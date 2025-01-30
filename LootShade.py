@@ -1,9 +1,10 @@
+import sys
 import os
-import random
 import json
 import time
-import cProfile
+import random
 import pstats
+import cProfile
 from io import StringIO
 from PIL import Image, ImageTk
 from PIL import Image, ImageOps
@@ -12,46 +13,192 @@ from tkinter import ttk
 from tkinter import messagebox
 import webbrowser
 from data.npc_data import npc_data
+from data.theme_data import theme_data
+CONFIG_FILE = "config.json"
 
 start_time = time.time()
 print("Starting up...")
 time.sleep(2)
 
 def profile_script():
+    if not config.get("enable_profiling", False):
+        root.mainloop()
+        return
+
     profiler = cProfile.Profile()
     profiler.enable()
     root.mainloop()
     profiler.disable()
+
     s = StringIO()
     sortby = 'cumulative'
     ps = pstats.Stats(profiler, stream=s).sort_stats(sortby)
     ps.print_stats()
+
     with open("profile_report.txt", "w") as f:
         f.write(s.getvalue())
+
     print("Profile report saved to 'profile_report.txt'.")
 
+def restart_application():
+    python = sys.executable
+    os.execl(python, python, *sys.argv)
+    
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except AttributeError:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
+def load_config():
+    default_config = {
+        "show_info_window": True,
+        "world": "F2P",
+        "show_members_items": True,
+        "show_drops_as_fraction": False,
+        "theme": "Creme",
+        "enable_profiling": False
+    }
+
+    user_config_path = os.path.join(os.getenv('APPDATA'), 'LootShade', CONFIG_FILE)
+
+    if os.path.exists(user_config_path):
+        try:
+            with open(user_config_path, "r") as file:
+                config = json.load(file)
+                if isinstance(config, dict):
+                    return {**default_config, **config}
+        except (json.JSONDecodeError, IOError):
+            print("Warning: User config.json is corrupted. Resetting to defaults.")
+
+    config_path = resource_path(CONFIG_FILE)
+    try:
+        with open(config_path, "r") as file:
+            config = json.load(file)
+            if isinstance(config, dict):
+                return {**default_config, **config}
+    except (json.JSONDecodeError, IOError):
+        print("Warning: Could not load packaged config.json. Using defaults.")
+
+    return default_config
+
+def save_config(config):
+    user_config_path = os.path.join(os.getenv('APPDATA'), 'LootShade', CONFIG_FILE)
+    os.makedirs(os.path.dirname(user_config_path), exist_ok=True)
+    
+    try:
+        with open(user_config_path, "w") as file:
+            json.dump(config, file, indent=4)
+        print(f"Config saved to: {user_config_path}")
+    except IOError:
+        print("Error: Unable to save config.json.")
+
+def show_info_window():
+    config = load_config()
+    if not config.get("show_info_window", True):
+        return
+
+    info_window = tk.Toplevel(root)
+    info_window.title("Welcome to LootShade")
+    info_window.geometry("400x250")
+    info_window.resizable(False, False)
+    info_window.iconbitmap(icon_path)
+    
+    info_text = tk.Text(
+        info_window,
+        wrap="word",
+        font=("Arial", 12),
+        padx=10,
+        pady=10,
+        height=8,
+        width=50,
+        borderwidth=0
+    )
+    info_text.pack(expand=True, fill="both")
+
+    info_text.insert("end", "   Welcome to LootShade!\n\n", "header")
+    info_text.insert("end", "1. Click 'World' from the menu to change between f2p/p2p.\n", "bold")
+    info_text.insert("end", "2. Click 'Help' from the menu if you feel stuck.\n\n\n", "bold")
+
+    info_text.tag_configure("header", font=("Arial", 16, "bold"))
+    info_text.tag_configure("bold", font=("Arial", 12))
+    info_text.tag_configure("normal", font=("Arial", 10))
+
+    info_text.config(state="disabled")
+
+    show_again_var = tk.BooleanVar(value=config.get("show_info_window", True))
+
+    def toggle_show_again():
+        config["show_info_window"] = show_again_var.get()
+        save_config(config)
+
+    show_again_checkbox = tk.Checkbutton(
+        info_window, text="Show this window on startup",
+        variable=show_again_var,
+        command=toggle_show_again
+    )
+    show_again_checkbox.pack(pady=5)
+
+    close_button = tk.Button(info_window, text="OK", command=info_window.destroy)
+    close_button.pack(pady=10)
+
+rarity_conversion = {
+    "0.00%": "0/128", "0.78%": "1/128", "1.56%": "2/128", "2.34%": "3/128", "3.13%": "4/128",
+    "3.91%": "5/128", "4.69%": "6/128", "5.47%": "7/128", "6.25%": "8/128", "7.03%": "9/128",
+    "7.81%": "10/128", "8.59%": "11/128", "9.38%": "12/128", "10.16%": "13/128", "10.94%": "14/128",
+    "11.72%": "15/128", "12.50%": "16/128", "13.28%": "17/128", "14.06%": "18/128", "14.84%": "19/128",
+    "15.63%": "20/128", "16.41%": "21/128", "17.19%": "22/128", "17.97%": "23/128", "18.75%": "24/128",
+    "19.53%": "25/128", "20.31%": "26/128", "21.09%": "27/128", "21.88%": "28/128", "22.66%": "29/128",
+    "23.44%": "30/128", "24.22%": "31/128", "25.00%": "32/128", "25.78%": "33/128", "26.56%": "34/128",
+    "27.34%": "35/128", "28.13%": "36/128", "28.91%": "37/128", "29.69%": "38/128", "30.47%": "39/128",
+    "31.25%": "40/128", "32.03%": "41/128", "32.81%": "42/128", "33.59%": "43/128", "34.38%": "44/128",
+    "35.16%": "45/128", "35.94%": "46/128", "36.72%": "47/128", "37.50%": "48/128", "38.28%": "49/128",
+    "39.06%": "50/128", "39.84%": "51/128", "40.63%": "52/128", "41.41%": "53/128", "42.19%": "54/128",
+    "43.75%": "56/128", "44.53%": "57/128", "45.31%": "58/128", "46.09%": "59/128", "46.88%": "60/128",
+    "47.66%": "61/128", "48.44%": "62/128", "49.22%": "63/128", "50.00%": "64/128", "100.00%": "128/128"
+}
+
+def format_rarity(rarity):
+    if rarity == "100.00%" or rarity == "100%" or rarity_conversion.get(rarity) == "128/128":
+        return "Always"
+
+    if show_frac_var.get():
+        return rarity_conversion.get(rarity, rarity)
+
+    return rarity
+
+sort_order = {}
 def sort_treeview(treeview, column_index):
     items = list(treeview.get_children())
 
     def get_sort_value(item):
         value = treeview.item(item)['values'][column_index]
-        if isinstance(value, str):  
-            value = value.strip()
 
-            if value.endswith('%'):
-                try:
-                    return float(value.strip('%'))
-                except ValueError:
-                    return value
-            
+        if not isinstance(value, str):
+            return value
+
+        order_desc = sort_order.get(column_index, False)
+
+        if value == "Always":
+            return float('inf') if order_desc else float('+inf')
+
+        if '/' in value:
             try:
-                return float(value)
+                numerator, denominator = map(int, value.split('/'))
+                return numerator / denominator
             except ValueError:
-                return value
-        
-        return value
-    
-    items.sort(key=get_sort_value)
+                return float('-inf') if order_desc else float('inf')
+
+        try:
+            return float(value.strip('%')) if value.endswith('%') else float(value)
+        except ValueError:
+            return float('-inf') if order_desc else float('inf')
+
+    order = sort_order.get(column_index, False)
+    items.sort(key=get_sort_value, reverse=order)
+    sort_order[column_index] = not order
 
     for index, item in enumerate(items):
         treeview.move(item, '', index)
@@ -82,39 +229,50 @@ def show_drops(event):
         if drops:
             for drop in drops:
                 item_name = f"★ {drop['item']}" if drop.get('members', False) else drop['item']
-                drop_listbox.insert("", "end", values=(item_name, drop.get('qty', 1), drop.get('rarity', "N/A")))
+                formatted_rarity = format_rarity(drop.get('rarity', "N/A"))
+                drop_listbox.insert("", "end", values=(item_name, drop.get('qty', 1), formatted_rarity))
         else:
             drop_listbox.insert("", "end", values=("No drops available", "", ""))
     else:
         drop_listbox.insert("", "end", values=("No drops available", "", ""))
+
+def toggle_rarity_display():
+    config["show_drops_as_fraction"] = show_frac_var.get()
+    save_config(config)
+    refresh_drops()
 
 def search_items():
     search_term = search_entry.get().lower()
     search_results.delete(*search_results.get_children())
     selected_world = world_var.get().lower()
 
-    results_found = False
+    if not search_term:
+        return
 
+    results_found = False
+    
     for npc, worlds in npc_data.items():
         for world_entry in worlds:
             if selected_world in world_entry:
                 for drop in world_entry[selected_world]:
                     if search_term in drop['item'].lower() and (show_members_var.get() or not drop['members']):
                         item_name = f"★ {drop['item']}" if drop['members'] else drop['item']
-
+                        formatted_rarity = format_rarity(drop.get('rarity', "N/A"))
+                        
                         for level_entry in world_entry.get("levels", []):
                             npc_level = level_entry.get("lvl", "N/A")
                             npc_display_name = f"{npc} (lvl-{npc_level})"
-                            search_results.insert("", "end", values=(npc_display_name, item_name, drop['qty'], drop['rarity']))
+                            search_results.insert("", "end", values=(npc_display_name, item_name, drop['qty'], formatted_rarity))
                             results_found = True
-
+    
     if not results_found:
         search_results.insert("", "end", values=("No results found", "", "", ""))
 
 def refresh_drops():
     if npc_listbox.curselection():
         show_drops(None)
-    search_items()
+    if search_entry.get().strip():
+        search_items()
 
 def hex_to_rgb(hex_color):
     hex_color = hex_color.lstrip('#')
@@ -138,7 +296,6 @@ theme_settings = {
         "img_bg_color": hex_to_rgb("#ffffff"),
     }
 }
-
 image_cache = {}
 
 def load_images_optimized(folder_name):
@@ -175,40 +332,21 @@ def load_images(folder_name):
     image_cache = images
     return images, display_name_map
 
+config = load_config()
+
+def update_world():
+    config["world"] = world_var.get()
+    save_config(config)
+    refresh_drops()
+
 def toggle_theme():
     global theme_settings, image_cache
     current_theme = theme_var.get()
+    config["theme"] = current_theme
+    save_config(config)
 
-    if current_theme == "Dark":
-        theme_settings.update({
-            "background_color": "#2e2e2e",
-            "foreground_color": "#ffffff",
-            "treeview_bg": "#2e2e2e",
-            "treeview_fg": "#ffffff",
-            "treeview_heading_bg": "#4d4d4d",
-            "treeview_heading_fg": "#ffffff",
-            "img_bg_color": "#2e2e2e",
-        })
-    elif current_theme == "Light":
-        theme_settings.update({
-            "background_color": "#ffffff",
-            "foreground_color": "#000000",
-            "treeview_bg": "#ffffff",
-            "treeview_fg": "#000000",
-            "treeview_heading_bg": "#e0e0e0",
-            "treeview_heading_fg": "#000000",
-            "img_bg_color": "#ffffff",
-        })
-    else: # default "creme"
-        theme_settings.update({
-            "background_color": "#e2dbc8",
-            "foreground_color": "#000000",
-            "treeview_bg": "#d8ccb4",
-            "treeview_fg": "#000000",
-            "treeview_heading_bg": "#b8a282",
-            "treeview_heading_fg": "#000000",
-            "img_bg_color": "#d8ccb4",
-        })
+    theme_settings = theme_data.get(current_theme, theme_data["Creme"])
+
     npc_listbox.config(bg=theme_settings["treeview_bg"])
     image_label.config(bg=theme_settings["img_bg_color"])
     
@@ -240,7 +378,9 @@ def toggle_theme():
         image_label.config(image=placeholder_image)
         image_label.image = placeholder_image
 
-def update_world():
+def toggle_show_members():
+    config["show_members_items"] = show_members_var.get()
+    save_config(config)
     refresh_drops()
 
 def resize_panes():
@@ -446,9 +586,13 @@ style = ttk.Style()
 menu_bar = tk.Menu(root)
 root.config(menu=menu_bar)
 
-world_var = tk.StringVar(value="F2P")
+world_var = tk.StringVar(value=config.get("world", "F2P"))
+theme_var = tk.StringVar(value=config.get("theme", "Creme"))
+show_members_var = tk.BooleanVar(value=config.get("show_members_items", True))
+show_frac_var = tk.BooleanVar(value=config.get("show_drops_as_fraction", False))
+
 worlds_menu = tk.Menu(menu_bar, tearoff=0)
-menu_bar.add_cascade(label="Worlds", menu=worlds_menu)
+menu_bar.add_cascade(label="World", menu=worlds_menu)
 
 worlds_menu.add_radiobutton(label="F2P", variable=world_var, value="F2P", command=update_world)
 worlds_menu.add_radiobutton(label="P2P", variable=world_var, value="P2P", command=update_world)
@@ -459,13 +603,25 @@ menu_bar.add_cascade(label="Settings", menu=settings_menu)
 theme_menu = tk.Menu(menu_bar, tearoff=0)
 menu_bar.add_cascade(label="Theme", menu=theme_menu)
 
-theme_var = tk.StringVar(value="Creme")
-theme_menu.add_radiobutton(label="Light Theme", variable=theme_var, value="Light", command=toggle_theme)
-theme_menu.add_radiobutton(label="Dark Theme", variable=theme_var, value="Dark", command=toggle_theme)
-theme_menu.add_radiobutton(label="Creme Theme", variable=theme_var, value="Creme", command=toggle_theme)
+for theme_name in theme_data:
+    theme_menu.add_radiobutton(
+        label=f"{theme_name}", 
+        variable=theme_var, 
+        value=theme_name, 
+        command=toggle_theme
+    )
 
-show_members_var = tk.BooleanVar(value=True)
-settings_menu.add_checkbutton(label="Show Member Items", variable=show_members_var, command=refresh_drops)
+enable_profiling_var = tk.BooleanVar(value=config.get("enable_profiling", False))
+
+def toggle_profiling():
+    config["enable_profiling"] = enable_profiling_var.get()
+    save_config(config)
+    restart_application()
+
+settings_menu.add_checkbutton(label="Enable Profiling", variable=enable_profiling_var, command=toggle_profiling)
+
+settings_menu.add_checkbutton(label="Show Member Items", variable=show_members_var, command=toggle_show_members)
+settings_menu.add_checkbutton(label="Show drops as 1/128", variable=show_frac_var, command=toggle_rarity_display)
 
 top_paned_window = tk.PanedWindow(root, orient=tk.HORIZONTAL)
 top_paned_window.pack(fill=tk.BOTH, expand=True)
@@ -615,17 +771,17 @@ for npc, world_entry, npc_id in npc_listbox_data:
     else:
         print(f"Skipping invalid entry: {npc}, {npc_id}")
 
-toggle_theme()
-
 end_time = time.time()
 elapsed_time = end_time - start_time
 print(f"Script took {elapsed_time:.2f} seconds to start up.")
 
-# Set initial sizes
 root.update_idletasks()
 resize_panes()
+toggle_theme()
+refresh_drops()
+show_info_window()
 
 root.bind("<Configure>", lambda event: resize_panes_throttled())
 
-#profile_script()
-root.mainloop()
+profile_script()
+#root.mainloop()

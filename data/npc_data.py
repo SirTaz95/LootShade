@@ -571,7 +571,7 @@ npc_data = {
             ],
             "levels": [            
                 {"lvl": 1, "hp": 3, "att": 0, "str": 0, "def": 0, "magic": 0, "attBo": -47, "strBo": -42, "rangeBo": 0, "stabDef": -42, "slashDef": -42, "crushDef": -42, "magicDef": -42, "rangeDef": -42, "attStyle": "Stab", "respawnrate": 50, "huntrange": 0, "wanderrange": 0, "maxrange": 0},
-                {"lvl": 3, "hp": 3, "att": 0, "str": 0, "def": 0, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": -100, "rangeDef": 0, "attStyle": "", "respawnrate": 0, "huntrange": 0, "wanderrange": 0, "maxrange": 0}
+                #{"lvl": 3, "hp": 3, "att": 0, "str": 0, "def": 0, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": -100, "rangeDef": 0, "attStyle": "Stab", "respawnrate": 0, "huntrange": 0, "wanderrange": 0, "maxrange": 0}
             ]
         }
     ],
@@ -738,7 +738,7 @@ npc_data = {
                 {'item': "Fire Talisman", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
-                {"lvl": 7, "hp": 12, "att": 5, "str": 2, "def": 5, "magic": 6, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 3, "rangeDef": 0, "attStyle": "", "respawnrate": 100, "huntrange": 3, "wanderrange": 3, "maxrange": 5}
+                {"lvl": 7, "hp": 12, "att": 5, "str": 2, "def": 5, "magic": 6, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 3, "rangeDef": 0, "attStyle": "Magic", "respawnrate": 100, "huntrange": 3, "wanderrange": 3, "maxrange": 5}
             ]
         },
         {
@@ -804,7 +804,7 @@ npc_data = {
                 {'item': "Fire Talisman", 'qty': 1, 'members': False, 'rarity': "1.56%"},
             ],  
             "levels": [
-                {"lvl": 20, "hp": 24, "att": 17, "str": 17, "def": 14, "magic": 22, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 3, "rangeDef": 0, "attStyle": "", "respawnrate": 100, "huntrange": 5, "wanderrange": 3, "maxrange": 5}
+                {"lvl": 20, "hp": 24, "att": 17, "str": 17, "def": 14, "magic": 22, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 3, "rangeDef": 0, "attStyle": "Magic", "respawnrate": 100, "huntrange": 5, "wanderrange": 3, "maxrange": 5}
             ]
         }
     ],
@@ -852,7 +852,7 @@ npc_data = {
                 {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.56%"},
             ],
             "levels": [
-                {'lvl': 34, 'hp': 37, 'att': 32, 'str': 26, 'def': 27, 'magic': 0, 'attBo': 9, 'strBo': 9, 'rangeBo': 0, 'stabDef': 9, 'slashDef': 8, 'crushDef': 10, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Slash', 'respawnrate': 100, 'huntrange': 0}
+                {"lvl": 34, "hp": 37, "att": 32, "str": 26, "def": 27, "magic": 0, "attBo": 9, "strBo": 9, "rangeBo": 0, "stabDef": 9, "slashDef": 8, "crushDef": 10, "magicDef": 0, "rangeDef": 0, "attStyle": "Slash", "respawnrate": 100, "huntrange": 0, "wanderrange": 0, "maxrange": 0}
             ]
         }
     ],
@@ -881,7 +881,7 @@ npc_data = {
                 {'item': "3Doseantipoison", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
-                {'lvl': 33, 'hp': 30, 'att': 28, 'str': 28, 'def': 32, 'magic': 25, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 0, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Crush', 'respawnrate': 50, 'huntrange': 0}
+                {"lvl": 33, "hp": 30, "att": 28, "str": 28, "def": 32, "magic": 25, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 50, "huntrange": 0, "wanderrange": 0, "maxrange": 0}
             ]
         }
     ],
@@ -928,7 +928,9 @@ npc_data = {
                 {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
-                {"lvl": 10, "hp": 16, "att": 8, "str": 6, "def": 9, "magic": 0, "attBo": 5, "strBo": 7, "rangeBo": 0, "stabDef": 3, "slashDef": 4, "crushDef": 4, "magicDef": 2, "rangeDef": 3, "attStyle": "Stab", "respawnrate": 0, "huntrange": 0}
+                {"lvl": 9, "hp": 16, "att": 8, "str": 8, "def": 6, "magic": 0, "attBo": 11, "strBo": 9, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 5, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 100, "huntrange": 0, "wanderrange": 13, "maxrange": 15},
+                {"lvl": 10, "hp": 16, "att": 8, "str": 6, "def": 9, "magic": 0, "attBo": 5, "strBo": 7, "rangeBo": 0, "stabDef": 3, "slashDef": 4, "crushDef": 4, "magicDef": 2, "rangeDef": 3, "attStyle": "Stab", "respawnrate": 0, "huntrange": 0, "wanderrange": 5, "maxrange": 12},
+                {"lvl": 20, "hp": 26, "att": 15, "str": 16, "def": 16, "magic": 0, "attBo": 11, "strBo": 9, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 5, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 50, "huntrange": 0, "wanderrange": 13, "maxrange": 15}
             ]
         }
     ],
@@ -951,7 +953,7 @@ npc_data = {
                 {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.56%"},
             ],
             "levels": [
-                {'lvl': 47, 'hp': 54, 'att': 42, 'str': 42, 'def': 42, 'magic': 0, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 30, 'slashDef': 40, 'crushDef': 20, 'magicDef': 10, 'rangeDef': 30, 'attStyle': 'Crush', 'respawnrate': 60, 'huntrange': 1}
+                {"lvl": 47, "hp": 54, "att": 42, "str": 42, "def": 42, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 30, "slashDef": 40, "crushDef": 20, "magicDef": 10, "rangeDef": 30, "attStyle": "Crush", "respawnrate": 60, "huntrange": 1, "wanderrange": 4, "maxrange": 6}
             ]
         }
     ],
@@ -997,7 +999,7 @@ npc_data = {
                 {'item': "Cabbage", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
-                {'lvl': 7, 'hp': 12, 'att': 3, 'str': 4, 'def': 8, 'magic': 0, 'attBo': 5, 'strBo': 6, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 0, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Stab', 'respawnrate': 50, 'huntrange': 0}
+                {"lvl": 7, "hp": 12, "att": 3, "str": 4, "def": 8, "magic": 0, "attBo": 5, "strBo": 6, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Stab", "respawnrate": 50, "huntrange": 0, "wanderrange": 20, "maxrange": 22}
             ]
         }
     ],
@@ -1029,7 +1031,7 @@ npc_data = {
                 {'item': "~Ultrarare Getitem", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
-                {'lvl': 93, 'hp': 111, 'att': 65, 'str': 65, 'def': 65, 'magic': 0, 'attBo': 29, 'strBo': 31, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 3, 'crushDef': 2, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Slash', 'respawnrate': 60, 'huntrange': 2}
+                {"lvl": 93, "hp": 111, "att": 65, "str": 65, "def": 65, "magic": 0, "attBo": 29, "strBo": 31, "rangeBo": 0, "stabDef": 0, "slashDef": 3, "crushDef": 2, "magicDef": 0, "rangeDef": 0, "attStyle": "Slash", "respawnrate": 60, "huntrange": 2, "wanderrange": 3, "maxrange": 5}
             ]
         }
     ],
@@ -1089,7 +1091,7 @@ npc_data = {
                 {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "2.34%"},
             ],
             "levels": [
-                {'lvl': 28, 'hp': 35, 'att': 18, 'str': 22, 'def': 26, 'magic': 0, 'attBo': 18, 'strBo': 16, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 0, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Crush', 'respawnrate': 60, 'huntrange': 2}
+                {"lvl": 28, "hp": 35, "att": 18, "str": 22, "def": 26, "magic": 0, "attBo": 18, "strBo": 16, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 60, "huntrange": 2, "wanderrange": 3, "maxrange": 5}
             ]
         }
     ],
@@ -1105,6 +1107,7 @@ npc_data = {
                 {'item': "Raw Rat Meat", 'qty': 1, 'members': False, 'rarity': "100%"},
             ],
             "levels": [
+                {"lvl": 3, "hp": 3, "att": 0, "str": 0, "def": 0, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": -100, "slashDef": -100, "crushDef": -100, "magicDef": 0, "rangeDef": 0, "attStyle": "Stab", "respawnrate": 60, "huntrange": 0, "wanderrange": 6, "maxrange": 8},
                 {'lvl': 6, 'hp': 10, 'att': 6, 'str': 5, 'def': 2, 'magic': 0, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 0, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Stab', 'respawnrate': 60, 'huntrange': 1}
             ]
         }
@@ -1148,9 +1151,9 @@ npc_data = {
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "14.06%"},
             ],
             "levels": [
-            {"lvl": 2, "hp": 5, "att": 0, "str": 0, "def": 0, "magic": 0, "attBo": -21, "strBo": -15, "rangeBo": 0, "stabDef": -15, "slashDef": -15, "crushDef": -15, "magicDef": -15, "rangeDef": -15, "attStyle": "Crush", "respawnrate": 140, "huntrange": 0},
-            {"lvl": 5, "hp": 12, "att": 3, "str": 0, "def": 4, "magic": 0, "attBo": 12, "strBo": 12, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Stab", "respawnrate": 140, "huntrange": 0},
-            {"lvl": 13, "hp": 16, "att": 12, "str": 13, "def": 7, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 4, "slashDef": 6, "crushDef": 8, "magicDef": 4, "rangeDef": 4, "attStyle": "Crush", "respawnrate": 140, "huntrange": 0}
+                {"lvl": 2, "hp": 5, "att": 0, "str": 0, "def": 0, "magic": 0, "attBo": -21, "strBo": -15, "rangeBo": 0, "stabDef": -15, "slashDef": -15, "crushDef": -15, "magicDef": -15, "rangeDef": -15, "attStyle": "Crush", "respawnrate": 140, "huntrange": 0, "wanderrange": 15, "maxrange": 17},
+                {"lvl": 5, "hp": 12, "att": 3, "str": 0, "def": 4, "magic": 0, "attBo": 12, "strBo": 12, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Stab", "respawnrate": 70, "huntrange": 0, "wanderrange": 15, "maxrange": 17},
+                {"lvl": 13, "hp": 16, "att": 12, "str": 13, "def": 7, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 4, "slashDef": 6, "crushDef": 8, "magicDef": 4, "rangeDef": 4, "attStyle": "Crush", "respawnrate": 140, "huntrange": 0, "wanderrange": 15, "maxrange": 17}
             ]
         },
     ],
@@ -1200,7 +1203,7 @@ npc_data = {
                 {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "3.91%"},
             ],
             "levels": [
-                {'lvl': 92, 'hp': 87, 'att': 76, 'str': 78, 'def': 81, 'magic': 0, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 0, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Slash', 'respawnrate': 30, 'huntrange': 3}
+                {"lvl": 92, "hp": 87, "att": 76, "str": 78, "def": 81, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": -10, "rangeDef": 0, "attStyle": "Slash", "respawnrate": 30, "huntrange": 3, "wanderrange": 6, "maxrange": 8}
             ]
         }
     ],
@@ -1231,7 +1234,7 @@ npc_data = {
                 {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "3.91%"},
             ],
             "levels": [
-                {'lvl': 83, 'hp': 75, 'att': 68, 'str': 68, 'def': 68, 'magic': 68, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 20, 'slashDef': 40, 'crushDef': 40, 'magicDef': 30, 'rangeDef': 20, 'attStyle': 'Slash', 'respawnrate': 60, 'huntrange': 4}
+                {"lvl": 83, "hp": 75, "att": 68, "str": 68, "def": 68, "magic": 68, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 20, "slashDef": 40, "crushDef": 40, "magicDef": 30, "rangeDef": 20, "attStyle": "Slash", "respawnrate": 60, "huntrange": 4, "wanderrange": 4, "maxrange": 6}
             ]
         }
     ],
@@ -1289,7 +1292,10 @@ npc_data = {
                 {'item': "Coins", 'qty': 30, 'members': False, 'rarity': "1.56%"},
             ],
             "levels": [
-                {'lvl': 22, 'hp': 22, 'att': 15, 'str': 15, 'def': 16, 'magic': 0, 'attBo': 6, 'strBo': 10, 'rangeBo': 10, 'stabDef': 13, 'slashDef': 17, 'crushDef': 14, 'magicDef': 0, 'rangeDef': 15, 'attStyle': 'Range', 'respawnrate': 100, 'huntrange': 0}
+                {"lvl": 20, "hp": 22, "att": 17, "str": 18, "def": 13, "magic": 0, "attBo": 9, "strBo": 7, "rangeBo": 0, "stabDef": 24, "slashDef": 14, "crushDef": 19, "magicDef": 4, "rangeDef": 16, "attStyle": "Crush", "respawnrate": 100, "huntrange": 0, "wanderrange": 0, "maxrange": 0},
+                {"lvl": 21, "hp": 22, "att": 19, "str": 18, "def": 14, "magic": 0, "attBo": 4, "strBo": 5, "rangeBo": 0, "stabDef": 18, "slashDef": 25, "crushDef": 19, "magicDef": -4, "rangeDef": 20, "attStyle": "Stab", "respawnrate": 100, "huntrange": 0, "wanderrange": 2, "maxrange": 7},
+                {"lvl": 22, "hp": 22, "att": 15, "str": 15, "def": 16, "magic": 0, "attBo": 6, "strBo": 10, "rangeBo": 0, "stabDef": 13, "slashDef": 17, "crushDef": 14, "magicDef": -4, "rangeDef": 15, "attStyle": "Ranged", "respawnrate": 100, "huntrange": 0, "wanderrange": 2, "maxrange": 4},
+                {"lvl": 42, "hp": 50, "att": 20, "str": 20, "def": 20, "magic": 0, "attBo": 19, "strBo": 8, "rangeBo": 0, "stabDef": 18, "slashDef": 23, "crushDef": 27, "magicDef": 10, "rangeDef": 19, "attStyle": "Ranged", "respawnrate": 50, "huntrange": 0, "wanderrange": 1, "maxrange": 20}
             ]
         }
     ],
@@ -1343,7 +1349,7 @@ npc_data = {
                 {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
-                {'lvl': 29, 'hp': 35, 'att': 22, 'str': 22, 'def': 25, 'magic': 0, 'attBo': 8, 'strBo': 13, 'rangeBo': 0, 'stabDef': 12, 'slashDef': 14, 'crushDef': 10, 'magicDef': 0, 'rangeDef': 11, 'attStyle': 'Slash', 'respawnrate': 100, 'huntrange': 0}
+                {"lvl": 29, "hp": 35, "att": 22, "str": 22, "def": 25, "magic": 0, "attBo": 8, "strBo": 13, "rangeBo": 0, "stabDef": 12, "slashDef": 14, "crushDef": 10, "magicDef": -1, "rangeDef": 11, "attStyle": "Slash", "respawnrate": 100, "huntrange": 0, "wanderrange": 0, "maxrange": 0}
             ]
         }
     ],
@@ -1355,7 +1361,7 @@ npc_data = {
                 {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
             ],
             "levels": [
-                {'lvl': 122, 'hp': 116, 'att': 105, 'str': 104, 'def': 102, 'magic': 0, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 0, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Stab', 'respawnrate': 178, 'huntrange': 2}
+                {"lvl": 122, "hp": 116, "att": 105, "str": 104, "def": 102, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Stab", "respawnrate": 178, "huntrange": 2, "wanderrange": 3, "maxrange": 5}
             ]
         }
     ],
@@ -1371,7 +1377,7 @@ npc_data = {
                 {'item': "Black Cape", 'qty': 1, 'members': False, 'rarity': "100%"},
             ],
             "levels": [
-                {'lvl': 5, 'hp': 13, 'att': 2, 'str': 2, 'def': 2, 'magic': 0, 'attBo': 6, 'strBo': 7, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 3, 'crushDef': 2, 'magicDef': 0, 'rangeDef': 2, 'attStyle': 'Stab', 'respawnrate': 0, 'huntrange': 5}
+                {"lvl": 5, "hp": 13, "att": 2, "str": 2, "def": 2, "magic": 0, "attBo": 6, "strBo": 7, "rangeBo": 0, "stabDef": 0, "slashDef": 3, "crushDef": 2, "magicDef": 0, "rangeDef": 2, "attStyle": "Stab", "respawnrate": 0, "huntrange": 5, "wanderrange": 12, "maxrange": 14}
             ]
         }
     ],
@@ -1429,7 +1435,7 @@ npc_data = {
                 {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.56%"},
             ],
             "levels": [
-                {'lvl': 28, 'hp': 29, 'att': 22, 'str': 24, 'def': 24, 'magic': 0, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 0, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': "Crush", 'respawnrate': 0, 'huntrange': 1}
+                {"lvl": 28, "hp": 29, "att": 22, "str": 24, "def": 24, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 1, "wanderrange": 15, "maxrange": 17}
             ]
         }, {
             "id": 1,
@@ -1481,7 +1487,7 @@ npc_data = {
                 {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.56%"},
             ],
             "levels": [
-                {'lvl': 42, 'hp': 49, 'att': 33, 'str': 31, 'def': 36, 'magic': 0, 'attBo': 8, 'strBo': 10, 'rangeBo': 0, 'stabDef': 1, 'slashDef': 1, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': "Stab", 'respawnrate': 0, 'huntrange': 1}
+                {"lvl": 42, "hp": 49, "att": 33, "str": 31, "def": 36, "magic": 0, "attBo": 8, "strBo": 10, "rangeBo": 0, "stabDef": 1, "slashDef": 1, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Stab", "respawnrate": 0, "huntrange": 1, "wanderrange": 3, "maxrange": 5}
             ]
         }
     ],
@@ -1544,7 +1550,7 @@ npc_data = {
                 {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "3.13%"},
             ],
             "levels": [
-                {'lvl': 54, 'hp': 70, 'att': 40, 'str': 40, 'def': 40, 'magic': 0, 'attBo': 29, 'strBo': 31, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 3, 'crushDef': 2, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Slash', 'respawnrate': 60, 'huntrange': 2}
+                {"lvl": 54, "hp": 70, "att": 40, "str": 40, "def": 40, "magic": 0, "attBo": 29, "strBo": 31, "rangeBo": 0, "stabDef": 0, "slashDef": 3, "crushDef": 2, "magicDef": 0, "rangeDef": 0, "attStyle": "Slash", "respawnrate": 60, "huntrange": 2, "wanderrange": 0, "maxrange": 0}
             ]
         }
             ],
@@ -1580,7 +1586,7 @@ npc_data = {
                 {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "2.34%"},
             ],
             "levels": [
-                {'lvl': 53, 'hp': 59, 'att': 47, 'str': 47, 'def': 47, 'magic': 0, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 30, 'slashDef': 40, 'crushDef': 20, 'magicDef': 10, 'rangeDef': 30, 'attStyle': 'Slash', 'respawnrate': 60, 'huntrange': 1}
+                {"lvl": 53, "hp": 59, "att": 47, "str": 47, "def": 47, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 30, "slashDef": 40, "crushDef": 20, "magicDef": 10, "rangeDef": 30, "attStyle": "Slash", "respawnrate": 60, "huntrange": 1, "wanderrange": 3, "maxrange": 5}
             ]
         }
     ],
@@ -1656,7 +1662,7 @@ npc_data = {
                 {'item': "Potion", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
-                {'lvl': 2, 'hp': 8, 'att': 0, 'str': 0, 'def': 0, 'magic': 0, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 0, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Stab', 'respawnrate': 100, 'huntrange': 0}
+                {"lvl": 2, "hp": 8, "att": 0, "str": 0, "def": 0, "magic": 0, "attBo": -42, "strBo": -37, "rangeBo": 0, "stabDef": -42, "slashDef": -42, "crushDef": -42, "magicDef": -42, "rangeDef": -42, "attStyle": "Stab", "respawnrate": 100, "huntrange": 0, "wanderrange": 27, "maxrange": 25}
             ]
         }
     ],
@@ -1683,7 +1689,7 @@ npc_data = {
                 {'item': "Unidentified Rogues Purse", 'qty': 1, 'members': False, 'rarity': "0.78"},
             ],
             "levels": [
-                {'lvl': 48, 'hp': 60, 'att': 43, 'str': 43, 'def': 43, 'magic': 0, 'attBo': 22, 'strBo': 20, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 0, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Crush', 'respawnrate': 60, 'huntrange': 2}
+                {"lvl": 48, "hp": 60, "att": 43, "str": 43, "def": 43, "magic": 0, "attBo": 22, "strBo": 20, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 60, "huntrange": 2, "wanderrange": 3, "maxrange": 5}
             ]
         }
     ],
