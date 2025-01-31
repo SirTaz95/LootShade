@@ -38,6 +38,3 @@ A: Join our Discord community via the link in the “Help” menu! You’ll find
 
 **Enjoy your adventures with LootShade!**  
 Developed by Taz — 2025
-
-Let me know if you want to add or tweak anything—I'm here to help!
-
