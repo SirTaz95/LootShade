@@ -31,8 +31,9 @@ A: No worries! Head to the “Help” menu and select “Show Info Window.” Th
 **Q: How can I reset my settings?**  
 A: Delete or modify the `config.json` file found in your `AppData\LootShade` directory. The app will recreate it with default settings the next time you run it.
 
-**Q: How do I report bugs or get support?**  
-A: Join our Discord community via the link in the “Help” menu! You’ll find support, report bugs, and chat with other users there.
+**Q: How do I report bugs or feedback?**  
+A: Go to the “Help” menu and select “Report Bug.” This will allow you to send the development team a short paragraph regarding your issues with LootShade.
+
 
 ---
 
