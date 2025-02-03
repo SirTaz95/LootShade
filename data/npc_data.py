@@ -1,15 +1,16 @@
 npc_data = {
-    "Al-Kharid warrior": [
+    "Al-Kharid warrior": [#Checked
         {
             "id": 0,
-            "f2p": [
+            'f2p': [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Dagger", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Bronze Med Helm", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Bronze Arrow", 'qty': 7, 'members': False, 'rarity': "2.34%"},
-                {'item': "Earth Rune", 'qty': 4, 'members': False, 'rarity': "1.56%"},
-                {'item': "Fire Rune", 'qty': 6, 'members': False, 'rarity': "1.56%"},
-                {'item': "Mind Rune", 'qty': 9, 'members': False, 'rarity': "1.56%"},
-                {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "Earthrune", 'qty': 4, 'members': False, 'rarity': "1.56%"},
+                {'item': "Firerune", 'qty': 6, 'members': False, 'rarity': "1.56%"},
+                {'item': "Mindrune", 'qty': 9, 'members': False, 'rarity': "1.56%"},
+                {'item': "Chaosrune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "17.97%"},
                 {'item': "Coins", 'qty': 3, 'members': False, 'rarity': "29.69%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "7.03%"},
@@ -19,16 +20,17 @@ npc_data = {
                 {'item': "Copper Ore", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Earth Talisman", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Cabbage", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "23.44%"},
             ],
-                    "p2p": [
+            'p2p': [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Dagger", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Bronze Med Helm", 'qty': 1, 'members': False, 'rarity': "1.56%"},
-                {'item': "Bolt", 'qty': 9, 'members': False, 'rarity': "17.19%"},
                 {'item': "Bronze Arrow", 'qty': 7, 'members': False, 'rarity': "2.34%"},
-                {'item': "Earth Rune", 'qty': 4, 'members': False, 'rarity': "1.56%"},
-                {'item': "Fire Rune", 'qty': 6, 'members': False, 'rarity': "1.56%"},
-                {'item': "Mind Rune", 'qty': 9, 'members': False, 'rarity': "1.56%"},
-                {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "Earthrune", 'qty': 4, 'members': False, 'rarity': "1.56%"},
+                {'item': "Firerune", 'qty': 6, 'members': False, 'rarity': "1.56%"},
+                {'item': "Mindrune", 'qty': 9, 'members': False, 'rarity': "1.56%"},
+                {'item': "Chaosrune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
                 {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "17.97%"},
                 {'item': "Coins", 'qty': 3, 'members': False, 'rarity': "29.69%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "7.03%"},
@@ -38,6 +40,8 @@ npc_data = {
                 {'item': "Copper Ore", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Earth Talisman", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Cabbage", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "6.25%"},
+                {'item': "Bolt", 'qty': 9, 'members': False, 'rarity': "17.19%"},
             ],
             "levels": [
                 {"lvl": 9, "hp": 19, "att": 7, "str": 5, "def": 4, "magic": 0, "attBo": 10, "strBo": 9, "rangeBo": 0, "stabDef": 12, "slashDef": 15, "crushDef": 10, "magicDef": -1, "rangeDef": 12, "attStyle": "Slash", "respawnrate": 50, "huntrange": 0, "wanderrange": 0, "maxrange": 0}
@@ -56,20 +60,21 @@ npc_data = {
             ]
         }
     ],
-    "Bandit": [
+    "Bandit": [#Checked
         {
             "id": 0,
-            "f2p": [
+            'f2p': [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Scimitar", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Steel Sq Shield", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Steel Axe", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "Chaos Rune", 'qty': 6, 'members': False, 'rarity': "2.34%"},
-                {'item': "Water Rune", 'qty': 9, 'members': False, 'rarity': "2.34%"},
-                {'item': "Air Rune", 'qty': 10, 'members': False, 'rarity': "1.56%"},
-                {'item': "Death Rune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
-                {'item': "Law Rune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
-                {'item': "Mind Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
-                {'item': "Nature Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "Chaosrune", 'qty': 6, 'members': False, 'rarity': "2.34%"},
+                {'item': "Waterrune", 'qty': 9, 'members': False, 'rarity': "2.34%"},
+                {'item': "Airrune", 'qty': 10, 'members': False, 'rarity': "1.56%"},
+                {'item': "Deathrune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
+                {'item': "Lawrune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
+                {'item': "Mindrune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "Naturerune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "28.91%"},
                 {'item': "Coins", 'qty': 35, 'members': False, 'rarity': "20.31%"},
                 {'item': "Coins", 'qty': 12, 'members': False, 'rarity': "10.16%"},
@@ -78,19 +83,20 @@ npc_data = {
                 {'item': "Coins", 'qty': 80, 'members': False, 'rarity': "1.56%"},
                 {'item': "Coal", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "2.34%"},
             ],
-                    "p2p": [
+            'p2p': [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Scimitar", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Steel Sq Shield", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Steel Axe", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "Chaos Rune", 'qty': 6, 'members': False, 'rarity': "2.34%"},
-                {'item': "Water Rune", 'qty': 9, 'members': False, 'rarity': "2.34%"},
-                {'item': "Air Rune", 'qty': 10, 'members': False, 'rarity': "1.56%"},
-                {'item': "Death Rune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
-                {'item': "Law Rune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
-                {'item': "Blood Rune", 'qty': 2, 'members': True, 'rarity': "0.78%"},
-                {'item': "Mind Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
-                {'item': "Nature Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "Chaosrune", 'qty': 6, 'members': False, 'rarity': "2.34%"},
+                {'item': "Waterrune", 'qty': 9, 'members': False, 'rarity': "2.34%"},
+                {'item': "Airrune", 'qty': 10, 'members': False, 'rarity': "1.56%"},
+                {'item': "Deathrune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
+                {'item': "Lawrune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
+                {'item': "Mindrune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "Naturerune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
                 {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "28.91%"},
                 {'item': "Coins", 'qty': 35, 'members': False, 'rarity': "20.31%"},
                 {'item': "Coins", 'qty': 12, 'members': False, 'rarity': "10.16%"},
@@ -99,25 +105,28 @@ npc_data = {
                 {'item': "Coins", 'qty': 80, 'members': False, 'rarity': "1.56%"},
                 {'item': "Coal", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "1.56%"},
+                {'item': "Blood Rune", 'qty': 2, 'members': True, 'rarity': "0.78%"},
             ],
             "levels": [ 
                 {"lvl": 21, "hp": 27, "att": 17, "str": 17, "def": 17, "magic": 0, "attBo": 11, "strBo": 12, "rangeBo": 0, "stabDef": 0, "slashDef": 3, "crushDef": 2, "magicDef": 0, "rangeDef": 0, "attStyle": "Stab", "respawnrate": 0, "huntrange": 6, "wanderrange": 0, "maxrange": 0}
             ]
         }
     ],
-    "Barbarian": [
+    "Barbarian": [#Checked
         {
             "id": 0,
-            "f2p": [
+            'f2p': [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Bronze Axe", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "Staff", 'qty': 1, 'members': False, 'rarity': "3.13%"},
-                {'item': "Iron Mace", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "3.91%"},
-                {'item': "Bronze Arrow", 'qty': 15, 'members': False, 'rarity': "2.34%"},
-                {'item': "Earth Rune", 'qty': 2, 'members': False, 'rarity': "2.34%"},
-                {'item': "Fire Rune", 'qty': 5, 'members': False, 'rarity': "1.56%"},
-                {'item': "Mind Rune", 'qty': 5, 'members': False, 'rarity': "1.56%"},
-                {'item': "Law Rune", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Iron Mace", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "chaosrune", 'qty': 15, 'members': False, 'rarity': "3.91%"},
+                {'item': "Bronze Arrow", 'qty': 2, 'members': False, 'rarity': "2.34%"},
+                {'item': "earthrune", 'qty': 5, 'members': False, 'rarity': "2.34%"},
+                {'item': "firerune", 'qty': 5, 'members': False, 'rarity': "1.56%"},
+                {'item': "mindrune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
+                {'item': "lawrune", 'qty': 5, 'members': False, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "32.81%"},
                 {'item': "Coins", 'qty': 8, 'members': False, 'rarity': "7.03%"},
                 {'item': "Coins", 'qty': 17, 'members': False, 'rarity': "3.91%"},
@@ -128,17 +137,19 @@ npc_data = {
                 {'item': "Cooked Meat", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Flier", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Ring Mould", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Nothing", 'qty': 1, 'members': False, 'rarity': "28.13%"},
             ],
-                    "p2p": [
+            'p2p': [                
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Bronze Axe", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "Staff", 'qty': 1, 'members': False, 'rarity': "3.13%"},
-                {'item': "Iron Mace", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "3.91%"},
-                {'item': "Bronze Arrow", 'qty': 15, 'members': False, 'rarity': "2.34%"},
-                {'item': "Earth Rune", 'qty': 2, 'members': False, 'rarity': "2.34%"},
-                {'item': "Fire Rune", 'qty': 5, 'members': False, 'rarity': "1.56%"},
-                {'item': "Mind Rune", 'qty': 5, 'members': False, 'rarity': "1.56%"},
-                {'item': "Law Rune", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Iron Mace", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "chaosrune", 'qty': 15, 'members': False, 'rarity': "3.91%"},
+                {'item': "Bronze Arrow", 'qty': 2, 'members': False, 'rarity': "2.34%"},
+                {'item': "earthrune", 'qty': 5, 'members': False, 'rarity': "2.34%"},
+                {'item': "firerune", 'qty': 5, 'members': False, 'rarity': "1.56%"},
+                {'item': "mindrune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
+                {'item': "lawrune", 'qty': 5, 'members': False, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "32.81%"},
                 {'item': "Coins", 'qty': 8, 'members': False, 'rarity': "7.03%"},
                 {'item': "Coins", 'qty': 17, 'members': False, 'rarity': "3.91%"},
@@ -149,25 +160,27 @@ npc_data = {
                 {'item': "Cooked Meat", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Flier", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Ring Mould", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Nothing", 'qty': 1, 'members': False, 'rarity': "28.13%"},
             ],
             "levels": [
                 {"lvl": 7, "hp": 14, "att": 6, "str": 6, "def": 2, "magic": 0, "attBo": 8, "strBo": 7, "rangeBo": 0, "stabDef": 12, "slashDef": 15, "crushDef": 13, "magicDef": 3, "rangeDef": 0, "attStyle": "Slash", "respawnrate": 50, "huntrange": 0, "wanderrange": 10, "maxrange": 12}
             ]
         }
     ],
-    "Barbarian woman": [
+    "Barbarian woman": [#Checked
         {
             "id": 0,
-            "f2p": [
+            'f2p': [                
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Bronze Axe", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "Staff", 'qty': 1, 'members': False, 'rarity': "3.13%"},
-                {'item': "Iron Mace", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "3.91%"},
-                {'item': "Bronze Arrow", 'qty': 15, 'members': False, 'rarity': "2.34%"},
-                {'item': "Earth Rune", 'qty': 2, 'members': False, 'rarity': "2.34%"},
-                {'item': "Fire Rune", 'qty': 5, 'members': False, 'rarity': "1.56%"},
-                {'item': "Mind Rune", 'qty': 5, 'members': False, 'rarity': "1.56%"},
-                {'item': "Law Rune", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Iron Mace", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "chaosrune", 'qty': 15, 'members': False, 'rarity': "3.91%"},
+                {'item': "Bronze Arrow", 'qty': 2, 'members': False, 'rarity': "2.34%"},
+                {'item': "earthrune", 'qty': 5, 'members': False, 'rarity': "2.34%"},
+                {'item': "firerune", 'qty': 5, 'members': False, 'rarity': "1.56%"},
+                {'item': "mindrune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
+                {'item': "lawrune", 'qty': 5, 'members': False, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "32.81%"},
                 {'item': "Coins", 'qty': 8, 'members': False, 'rarity': "7.03%"},
                 {'item': "Coins", 'qty': 17, 'members': False, 'rarity': "3.91%"},
@@ -178,17 +191,19 @@ npc_data = {
                 {'item': "Cooked Meat", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Flier", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Ring Mould", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Nothing", 'qty': 1, 'members': False, 'rarity': "28.13%"},
             ],
-            "p2p": [
+            'p2p': [                
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Bronze Axe", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "Staff", 'qty': 1, 'members': False, 'rarity': "3.13%"},
-                {'item': "Iron Mace", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "3.91%"},
-                {'item': "Bronze Arrow", 'qty': 15, 'members': False, 'rarity': "2.34%"},
-                {'item': "Earth Rune", 'qty': 2, 'members': False, 'rarity': "2.34%"},
-                {'item': "Fire Rune", 'qty': 5, 'members': False, 'rarity': "1.56%"},
-                {'item': "Mind Rune", 'qty': 5, 'members': False, 'rarity': "1.56%"},
-                {'item': "Law Rune", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Iron Mace", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "chaosrune", 'qty': 15, 'members': False, 'rarity': "3.91%"},
+                {'item': "Bronze Arrow", 'qty': 2, 'members': False, 'rarity': "2.34%"},
+                {'item': "earthrune", 'qty': 5, 'members': False, 'rarity': "2.34%"},
+                {'item': "firerune", 'qty': 5, 'members': False, 'rarity': "1.56%"},
+                {'item': "mindrune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
+                {'item': "lawrune", 'qty': 5, 'members': False, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "32.81%"},
                 {'item': "Coins", 'qty': 8, 'members': False, 'rarity': "7.03%"},
                 {'item': "Coins", 'qty': 17, 'members': False, 'rarity': "3.91%"},
@@ -199,13 +214,14 @@ npc_data = {
                 {'item': "Cooked Meat", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Flier", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Ring Mould", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Nothing", 'qty': 1, 'members': False, 'rarity': "28.13%"},
             ],
             "levels": [
                 {"lvl": 8, "hp": 14, "att": 6, "str": 5, "def": 5, "magic": 0, "attBo": 8, "strBo": 10, "rangeBo": 0, "stabDef": 1, "slashDef": 1, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Stab", "respawnrate": 50, "huntrange": 0, "wanderrange": 10, "maxrange": 12}
             ]
         }
     ],
-    "Bear": [
+    "Bear": [#Checked
         {
             "id": 0,
             "f2p": [
@@ -229,6 +245,7 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
+                {'item': "Ashes", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Black Sword", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Steel Battleaxe", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Black Axe", 'qty': 1, 'members': False, 'rarity': "1.56%"},
@@ -240,7 +257,7 @@ npc_data = {
                 {'item': "Blood Rune", 'qty': 7, 'members': True, 'rarity': "3.13%"},
                 {'item': "Fire Rune", 'qty': 37, 'members': False, 'rarity': "0.78%"},
                 {'item': "Law Rune", 'qty': 3, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "17.97%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "18.59%"},
                 {'item': "Coins", 'qty': 132, 'members': False, 'rarity': "31.25%"},
                 {'item': "Coins", 'qty': 30, 'members': False, 'rarity': "5.47%"},
                 {'item': "Coins", 'qty': 44, 'members': False, 'rarity': "4.69%"},
@@ -249,47 +266,49 @@ npc_data = {
                 {'item': "Lobster", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Adamantite Bar", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "3Dose1Defense", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "3.91%"},
-                {'item': "~Ultrarare Getitem", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "3.91%"},
+                {'item': "◄Ultra Rare►", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
                 {'lvl': 172, 'hp': 157, 'att': 145, 'str': 148, 'def': 152, 'magic': 0, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 0, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Slash', 'respawnrate': 60, 'huntrange': 3}
             ]
         }
     ],
-    "Black Heather": [
+    "Black Heather": [#Checked
         {
             "id": 0,
-            "f2p": [
+            'f2p': [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Steel Longsword", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Steel Full Helm", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "Law Rune", 'qty': 2, 'members': False, 'rarity': "3.13%"},
-                {'item': "Nature Rune", 'qty': 4, 'members': False, 'rarity': "3.13%"},
-                {'item': "Body Rune", 'qty': 12, 'members': False, 'rarity': "2.34%"},
-                {'item': "Chaos Rune", 'qty': 3, 'members': False, 'rarity': "2.34%"},
-                {'item': "Water Rune", 'qty': 30, 'members': False, 'rarity': "2.34%"},
-                {'item': "Mind Rune", 'qty': 5, 'members': False, 'rarity': "0.78%"},
+                {'item': "Lawrune", 'qty': 2, 'members': False, 'rarity': "3.13%"},
+                {'item': "Naturerune", 'qty': 4, 'members': False, 'rarity': "3.13%"},
+                {'item': "Bodyrune", 'qty': 12, 'members': False, 'rarity': "2.34%"},
+                {'item': "Chaosrune", 'qty': 3, 'members': False, 'rarity': "2.34%"},
+                {'item': "Waterrune", 'qty': 30, 'members': False, 'rarity': "2.34%"},
+                {'item': "Mindrune", 'qty': 5, 'members': False, 'rarity': "0.78%"},
+                {'item': "Coins", 'qty': 48, 'members': False, 'rarity': "23.44%"},
+                {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "14.06%"},
+                {'item': "Coins", 'qty': 8, 'members': False, 'rarity': "8.59%"},
+                {'item': "Coins", 'qty': 70, 'members': False, 'rarity': "7.81%"},
+                {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "3.91%"},
+                {'item': "Coins", 'qty': 150, 'members': False, 'rarity': "1.56%"},
+                {'item': "Silver Ore", 'qty': 1, 'members': False, 'rarity': "8.59%"},
+                {'item': "Swordfish (noted)", 'qty': 5, 'members': False, 'rarity': "1.56%"},
+                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "6.25%"},
                 {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "11.72%"},
-                {'item': "Coins", 'qty': 48, 'members': False, 'rarity': "23.44%"},
-                {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "14.06%"},
-                {'item': "Coins", 'qty': 8, 'members': False, 'rarity': "8.59%"},
-                {'item': "Coins", 'qty': 70, 'members': False, 'rarity': "7.81%"},
-                {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "3.91%"},
-                {'item': "Coins", 'qty': 150, 'members': False, 'rarity': "1.56%"},
-                {'item': "Silver Ore", 'qty': 1, 'members': False, 'rarity': "8.59%"},
-                {'item': "Cert Swordfish", 'qty': 5, 'members': False, 'rarity': "1.56%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.56%"},
             ],
-                    "p2p": [
+            'p2p': [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Steel Longsword", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Steel Full Helm", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "Law Rune", 'qty': 2, 'members': False, 'rarity': "3.13%"},
-                {'item': "Nature Rune", 'qty': 4, 'members': False, 'rarity': "3.13%"},
-                {'item': "Body Rune", 'qty': 12, 'members': False, 'rarity': "2.34%"},
-                {'item': "Chaos Rune", 'qty': 3, 'members': False, 'rarity': "2.34%"},
-                {'item': "Water Rune", 'qty': 30, 'members': False, 'rarity': "2.34%"},
-                {'item': "Mind Rune", 'qty': 5, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "11.72%"},
+                {'item': "Lawrune", 'qty': 2, 'members': False, 'rarity': "3.13%"},
+                {'item': "Naturerune", 'qty': 4, 'members': False, 'rarity': "3.13%"},
+                {'item': "Bodyrune", 'qty': 12, 'members': False, 'rarity': "2.34%"},
+                {'item': "Chaosrune", 'qty': 3, 'members': False, 'rarity': "2.34%"},
+                {'item': "Waterrune", 'qty': 30, 'members': False, 'rarity': "2.34%"},
+                {'item': "Mindrune", 'qty': 5, 'members': False, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 48, 'members': False, 'rarity': "23.44%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "14.06%"},
                 {'item': "Coins", 'qty': 8, 'members': False, 'rarity': "8.59%"},
@@ -297,30 +316,32 @@ npc_data = {
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "3.91%"},
                 {'item': "Coins", 'qty': 150, 'members': False, 'rarity': "1.56%"},
                 {'item': "Silver Ore", 'qty': 1, 'members': False, 'rarity': "8.59%"},
-                {'item': "Cert Swordfish", 'qty': 5, 'members': False, 'rarity': "1.56%"},
+                {'item': "Swordfish (noted)", 'qty': 5, 'members': False, 'rarity': "1.56%"},
                 {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "6.25%"},
+                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "11.72%"},
             ], 
             "levels": [
                 {"lvl": 34, "hp": 37, "att": 32, "str": 26, "def": 27, "magic": 0, "attBo": 9, "strBo": 9, "rangeBo": 0, "stabDef": 9, "slashDef": 8, "crushDef": 10, "magicDef": 0, "rangeDef": 0, "attStyle": "Slash", "respawnrate": 100, "huntrange": 0, "wanderrange": 0, "maxrange": 0}
             ]
         }
     ],
-    "Black Knight": [
+    "Black Knight": [#Checked
         {
             "id": 0,
-            "f2p": [
+            'f2p': [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Sword", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Iron Full Helm", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Steel Mace", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Mithril Arrow", 'qty': 3, 'members': False, 'rarity': "3.13%"},
-                {'item': "Body Rune", 'qty': 9, 'members': False, 'rarity': "2.34%"},
-                {'item': "Chaos Rune", 'qty': 6, 'members': False, 'rarity': "2.34%"},
-                {'item': "Earth Rune", 'qty': 10, 'members': False, 'rarity': "2.34%"},
-                {'item': "Death Rune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
-                {'item': "Law Rune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
+                {'item': "Bodyrune", 'qty': 9, 'members': False, 'rarity': "2.34%"},
+                {'item': "Chaosrune", 'qty': 6, 'members': False, 'rarity': "2.34%"},
+                {'item': "Earthrune", 'qty': 10, 'members': False, 'rarity': "2.34%"},
+                {'item': "Deathrune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
+                {'item': "Lawrune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
                 {'item': "Cosmicrune", 'qty': 7, 'members': False, 'rarity': "0.78%"},
-                {'item': "Mind Rune", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "2.34%"},
+                {'item': "Mindrune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
                 {'item': "Steel Bar", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "Tin Ore", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Pot Of Flour", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -332,20 +353,22 @@ npc_data = {
                 {'item': "Coins", 'qty': 80, 'members': False, 'rarity': "1.56%"},
                 {'item': "Bread", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "15.63%"},
+                {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "2.35%"},
             ],
-            "p2p": [
+            'p2p': [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Sword", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Iron Full Helm", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Steel Mace", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Mithril Arrow", 'qty': 3, 'members': False, 'rarity': "3.13%"},
-                {'item': "Body Rune", 'qty': 9, 'members': False, 'rarity': "2.34%"},
-                {'item': "Chaos Rune", 'qty': 6, 'members': False, 'rarity': "2.34%"},
-                {'item': "Earth Rune", 'qty': 10, 'members': False, 'rarity': "2.34%"},
-                {'item': "Death Rune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
-                {'item': "Law Rune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
+                {'item': "Bodyrune", 'qty': 9, 'members': False, 'rarity': "2.34%"},
+                {'item': "Chaosrune", 'qty': 6, 'members': False, 'rarity': "2.34%"},
+                {'item': "Earthrune", 'qty': 10, 'members': False, 'rarity': "2.34%"},
+                {'item': "Deathrune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
+                {'item': "Lawrune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
                 {'item': "Cosmicrune", 'qty': 7, 'members': False, 'rarity': "0.78%"},
-                {'item': "Mind Rune", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "2.34%"},
+                {'item': "Mindrune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
                 {'item': "Steel Bar", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "Tin Ore", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Pot Of Flour", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -357,6 +380,8 @@ npc_data = {
                 {'item': "Coins", 'qty': 80, 'members': False, 'rarity': "1.56%"},
                 {'item': "Bread", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "15.63%"},
+                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "2.35%"},
             ],
             "levels": [
                 {"lvl": 31, "hp": 42, "att": 25, "str": 25, "def": 25, "magic": 0, "attBo": 18, "strBo": 16, "rangeBo": 0, "stabDef": 73, "slashDef": 76, "crushDef": 70, "magicDef": -11, "rangeDef": 72, "attStyle": "Slash", "respawnrate": 50, "huntrange": 5, "wanderrange": 10, "maxrange": 12}
@@ -368,6 +393,7 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
+                {'item': "Dragon Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Mithril 2H Sword", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Mithril Axe", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Mithril Battleaxe", 'qty': 1, 'members': False, 'rarity': "2.34%"},
@@ -375,7 +401,7 @@ npc_data = {
                 {'item': "Mithril Kiteshield", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Adamant Platebody", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Rune Longsword", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "Adamant Javelin", 'qty': 30, 'members': False, 'rarity': "15.62%"},
+                {'item': "Adamant Javelin", 'qty': 30, 'members': False, 'rarity': "15.63%"},
                 {'item': "Fire Rune", 'qty': 50, 'members': False, 'rarity': "6.25%"},
                 {'item': "Adamant Dart P", 'qty': 16, 'members': False, 'rarity': "5.47%"},
                 {'item': "Law Rune", 'qty': 10, 'members': False, 'rarity': "3.91%"},
@@ -386,8 +412,8 @@ npc_data = {
                 {'item': "Coins", 'qty': 690, 'members': False, 'rarity': "0.78%"},
                 {'item': "Adamantite Bar", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Chocolate Cake", 'qty': 1, 'members': False, 'rarity': "2.34%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "2.34%"},
-                {'item': "~Ultrarare Getitem", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "◄Ultra Rare►", 'qty': 1, 'members': False, 'rarity': "1.56%"},
             ],
             "levels": [
                 {"lvl": 199, "hp": 190, "att": 200, "str": 200, "def": 200, "magic": 100, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 50, "slashDef": 70, "crushDef": 70, "magicDef": 60, "rangeDef": 50, "attStyle": "Slash", "respawnrate": 60, "huntrange": 4, "wanderrange": 10, "maxrange": 12}
@@ -412,6 +438,7 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
+                {'item': "Dragon Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Steel Platelegs", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Steel Battleaxe", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Mithril Axe", 'qty': 1, 'members': False, 'rarity': "2.34%"},
@@ -423,7 +450,7 @@ npc_data = {
                 {'item': "Nature Rune", 'qty': 15, 'members': False, 'rarity': "3.91%"},
                 {'item': "Law Rune", 'qty': 3, 'members': False, 'rarity': "2.34%"},
                 {'item': "Fire Rune", 'qty': 37, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "11.72%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "11.72%"},
                 {'item': "Coins", 'qty': 44, 'members': False, 'rarity': "22.66%"},
                 {'item': "Coins", 'qty': 132, 'members': False, 'rarity': "19.53%"},
                 {'item': "Coins", 'qty': 200, 'members': False, 'rarity': "7.81%"},
@@ -431,7 +458,7 @@ npc_data = {
                 {'item': "Coins", 'qty': 440, 'members': False, 'rarity': "0.78%"},
                 {'item': "Bass", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Adamantite Ore", 'qty': 1, 'members': False, 'rarity': "2.34%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "3.91%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "3.91%"},
             ],
             "levels": [
                 {"lvl": 99, "hp": 105, "att": 95, "str": 95, "def": 95, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 50, "slashDef": 70, "crushDef": 70, "magicDef": 60, "rangeDef": 50, "attStyle": "Slash", "respawnrate": 60, "huntrange": 4, "wanderrange": 4, "maxrange": 6}
@@ -443,14 +470,15 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Law Rune", 'qty': 2, 'members': False, 'rarity': "5.47%"},
                 {'item': "Air Rune", 'qty': 36, 'members': False, 'rarity': "2.34%"},
                 {'item': "Body Rune", 'qty': 9, 'members': False, 'rarity': "1.56%"},
                 {'item': "Earth Rune", 'qty': 9, 'members': False, 'rarity': "1.56%"},
                 {'item': "Mind Rune", 'qty': 12, 'members': False, 'rarity': "1.56%"},
                 {'item': "Nature Rune", 'qty': 3, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "27.34%"},
-                {'item': "~Randomherb", 'qty': 2, 'members': True, 'rarity': "8.59%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "27.34%"},
+                {'item': "◄Herb►", 'qty': 2, 'members': False, 'rarity': "8.59%"},
                 {'item': "Coins", 'qty': 3, 'members': False, 'rarity': "3.91%"},
                 {'item': "Coins", 'qty': 8, 'members': False, 'rarity': "3.91%"},
                 {'item': "Coins", 'qty': 29, 'members': False, 'rarity': "2.34%"},
@@ -459,7 +487,7 @@ npc_data = {
                 {'item': "Bronze Longsword", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Snape Grass", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Unholy Mould", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
                 {"lvl": 13, "hp": 20, "att": 8, "str": 8, "def": 12, "magic": 10, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 50, "huntrange": 3, "wanderrange": 0, "maxrange": 0}
@@ -471,14 +499,15 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Black Dagger", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Fire Rune", 'qty': 12, 'members': False, 'rarity': "3.91%"},
                 {'item': "Law Rune", 'qty': 22, 'members': False, 'rarity': "3.13%"},
                 {'item': "Earth Rune", 'qty': 9, 'members': False, 'rarity': "1.56%"},
                 {'item': "Air Rune", 'qty': 36, 'members': False, 'rarity': "0.78%"},
                 {'item': "Nature Rune", 'qty': 3, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "26.56%"},
-                {'item': "~Randomherb", 'qty': 2, 'members': True, 'rarity': "7.81%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "26.56%"},
+                {'item': "◄Herb►", 'qty': 2, 'members': False, 'rarity': "7.81%"},
                 {'item': "White Berries", 'qty': 1, 'members': False, 'rarity': "3.91%"},
                 {'item': "Unicorn Horn Dust", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Limpwurt Root", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -489,28 +518,29 @@ npc_data = {
                 {'item': "Coins", 'qty': 29, 'members': False, 'rarity': "2.34%"},
                 {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "0.78%"},
                 {'item': "1Dose2Defense", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
                 {"lvl": 37, "hp": 40, "att": 32, "str": 34, "def": 25, "magic": 0, "attBo": 9, "strBo": 5, "rangeBo": 0, "stabDef": 13, "slashDef": 17, "crushDef": 14, "magicDef": -4, "rangeDef": 14, "attStyle": "Crush", "respawnrate": 100, "huntrange": 1, "wanderrange": 0, "maxrange": 0}
             ]
         }
     ],
-    "Chaos dwarf": [
+    "Chaos dwarf": [#Checked
         {
             "id": 0,
-            "f2p": [
+            'f2p': [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Steel Full Helm", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Mithril Longsword", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Mithril Sq Shield", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "Law Rune", 'qty': 3, 'members': False, 'rarity': "3.13%"},
-                {'item': "Air Rune", 'qty': 24, 'members': False, 'rarity': "2.34%"},
-                {'item': "Chaos Rune", 'qty': 10, 'members': False, 'rarity': "2.34%"},
-                {'item': "Mind Rune", 'qty': 37, 'members': False, 'rarity': "2.34%"},
-                {'item': "Nature Rune", 'qty': 9, 'members': False, 'rarity': "2.34%"},
+                {'item': "Lawrune", 'qty': 3, 'members': False, 'rarity': "3.13%"},
+                {'item': "Airrune", 'qty': 24, 'members': False, 'rarity': "2.34%"},
+                {'item': "Chaosrune", 'qty': 10, 'members': False, 'rarity': "2.34%"},
+                {'item': "Mindrune", 'qty': 37, 'members': False, 'rarity': "2.34%"},
+                {'item': "Naturerune", 'qty': 9, 'members': False, 'rarity': "2.34%"},
                 {'item': "Cosmicrune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
-                {'item': "Death Rune", 'qty': 3, 'members': False, 'rarity': "0.78%"},
-                {'item': "Water Rune", 'qty': 10, 'members': False, 'rarity': "0.78%"},
+                {'item': "Deathrune", 'qty': 3, 'members': False, 'rarity': "0.78%"},
+                {'item': "Waterrune", 'qty': 10, 'members': False, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 92, 'members': False, 'rarity': "31.25%"},
                 {'item': "Coins", 'qty': 47, 'members': False, 'rarity': "14.06%"},
                 {'item': "Coins", 'qty': 25, 'members': False, 'rarity': "8.59%"},
@@ -524,18 +554,19 @@ npc_data = {
                 {'item': "Tomato", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "3.91%"},
             ],
-                    "p2p": [
+            'p2p': [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Steel Full Helm", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Mithril Longsword", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Mithril Sq Shield", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "Law Rune", 'qty': 3, 'members': False, 'rarity': "3.13%"},
-                {'item': "Air Rune", 'qty': 24, 'members': False, 'rarity': "2.34%"},
-                {'item': "Chaos Rune", 'qty': 10, 'members': False, 'rarity': "2.34%"},
-                {'item': "Mind Rune", 'qty': 37, 'members': False, 'rarity': "2.34%"},
-                {'item': "Nature Rune", 'qty': 9, 'members': False, 'rarity': "2.34%"},
+                {'item': "Lawrune", 'qty': 3, 'members': False, 'rarity': "3.13%"},
+                {'item': "Airrune", 'qty': 24, 'members': False, 'rarity': "2.34%"},
+                {'item': "Chaosrune", 'qty': 10, 'members': False, 'rarity': "2.34%"},
+                {'item': "Mindrune", 'qty': 37, 'members': False, 'rarity': "2.34%"},
+                {'item': "Naturerune", 'qty': 9, 'members': False, 'rarity': "2.34%"},
                 {'item': "Cosmicrune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
-                {'item': "Death Rune", 'qty': 3, 'members': False, 'rarity': "0.78%"},
-                {'item': "Water Rune", 'qty': 10, 'members': False, 'rarity': "0.78%"},
+                {'item': "Deathrune", 'qty': 3, 'members': False, 'rarity': "0.78%"},
+                {'item': "Waterrune", 'qty': 10, 'members': False, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 92, 'members': False, 'rarity': "31.25%"},
                 {'item': "Coins", 'qty': 47, 'members': False, 'rarity': "14.06%"},
                 {'item': "Coins", 'qty': 25, 'members': False, 'rarity': "8.59%"},
@@ -554,7 +585,7 @@ npc_data = {
             ]
         }
     ],
-    "Chicken": [
+    "Chicken": [#Checked
         {
             "id": 0,
             "f2p": [
@@ -562,12 +593,14 @@ npc_data = {
                 {'item': "Raw Chicken", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Feather", 'qty': 15, 'members': False, 'rarity': "25%"},
                 {'item': "Feather", 'qty': 5, 'members': False, 'rarity': "25%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "50%"},
             ],
-                    "p2p": [
+            "p2p": [
                 {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Raw Chicken", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Feather", 'qty': 15, 'members': False, 'rarity': "25%"},
                 {'item': "Feather", 'qty': 5, 'members': False, 'rarity': "25%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "50%"},
             ],
             "levels": [            
                 {"lvl": 1, "hp": 3, "att": 0, "str": 0, "def": 0, "magic": 0, "attBo": -47, "strBo": -42, "rangeBo": 0, "stabDef": -42, "slashDef": -42, "crushDef": -42, "magicDef": -42, "rangeDef": -42, "attStyle": "Stab", "respawnrate": 50, "huntrange": 0, "wanderrange": 0, "maxrange": 0},
@@ -580,6 +613,7 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Steel Sword", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "Steel Med Helm", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Bronze Arrow", 'qty': 4, 'members': False, 'rarity': "3.91%"},
@@ -606,7 +640,7 @@ npc_data = {
             ]
         }
     ],
-    "Cow": [
+    "Cow": [#Checked
         {
             "id": 0,
             "f2p": [
@@ -624,10 +658,11 @@ npc_data = {
             ]
         }
     ],
-    "Dark warrior": [
+    "Dark warrior": [#Checked
         {
             "id": 0,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Bronze Med Helm", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Iron Mace", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Black Med Helm", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -640,15 +675,17 @@ npc_data = {
                 {'item': "Nature Rune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
                 {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "2.34%"},
                 {'item': "Coins", 'qty': 1, 'members': False, 'rarity': "24.22%"},
-                {'item': "Coins", 'qty': 2, 'members': False, 'rarity': "15.62%"},
-                {'item': "Coins", 'qty': 6, 'members': False, 'rarity': "15.62%"},
+                {'item': "Coins", 'qty': 2, 'members': False, 'rarity': "15.63%"},
+                {'item': "Coins", 'qty': 6, 'members': False, 'rarity': "15.63%"},
                 {'item': "Coins", 'qty': 13, 'members': False, 'rarity': "5.47%"},
                 {'item': "Coins", 'qty': 20, 'members': False, 'rarity': "4.69%"},
                 {'item': "Coins", 'qty': 30, 'members': False, 'rarity': "1.56%"},
                 {'item': "Iron Ore", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Sardine", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "14.06%"},
             ],
-                    "p2p": [
+            "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Bronze Med Helm", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Iron Mace", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Black Med Helm", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -659,28 +696,30 @@ npc_data = {
                 {'item': "Bronze Arrow", 'qty': 8, 'members': False, 'rarity': "3.13%"},
                 {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
                 {'item': "Nature Rune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "2.34%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Coins", 'qty': 1, 'members': False, 'rarity': "24.22%"},
-                {'item': "Coins", 'qty': 2, 'members': False, 'rarity': "15.62%"},
-                {'item': "Coins", 'qty': 6, 'members': False, 'rarity': "15.62%"},
+                {'item': "Coins", 'qty': 2, 'members': False, 'rarity': "15.63%"},
+                {'item': "Coins", 'qty': 6, 'members': False, 'rarity': "15.63%"},
                 {'item': "Coins", 'qty': 13, 'members': False, 'rarity': "5.47%"},
                 {'item': "Coins", 'qty': 20, 'members': False, 'rarity': "4.69%"},
                 {'item': "Coins", 'qty': 30, 'members': False, 'rarity': "1.56%"},
                 {'item': "Iron Ore", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Sardine", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "14.06%"},
             ],
             "levels": [
                 {"lvl": 8, "hp": 17, "att": 5, "str": 5, "def": 5, "magic": 0, "attBo": 20, "strBo": 16, "rangeBo": 0, "stabDef": 96, "slashDef": 79, "crushDef": 59, "magicDef": 0, "rangeDef": 0, "attStyle": "Slash", "respawnrate": 100, "huntrange": 1, "wanderrange": 0, "maxrange": 0}
             ]
         }
     ],
-    "Dark wizard": [
+    "Dark wizard": [#Checked
         {
             "id": 0,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Staff", 'qty': 1, 'members': False, 'rarity': "6.25%"},
-                {'item': "Wizard Hat", 'qty': 1, 'members': False, 'rarity': "3.13%"},
-                {'item': "Obj 581", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Wizard Hat (Black)", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+                {'item': "Wizards Robe (Black)", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Earth Rune", 'qty': 36, 'members': False, 'rarity': "3.13%"},
                 {'item': "Air Rune", 'qty': 10, 'members': False, 'rarity': "2.34%"},
                 {'item': "Water Rune", 'qty': 10, 'members': False, 'rarity': "2.34%"},
@@ -696,8 +735,7 @@ npc_data = {
                 {'item': "Body Rune", 'qty': 10, 'members': False, 'rarity': "2.34%"},
                 {'item': "Mind Rune", 'qty': 18, 'members': False, 'rarity': "1.56%"},
                 {'item': "Body Rune", 'qty': 18, 'members': False, 'rarity': "1.56%"},
-                {'item': "Wizard Hat", 'qty': 1, 'members': False, 'rarity': "1.56%"},
-                {'item': "Cosmicrune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "Cosmic Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
                 {'item': "Law Rune", 'qty': 3, 'members': False, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 1, 'members': False, 'rarity': "13.28%"},
                 {'item': "Coins", 'qty': 2, 'members': False, 'rarity': "12.5%"},
@@ -706,11 +744,14 @@ npc_data = {
                 {'item': "Coins", 'qty': 30, 'members': False, 'rarity': "0.78%"},
                 {'item': "Water Talisman", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Fire Talisman", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "12.5%"},
+                {'item': "Wizard Hat (Black)", 'qty': 1, 'members': False, 'rarity': "1.56%"},
             ],
-                    "p2p": [
+            "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Staff", 'qty': 1, 'members': False, 'rarity': "6.25%"},
-                {'item': "Wizard Hat", 'qty': 1, 'members': False, 'rarity': "3.13%"},
-                {'item': "Obj 581", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Wizard Hat (Black)", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+                {'item': "Wizards Robe (Black)", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Earth Rune", 'qty': 36, 'members': False, 'rarity': "3.13%"},
                 {'item': "Air Rune", 'qty': 10, 'members': False, 'rarity': "2.34%"},
                 {'item': "Water Rune", 'qty': 10, 'members': False, 'rarity': "2.34%"},
@@ -726,8 +767,7 @@ npc_data = {
                 {'item': "Body Rune", 'qty': 10, 'members': False, 'rarity': "2.34%"},
                 {'item': "Mind Rune", 'qty': 18, 'members': False, 'rarity': "1.56%"},
                 {'item': "Body Rune", 'qty': 18, 'members': False, 'rarity': "1.56%"},
-                {'item': "Blood Rune", 'qty': 2, 'members': True, 'rarity': "1.56%"},
-                {'item': "Cosmicrune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "Cosmic Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
                 {'item': "Law Rune", 'qty': 3, 'members': False, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 1, 'members': False, 'rarity': "13.28%"},
                 {'item': "Coins", 'qty': 2, 'members': False, 'rarity': "12.5%"},
@@ -736,6 +776,8 @@ npc_data = {
                 {'item': "Coins", 'qty': 30, 'members': False, 'rarity': "0.78%"},
                 {'item': "Water Talisman", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Fire Talisman", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "12.5%"},
+                {'item': "Blood Rune", 'qty': 2, 'members': True, 'rarity': "1.56%"},
             ],
             "levels": [
                 {"lvl": 7, "hp": 12, "att": 5, "str": 2, "def": 5, "magic": 6, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 3, "rangeDef": 0, "attStyle": "Magic", "respawnrate": 100, "huntrange": 3, "wanderrange": 3, "maxrange": 5}
@@ -744,9 +786,10 @@ npc_data = {
         {
             "id": 1,
             "f2p": [
-                {'item': "Wizard Hat", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
+                {'item': "Wizard Hat (Black)", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Staff", 'qty': 1, 'members': False, 'rarity': "3.13%"},
-                {'item': "Obj 581", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Wizards Robe (Black)", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Earth Rune", 'qty': 36, 'members': False, 'rarity': "3.13%"},
                 {'item': "Air Rune", 'qty': 10, 'members': False, 'rarity': "2.34%"},
                 {'item': "Water Rune", 'qty': 10, 'members': False, 'rarity': "2.34%"},
@@ -762,9 +805,8 @@ npc_data = {
                 {'item': "Body Rune", 'qty': 10, 'members': False, 'rarity': "2.34%"},
                 {'item': "Mind Rune", 'qty': 18, 'members': False, 'rarity': "1.56%"},
                 {'item': "Body Rune", 'qty': 18, 'members': False, 'rarity': "1.56%"},
-                {'item': "Wizard Hat", 'qty': 1, 'members': False, 'rarity': "1.56%"},
-                {'item': "Cosmicrune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
-                {'item': "Law Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "Cosmic Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "Law Rune", 'qty': 3, 'members': False, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 1, 'members': False, 'rarity': "13.28%"},
                 {'item': "Coins", 'qty': 2, 'members': False, 'rarity': "12.5%"},
                 {'item': "Coins", 'qty': 4, 'members': False, 'rarity': "7.03%"},
@@ -772,11 +814,14 @@ npc_data = {
                 {'item': "Coins", 'qty': 30, 'members': False, 'rarity': "0.78%"},
                 {'item': "Water Talisman", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Fire Talisman", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "Wizards Hat (Black)", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "12.5%"},
             ],
-                    "p2p": [
-                {'item': "Wizard Hat", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+            "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
+                {'item': "Wizard Hat (Black)", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Staff", 'qty': 1, 'members': False, 'rarity': "3.13%"},
-                {'item': "Obj 581", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Wizards Robe (Black)", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Earth Rune", 'qty': 36, 'members': False, 'rarity': "3.13%"},
                 {'item': "Air Rune", 'qty': 10, 'members': False, 'rarity': "2.34%"},
                 {'item': "Water Rune", 'qty': 10, 'members': False, 'rarity': "2.34%"},
@@ -792,9 +837,8 @@ npc_data = {
                 {'item': "Body Rune", 'qty': 10, 'members': False, 'rarity': "2.34%"},
                 {'item': "Mind Rune", 'qty': 18, 'members': False, 'rarity': "1.56%"},
                 {'item': "Body Rune", 'qty': 18, 'members': False, 'rarity': "1.56%"},
-                {'item': "Blood Rune", 'qty': 2, 'members': True, 'rarity': "1.56%"},
-                {'item': "Cosmicrune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
-                {'item': "Law Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "Cosmic Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "Law Rune", 'qty': 3, 'members': False, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 1, 'members': False, 'rarity': "13.28%"},
                 {'item': "Coins", 'qty': 2, 'members': False, 'rarity': "12.5%"},
                 {'item': "Coins", 'qty': 4, 'members': False, 'rarity': "7.03%"},
@@ -802,45 +846,49 @@ npc_data = {
                 {'item': "Coins", 'qty': 30, 'members': False, 'rarity': "0.78%"},
                 {'item': "Water Talisman", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Fire Talisman", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "Blood Rune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "12.5%"},
             ],  
             "levels": [
                 {"lvl": 20, "hp": 24, "att": 17, "str": 17, "def": 14, "magic": 22, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 3, "rangeDef": 0, "attStyle": "Magic", "respawnrate": 100, "huntrange": 5, "wanderrange": 3, "maxrange": 5}
             ]
         }
     ],
-    "Donny the lad": [
+    "Donny the lad": [#Checked
         {
             "id": 0,
-            "f2p": [
+            'f2p': [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Steel Longsword", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Steel Full Helm", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "Law Rune", 'qty': 2, 'members': False, 'rarity': "3.13%"},
-                {'item': "Nature Rune", 'qty': 4, 'members': False, 'rarity': "3.13%"},
-                {'item': "Body Rune", 'qty': 12, 'members': False, 'rarity': "2.34%"},
-                {'item': "Chaos Rune", 'qty': 3, 'members': False, 'rarity': "2.34%"},
-                {'item': "Water Rune", 'qty': 30, 'members': False, 'rarity': "2.34%"},
-                {'item': "Mind Rune", 'qty': 5, 'members': False, 'rarity': "0.78%"},
+                {'item': "Lawrune", 'qty': 2, 'members': False, 'rarity': "3.13%"},
+                {'item': "Naturerune", 'qty': 4, 'members': False, 'rarity': "3.13%"},
+                {'item': "Bodyrune", 'qty': 12, 'members': False, 'rarity': "2.34%"},
+                {'item': "Chaosrune", 'qty': 3, 'members': False, 'rarity': "2.34%"},
+                {'item': "Waterrune", 'qty': 30, 'members': False, 'rarity': "2.34%"},
+                {'item': "Mindrune", 'qty': 5, 'members': False, 'rarity': "0.78%"},
+                {'item': "Coins", 'qty': 48, 'members': False, 'rarity': "23.44%"},
+                {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "14.06%"},
+                {'item': "Coins", 'qty': 8, 'members': False, 'rarity': "8.59%"},
+                {'item': "Coins", 'qty': 70, 'members': False, 'rarity': "7.81%"},
+                {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "3.91%"},
+                {'item': "Coins", 'qty': 150, 'members': False, 'rarity': "1.56%"},
+                {'item': "Silver Ore", 'qty': 1, 'members': False, 'rarity': "8.59%"},
+                {'item': "Swordfish (noted)", 'qty': 5, 'members': False, 'rarity': "1.56%"},
+                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "6.25%"},
                 {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "11.72%"},
-                {'item': "Coins", 'qty': 48, 'members': False, 'rarity': "23.44%"},
-                {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "14.06%"},
-                {'item': "Coins", 'qty': 8, 'members': False, 'rarity': "8.59%"},
-                {'item': "Coins", 'qty': 70, 'members': False, 'rarity': "7.81%"},
-                {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "3.91%"},
-                {'item': "Coins", 'qty': 150, 'members': False, 'rarity': "1.56%"},
-                {'item': "Silver Ore", 'qty': 1, 'members': False, 'rarity': "8.59%"},
-                {'item': "Cert Swordfish", 'qty': 5, 'members': False, 'rarity': "1.56%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.56%"},
             ],
-            "p2p": [
+            'p2p': [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Steel Longsword", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Steel Full Helm", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "Law Rune", 'qty': 2, 'members': False, 'rarity': "3.13%"},
-                {'item': "Nature Rune", 'qty': 4, 'members': False, 'rarity': "3.13%"},
-                {'item': "Body Rune", 'qty': 12, 'members': False, 'rarity': "2.34%"},
-                {'item': "Chaos Rune", 'qty': 3, 'members': False, 'rarity': "2.34%"},
-                {'item': "Water Rune", 'qty': 30, 'members': False, 'rarity': "2.34%"},
-                {'item': "Mind Rune", 'qty': 5, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "11.72%"},
+                {'item': "Lawrune", 'qty': 2, 'members': False, 'rarity': "3.13%"},
+                {'item': "Naturerune", 'qty': 4, 'members': False, 'rarity': "3.13%"},
+                {'item': "Bodyrune", 'qty': 12, 'members': False, 'rarity': "2.34%"},
+                {'item': "Chaosrune", 'qty': 3, 'members': False, 'rarity': "2.34%"},
+                {'item': "Waterrune", 'qty': 30, 'members': False, 'rarity': "2.34%"},
+                {'item': "Mindrune", 'qty': 5, 'members': False, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 48, 'members': False, 'rarity': "23.44%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "14.06%"},
                 {'item': "Coins", 'qty': 8, 'members': False, 'rarity': "8.59%"},
@@ -848,8 +896,10 @@ npc_data = {
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "3.91%"},
                 {'item': "Coins", 'qty': 150, 'members': False, 'rarity': "1.56%"},
                 {'item': "Silver Ore", 'qty': 1, 'members': False, 'rarity': "8.59%"},
-                {'item': "Cert Swordfish", 'qty': 5, 'members': False, 'rarity': "1.56%"},
+                {'item': "Swordfish (noted)", 'qty': 5, 'members': False, 'rarity': "1.56%"},
                 {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "6.25%"},
+                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "11.72%"},
             ],
             "levels": [
                 {"lvl": 34, "hp": 37, "att": 32, "str": 26, "def": 27, "magic": 0, "attBo": 9, "strBo": 9, "rangeBo": 0, "stabDef": 9, "slashDef": 8, "crushDef": 10, "magicDef": 0, "rangeDef": 0, "attStyle": "Slash", "respawnrate": 100, "huntrange": 0, "wanderrange": 0, "maxrange": 0}
@@ -861,13 +911,14 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Earth Rune", 'qty': 27, 'members': False, 'rarity': "3.13%"},
                 {'item': "Water Rune", 'qty': 9, 'members': False, 'rarity': "1.56%"},
                 {'item': "Earth Rune", 'qty': 9, 'members': False, 'rarity': "1.56%"},
                 {'item': "Fire Rune", 'qty': 9, 'members': False, 'rarity': "1.56%"},
                 {'item': "Chaos Rune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
                 {'item': "Law Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "20.31%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "20.31%"},
                 {'item': "Coins", 'qty': 2, 'members': False, 'rarity': "7.81%"},
                 {'item': "Coins", 'qty': 4, 'members': False, 'rarity': "3.13%"},
                 {'item': "Coins", 'qty': 1, 'members': False, 'rarity': "2.34%"},
@@ -885,17 +936,18 @@ npc_data = {
             ]
         }
     ],
-    "Dwarf": [
+    "Dwarf": [#Checked
         {
             "id": 0,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Bronze Pickaxe", 'qty': 1, 'members': False, 'rarity': "10.16%"},
                 {'item': "Bronze Med Helm", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Bronze Battleaxe", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Iron Battleaxe", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "3.13%"},
                 {'item': "Nature Rune", 'qty': 2, 'members': False, 'rarity': "3.13%"},
-                {'item': "Coins", 'qty': 4, 'members': False, 'rarity': "15.62%"},
+                {'item': "Coins", 'qty': 4, 'members': False, 'rarity': "15.63%"},
                 {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "11.72%"},
                 {'item': "Coins", 'qty': 30, 'members': False, 'rarity': "1.56%"},
                 {'item': "Hammer", 'qty': 1, 'members': False, 'rarity': "7.81%"},
@@ -905,17 +957,18 @@ npc_data = {
                 {'item': "Copper Ore", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Iron Bar", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Coal", 'qty': 1, 'members': False, 'rarity': "1.56%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "23.44%"},
             ],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Bronze Pickaxe", 'qty': 1, 'members': False, 'rarity': "10.16%"},
                 {'item': "Bronze Med Helm", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Bronze Battleaxe", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Iron Battleaxe", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "Bolt", 'qty': 9, 'members': False, 'rarity': "5.47%"},
                 {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "3.13%"},
                 {'item': "Nature Rune", 'qty': 2, 'members': False, 'rarity': "3.13%"},
-                {'item': "Coins", 'qty': 4, 'members': False, 'rarity': "15.62%"},
+                {'item': "Coins", 'qty': 4, 'members': False, 'rarity': "15.63%"},
                 {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "11.72%"},
                 {'item': "Coins", 'qty': 30, 'members': False, 'rarity': "1.56%"},
                 {'item': "Hammer", 'qty': 1, 'members': False, 'rarity': "7.81%"},
@@ -925,7 +978,9 @@ npc_data = {
                 {'item': "Copper Ore", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Iron Bar", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Coal", 'qty': 1, 'members': False, 'rarity': "1.56%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "17.97%"},
+                {'item': "Bolt", 'qty': 9, 'members': False, 'rarity': "5.47%"},
             ],
             "levels": [
                 {"lvl": 9, "hp": 16, "att": 8, "str": 8, "def": 6, "magic": 0, "attBo": 11, "strBo": 9, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 5, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 100, "huntrange": 0, "wanderrange": 13, "maxrange": 15},
@@ -948,19 +1003,20 @@ npc_data = {
                 {'item': "Death Rune", 'qty': 2, 'members': False, 'rarity': "3.13%"},
                 {'item': "Earth Rune", 'qty': 60, 'members': False, 'rarity': "2.34%"},
                 {'item': "Blood Rune", 'qty': 2, 'members': True, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "10.94%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "10.94%"},
                 {'item': "Coins", 'qty': 12, 'members': False, 'rarity': "14.06%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "1.56%"},
             ],
             "levels": [
                 {"lvl": 47, "hp": 54, "att": 42, "str": 42, "def": 42, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 30, "slashDef": 40, "crushDef": 20, "magicDef": 10, "rangeDef": 30, "attStyle": "Crush", "respawnrate": 60, "huntrange": 1, "wanderrange": 4, "maxrange": 6}
             ]
         }
     ],
-    "Farmer": [
+    "Farmer": [#Checked
         {
             "id": 0,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Bronze Med Helm", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Iron Dagger", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Bronze Arrow", 'qty': 7, 'members': False, 'rarity': "2.34%"},
@@ -978,8 +1034,10 @@ npc_data = {
                 {'item': "Copper Ore", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Earth Talisman", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Cabbage", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "14.84%"},
             ],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Bronze Med Helm", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Iron Dagger", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Bronze Arrow", 'qty': 7, 'members': False, 'rarity': "2.34%"},
@@ -987,7 +1045,7 @@ npc_data = {
                 {'item': "Fire Rune", 'qty': 6, 'members': False, 'rarity': "1.56%"},
                 {'item': "Mind Rune", 'qty': 9, 'members': False, 'rarity': "1.56%"},
                 {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "8.59%"},
+                {'item': "◄Herb►", 'qty': 10, 'members': False, 'rarity': "8.59%"},
                 {'item': "Coins", 'qty': 3, 'members': False, 'rarity': "29.69%"},
                 {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "17.97%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "7.03%"},
@@ -997,6 +1055,7 @@ npc_data = {
                 {'item': "Copper Ore", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Earth Talisman", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Cabbage", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "14.84%"},
             ],
             "levels": [
                 {"lvl": 7, "hp": 12, "att": 3, "str": 4, "def": 8, "magic": 0, "attBo": 5, "strBo": 6, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Stab", "respawnrate": 50, "huntrange": 0, "wanderrange": 20, "maxrange": 22}
@@ -1008,6 +1067,7 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
+                {'item': "Big Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Steel Axe", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Mithril Sq Shield", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Fire Battlestaff", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -1018,7 +1078,7 @@ npc_data = {
                 {'item': "Blood Rune", 'qty': 5, 'members': True, 'rarity': "3.13%"},
                 {'item': "Fire Rune", 'qty': 37, 'members': False, 'rarity': "0.78%"},
                 {'item': "Law Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "14.84%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "14.84%"},
                 {'item': "Coins", 'qty': 60, 'members': False, 'rarity': "31.25%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "5.47%"},
                 {'item': "Coins", 'qty': 25, 'members': False, 'rarity': "4.69%"},
@@ -1027,18 +1087,19 @@ npc_data = {
                 {'item': "Lobster", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Steel Bar", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "2Dose1Strength", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "8.59%"},
-                {'item': "~Ultrarare Getitem", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "8.59%"},
+                {'item': "◄Ultra Rare►", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
                 {"lvl": 93, "hp": 111, "att": 65, "str": 65, "def": 65, "magic": 0, "attBo": 29, "strBo": 31, "rangeBo": 0, "stabDef": 0, "slashDef": 3, "crushDef": 2, "magicDef": 0, "rangeDef": 0, "attStyle": "Slash", "respawnrate": 60, "huntrange": 2, "wanderrange": 3, "maxrange": 5}
             ]
         }
     ],
-    "Giant": [
+    "Giant": [#Checked
         {
             "id": 0,
             "f2p": [
+                {'item': "Big Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Full Helm", 'qty': 1, 'members': False, 'rarity': "3.91%"},
                 {'item': "Iron Dagger", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Iron Kiteshield", 'qty': 1, 'members': False, 'rarity': "2.34%"},
@@ -1049,7 +1110,7 @@ npc_data = {
                 {'item': "Law Rune", 'qty': 2, 'members': False, 'rarity': "2.34%"},
                 {'item': "Steel Arrow", 'qty': 10, 'members': False, 'rarity': "1.56%"},
                 {'item': "Mind Rune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
-                {'item': "Cosmicrune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
+                {'item': "Cosmic Rune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
                 {'item': "Nature Rune", 'qty': 6, 'members': False, 'rarity': "1.56%"},
                 {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
                 {'item': "Death Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
@@ -1062,9 +1123,11 @@ npc_data = {
                 {'item': "Limpwurt Root", 'qty': 1, 'members': False, 'rarity': "8.59%"},
                 {'item': "Beer", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "Body Talisman", 'qty': 1, 'members': False, 'rarity': "1.56%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "2.34%"},
-    ],
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "23.44%"},
+            ],
             "p2p": [
+                {'item': "Big Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Full Helm", 'qty': 1, 'members': False, 'rarity': "3.91%"},
                 {'item': "Iron Dagger", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Iron Kiteshield", 'qty': 1, 'members': False, 'rarity': "2.34%"},
@@ -1075,11 +1138,11 @@ npc_data = {
                 {'item': "Law Rune", 'qty': 2, 'members': False, 'rarity': "2.34%"},
                 {'item': "Steel Arrow", 'qty': 10, 'members': False, 'rarity': "1.56%"},
                 {'item': "Mind Rune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
-                {'item': "Cosmicrune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
+                {'item': "Cosmic Rune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
                 {'item': "Nature Rune", 'qty': 6, 'members': False, 'rarity': "1.56%"},
                 {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
                 {'item': "Death Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "5.47%"},
+                {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "5.47%"},
                 {'item': "Coins", 'qty': 38, 'members': False, 'rarity': "10.94%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "6.25%"},
                 {'item': "Coins", 'qty': 52, 'members': False, 'rarity': "1.56%"},
@@ -1088,14 +1151,15 @@ npc_data = {
                 {'item': "Limpwurt Root", 'qty': 1, 'members': False, 'rarity': "8.59%"},
                 {'item': "Beer", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "Body Talisman", 'qty': 1, 'members': False, 'rarity': "1.56%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "23.44%"},
             ],
             "levels": [
                 {"lvl": 28, "hp": 35, "att": 18, "str": 22, "def": 26, "magic": 0, "attBo": 18, "strBo": 16, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 60, "huntrange": 2, "wanderrange": 3, "maxrange": 5}
             ]
         }
     ],
-    "Giant rat": [
+    "Giant rat": [#Checked
         {
             "id": 0,
             "f2p": [
@@ -1112,10 +1176,11 @@ npc_data = {
             ]
         }
     ],
-    "Goblin": [
-        {#Goblin lvl 2
+    "Goblin": [#Checked
+        {
             "id": 0,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Coins", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Brass Necklace", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Air Talisman", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -1126,13 +1191,16 @@ npc_data = {
                 {'item': "Bronze Sq Shield", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Earth Rune", 'qty': 4, 'members': False, 'rarity': "2.34%"},
                 {'item': "Bolt", 'qty': 8, 'members': False, 'rarity': "2.34%"},
-                {'item': "Chefshat", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Chef's Hat", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Body Rune", 'qty': 7, 'members': False, 'rarity': "3.91%"},
                 {'item': "Goblin Mail", 'qty': 1, 'members': False, 'rarity': "3.91%"},
                 {'item': "Water Rune", 'qty': 6, 'members': False, 'rarity': "4.69%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "14.06%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "53.91%"},
+
             ],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Coins", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Brass Necklace", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Air Talisman", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -1143,12 +1211,13 @@ npc_data = {
                 {'item': "Bronze Sq Shield", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Earth Rune", 'qty': 4, 'members': False, 'rarity': "2.34%"},
                 {'item': "Bolt", 'qty': 8, 'members': False, 'rarity': "2.34%"},
-                {'item': "Chefshat", 'qty': 1, 'members': False, 'rarity': "2.34%"},
-                {'item': "Bronze Spear", 'qty': 1, 'members': True, 'rarity': "3.13%"},
+                {'item': "Chef's Hat", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Body Rune", 'qty': 7, 'members': False, 'rarity': "3.91%"},
                 {'item': "Goblin Mail", 'qty': 1, 'members': False, 'rarity': "3.91%"},
                 {'item': "Water Rune", 'qty': 6, 'members': False, 'rarity': "4.69%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "14.06%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "50.78%"},
+                {'item': "Bronze Spear", 'qty': 1, 'members': True, 'rarity': "3.13%"},
             ],
             "levels": [
                 {"lvl": 2, "hp": 5, "att": 0, "str": 0, "def": 0, "magic": 0, "attBo": -21, "strBo": -15, "rangeBo": 0, "stabDef": -15, "slashDef": -15, "crushDef": -15, "magicDef": -15, "rangeDef": -15, "attStyle": "Crush", "respawnrate": 140, "huntrange": 0, "wanderrange": 15, "maxrange": 17},
@@ -1157,31 +1226,65 @@ npc_data = {
             ]
         },
     ],
-    "Greater demon": [
+    "Goblin (village)": [#Checked
         {
             "id": 0,
             "f2p": [
-                {'item': "Steel 2H Sword", 'qty': 1, 'members': False, 'rarity': "3.13%"},
-                {'item': "Steel Axe", 'qty': 1, 'members': False, 'rarity': "2.34%"},
-                {'item': "Steel Battleaxe", 'qty': 1, 'members': False, 'rarity': "2.34%"},
-                {'item': "Mithril Kiteshield", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "Adamant Platelegs", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "Rune Full Helm", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "Fire Rune", 'qty': 76, 'members': False, 'rarity': "6.25%"},
-                {'item': "Chaos Rune", 'qty': 15, 'members': False, 'rarity': "2.34%"},
-                {'item': "Death Rune", 'qty': 5, 'members': False, 'rarity': "2.34%"},
-                {'item': "Fire Rune", 'qty': 37, 'members': False, 'rarity': "0.78%"},
-                {'item': "Coins", 'qty': 132, 'members': False, 'rarity': "31.25%"},
-                {'item': "Coins", 'qty': 44, 'members': False, 'rarity': "22.66%"},
-                {'item': "Coins", 'qty': 220, 'members': False, 'rarity': "7.81%"},
-                {'item': "Coins", 'qty': 11, 'members': False, 'rarity': "5.47%"},
-                {'item': "Coins", 'qty': 460, 'members': False, 'rarity': "0.78%"},
-                {'item': "Tuna", 'qty': 1, 'members': False, 'rarity': "2.34%"},
-                {'item': "Gold Bar", 'qty': 1, 'members': False, 'rarity': "1.56%"},
-                {'item': "Thread", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "3.91%"},
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
+                {'item': "Bronze Axe", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Bronze Scimitar", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Bronze Arrow", 'qty': 7, 'members': False, 'rarity': "2.34%"},
+                {'item': "Mind Rune", 'qty': 2, 'members': False, 'rarity': "2.34%"},
+                {'item': "Earth Rune", 'qty': 4, 'members': False, 'rarity': "2.34%"},
+                {'item': "Body Rune", 'qty': 2, 'members': False, 'rarity': "2.34%"},
+                {'item': "Chaos Rune", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Nature Rune", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "10.16%"},
+                {'item': "Coins", 'qty': 1, 'members': False, 'rarity': "26.56%"},
+                {'item': "Coins", 'qty': 3, 'members': False, 'rarity': "10.16%"},
+                {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "6.25%"},
+                {'item': "Coins", 'qty': 16, 'members': False, 'rarity': "5.47%"},
+                {'item': "Coins", 'qty': 24, 'members': False, 'rarity': "2.34%"},
+                {'item': "Goblin Mail", 'qty': 1, 'members': False, 'rarity': "7.81%"},
+                {'item': "Grapes", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Red Cape", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Tin Ore", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "14.84%"},
             ],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
+                {'item': "Bronze Axe", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Bronze Scimitar", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Bronze Arrow", 'qty': 7, 'members': False, 'rarity': "2.34%"},
+                {'item': "Mind Rune", 'qty': 2, 'members': False, 'rarity': "2.34%"},
+                {'item': "Earth Rune", 'qty': 4, 'members': False, 'rarity': "2.34%"},
+                {'item': "Body Rune", 'qty': 2, 'members': False, 'rarity': "2.34%"},
+                {'item': "Chaos Rune", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Nature Rune", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': True, 'rarity': "1.56%"},
+                {'item': "Coins", 'qty': 1, 'members': False, 'rarity': "26.56%"},
+                {'item': "Coins", 'qty': 3, 'members': False, 'rarity': "10.16%"},
+                {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "6.25%"},
+                {'item': "Coins", 'qty': 16, 'members': False, 'rarity': "5.47%"},
+                {'item': "Coins", 'qty': 24, 'members': False, 'rarity': "2.34%"},
+                {'item': "Goblin Mail", 'qty': 1, 'members': False, 'rarity': "7.81%"},
+                {'item': "Grapes", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Red Cape", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Tin Ore", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Bronze Spear", 'qty': 1, 'members': False, 'rarity': "7.03%"},
+                {'item': "Bronze Javelin", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "14.84%"},
+            ],
+            "levels": [
+                {"lvl": 5, "hp": 12, "att": 3, "str": 0, "def": 4, "magic": 0, "attBo": 12, "strBo": 12, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Stab", "respawnrate": 70, "huntrange": 0, "wanderrange": 15, "maxrange": 17},
+            ]
+        },
+    ],
+    "Greater demon": [#Checked
+        {
+            "id": 0,
+            "f2p": [
+                {'item': "Ashes", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Steel 2H Sword", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Steel Axe", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Steel Battleaxe", 'qty': 1, 'members': False, 'rarity': "2.34%"},
@@ -1193,14 +1296,36 @@ npc_data = {
                 {'item': "Death Rune", 'qty': 5, 'members': False, 'rarity': "2.34%"},
                 {'item': "Fire Rune", 'qty': 37, 'members': False, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 132, 'members': False, 'rarity': "31.25%"},
-                {'item': "Coins", 'qty': 44, 'members': False, 'rarity': "22.66%"},
+                {'item': "Coins", 'qty': 44, 'members': False, 'rarity': "14.84%"},
                 {'item': "Coins", 'qty': 220, 'members': False, 'rarity': "7.81%"},
                 {'item': "Coins", 'qty': 11, 'members': False, 'rarity': "5.47%"},
                 {'item': "Coins", 'qty': 460, 'members': False, 'rarity': "0.78%"},
                 {'item': "Tuna", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Gold Bar", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Thread", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "3.91%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "3.91%"},
+            ],
+            "p2p": [
+                {'item': "Ashes", 'qty': 1, 'members': False, 'rarity': "100%"},
+                {'item': "Steel 2H Sword", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+                {'item': "Steel Axe", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Steel Battleaxe", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Mithril Kiteshield", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Adamant Platelegs", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Rune Full Helm", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Fire Rune", 'qty': 76, 'members': False, 'rarity': "6.25%"},
+                {'item': "Chaos Rune", 'qty': 15, 'members': False, 'rarity': "2.34%"},
+                {'item': "Death Rune", 'qty': 5, 'members': False, 'rarity': "2.34%"},
+                {'item': "Fire Rune", 'qty': 37, 'members': False, 'rarity': "0.78%"},
+                {'item': "Coins", 'qty': 132, 'members': False, 'rarity': "31.25%"},
+                {'item': "Coins", 'qty': 44, 'members': False, 'rarity': "14.84%"},
+                {'item': "Coins", 'qty': 220, 'members': False, 'rarity': "7.81%"},
+                {'item': "Coins", 'qty': 11, 'members': False, 'rarity': "5.47%"},
+                {'item': "Coins", 'qty': 460, 'members': False, 'rarity': "0.78%"},
+                {'item': "Tuna", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Gold Bar", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "Thread", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "3.91%"},
             ],
             "levels": [
                 {"lvl": 92, "hp": 87, "att": 76, "str": 78, "def": 81, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": -10, "rangeDef": 0, "attStyle": "Slash", "respawnrate": 30, "huntrange": 3, "wanderrange": 6, "maxrange": 8}
@@ -1212,6 +1337,7 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
+                {'item': "Draon Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Steel Platelegs", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Steel Battleaxe", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Mithril Axe", 'qty': 1, 'members': False, 'rarity': "2.34%"},
@@ -1223,7 +1349,7 @@ npc_data = {
                 {'item': "Nature Rune", 'qty': 15, 'members': False, 'rarity': "3.91%"},
                 {'item': "Law Rune", 'qty': 3, 'members': False, 'rarity': "2.34%"},
                 {'item': "Fire Rune", 'qty': 37, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "11.72%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "11.72%"},
                 {'item': "Coins", 'qty': 44, 'members': False, 'rarity': "22.66%"},
                 {'item': "Coins", 'qty': 132, 'members': False, 'rarity': "19.53%"},
                 {'item': "Coins", 'qty': 200, 'members': False, 'rarity': "7.81%"},
@@ -1231,18 +1357,18 @@ npc_data = {
                 {'item': "Coins", 'qty': 440, 'members': False, 'rarity': "0.78%"},
                 {'item': "Bass", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Adamantite Ore", 'qty': 1, 'members': False, 'rarity': "2.34%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "3.91%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "3.91%"},
             ],
             "levels": [
                 {"lvl": 83, "hp": 75, "att": 68, "str": 68, "def": 68, "magic": 68, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 20, "slashDef": 40, "crushDef": 40, "magicDef": 30, "rangeDef": 20, "attStyle": "Slash", "respawnrate": 60, "huntrange": 4, "wanderrange": 4, "maxrange": 6}
             ]
         }
     ],
-    "Guard": [
+    "Guard": [#Checked
         {
             "id": 0,
             "f2p": [
-                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "6.25%"},
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Dagger", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "Body Talisman", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Grain", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -1253,7 +1379,6 @@ npc_data = {
                 {'item': "Earth Rune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
                 {'item': "Fire Rune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
                 {'item': "Bronze Arrow", 'qty': 2, 'members': False, 'rarity': "1.56%"},
-                {'item': "Body Talisman", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Chaos Rune", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Nature Rune", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Steel Arrow", 'qty': 5, 'members': False, 'rarity': "0.78%"},
@@ -1265,9 +1390,11 @@ npc_data = {
                 {'item': "Coins", 'qty': 25, 'members': False, 'rarity': "3.13%"},
                 {'item': "Coins", 'qty': 17, 'members': False, 'rarity': "3.13%"},
                 {'item': "Coins", 'qty': 30, 'members': False, 'rarity': "1.56%"},
+                {'item': "Body Talisman", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "6.25%"},
             ],
             "p2p": [
-                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "6.25%"},
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Dagger", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "Body Talisman", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Grain", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -1278,7 +1405,6 @@ npc_data = {
                 {'item': "Earth Rune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
                 {'item': "Fire Rune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
                 {'item': "Bronze Arrow", 'qty': 2, 'members': False, 'rarity': "1.56%"},
-                {'item': "Blood Rune", 'qty': 1, 'members': True, 'rarity': "0.78%"},
                 {'item': "Chaos Rune", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Nature Rune", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Steel Arrow", 'qty': 5, 'members': False, 'rarity': "0.78%"},
@@ -1290,6 +1416,8 @@ npc_data = {
                 {'item': "Coins", 'qty': 25, 'members': False, 'rarity': "3.13%"},
                 {'item': "Coins", 'qty': 17, 'members': False, 'rarity': "3.13%"},
                 {'item': "Coins", 'qty': 30, 'members': False, 'rarity': "1.56%"},
+                {'item': "Blood Rune", 'qty': 1, 'members': True, 'rarity': "0.78%"},
+                {'item': "Nothing", 'qty': 0, 'members': False, 'rarity': "6.25%"},
             ],
             "levels": [
                 {"lvl": 20, "hp": 22, "att": 17, "str": 18, "def": 13, "magic": 0, "attBo": 9, "strBo": 7, "rangeBo": 0, "stabDef": 24, "slashDef": 14, "crushDef": 19, "magicDef": 4, "rangeDef": 16, "attStyle": "Crush", "respawnrate": 100, "huntrange": 0, "wanderrange": 0, "maxrange": 0},
@@ -1303,6 +1431,7 @@ npc_data = {
         {
             "id": 0,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Bronze Axe", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "Bronze Battleaxe", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Iron Mace", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -1323,9 +1452,10 @@ npc_data = {
                 {'item': "Beer", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Bear Fur", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Flier", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Bronze Axe", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "Bronze Battleaxe", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Iron Mace", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -1346,7 +1476,7 @@ npc_data = {
                 {'item': "Beer", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Bear Fur", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Flier", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
                 {"lvl": 29, "hp": 35, "att": 22, "str": 22, "def": 25, "magic": 0, "attBo": 8, "strBo": 13, "rangeBo": 0, "stabDef": 12, "slashDef": 14, "crushDef": 10, "magicDef": -1, "rangeDef": 11, "attStyle": "Slash", "respawnrate": 100, "huntrange": 0, "wanderrange": 0, "maxrange": 0}
@@ -1385,6 +1515,7 @@ npc_data = {
         {
             "id": 0,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Goblin Mail", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Iron Dagger", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Steel Dagger", 'qty': 1, 'members': False, 'rarity': "2.34%"},
@@ -1397,7 +1528,7 @@ npc_data = {
                 {'item': "Body Rune", 'qty': 6, 'members': False, 'rarity': "1.56%"},
                 {'item': "Chaos Rune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
                 {'item': "Nature Rune", 'qty': 4, 'members': False, 'rarity': "1.56%"},
-                {'item': "Cosmicrune", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Cosmic Rune", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "5.47%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "12.5%"},
                 {'item': "Coins", 'qty': 28, 'members': False, 'rarity': "9.38%"},
@@ -1407,9 +1538,10 @@ npc_data = {
                 {'item': "Coins", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Limpwurt Root", 'qty': 1, 'members': False, 'rarity': "17.19%"},
                 {'item': "Goblin Mail", 'qty': 1, 'members': False, 'rarity': "1.56%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "1.56%"},
             ],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Bronze Spear", 'qty': 1, 'members': True, 'rarity': "2.34%"},
                 {'item': "Iron Dagger", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Steel Dagger", 'qty': 1, 'members': False, 'rarity': "2.34%"},
@@ -1422,8 +1554,8 @@ npc_data = {
                 {'item': "Body Rune", 'qty': 6, 'members': False, 'rarity': "1.56%"},
                 {'item': "Chaos Rune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
                 {'item': "Nature Rune", 'qty': 4, 'members': False, 'rarity': "1.56%"},
-                {'item': "Cosmicrune", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "5.47%"},
+                {'item': "Cosmic Rune", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "5.47%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "12.5%"},
                 {'item': "Coins", 'qty': 28, 'members': False, 'rarity': "9.38%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "9.38%"},
@@ -1432,7 +1564,7 @@ npc_data = {
                 {'item': "Coins", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Limpwurt Root", 'qty': 1, 'members': False, 'rarity': "17.19%"},
                 {'item': "Goblin Mail", 'qty': 1, 'members': False, 'rarity': "1.56%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "1.56%"},
             ],
             "levels": [
                 {"lvl": 28, "hp": 29, "att": 22, "str": 24, "def": 24, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 1, "wanderrange": 15, "maxrange": 17}
@@ -1440,6 +1572,7 @@ npc_data = {
         }, {
             "id": 1,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Sword", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Steel Dagger", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Steel Longsword", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -1449,7 +1582,7 @@ npc_data = {
                 {'item': "Body Rune", 'qty': 6, 'members': False, 'rarity': "1.56%"},
                 {'item': "Chaos Rune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
                 {'item': "Nature Rune", 'qty': 4, 'members': False, 'rarity': "1.56%"},
-                {'item': "Cosmicrune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "Cosmic Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "5.47%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "26.56%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "9.38%"},
@@ -1460,9 +1593,10 @@ npc_data = {
                 {'item': "Coins", 'qty': 42, 'members': False, 'rarity': "0.78%"},
                 {'item': "Limpwurt Root", 'qty': 1, 'members': False, 'rarity': "16.41%"},
                 {'item': "Goblin Mail", 'qty': 1, 'members': False, 'rarity': "1.56%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "1.56%"},
             ],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Sword", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Steel Dagger", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Steel Longsword", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -1472,9 +1606,9 @@ npc_data = {
                 {'item': "Body Rune", 'qty': 6, 'members': False, 'rarity': "1.56%"},
                 {'item': "Chaos Rune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
                 {'item': "Nature Rune", 'qty': 4, 'members': False, 'rarity': "1.56%"},
-                {'item': "Cosmicrune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "Cosmic Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
                 {'item': "Iron Javelin", 'qty': 5, 'members': True, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "5.47%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "5.47%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "26.56%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "9.38%"},
                 {'item': "Coins", 'qty': 28, 'members': False, 'rarity': "3.13%"},
@@ -1484,7 +1618,7 @@ npc_data = {
                 {'item': "Coins", 'qty': 42, 'members': False, 'rarity': "0.78%"},
                 {'item': "Limpwurt Root", 'qty': 1, 'members': False, 'rarity': "16.41%"},
                 {'item': "Goblin Mail", 'qty': 1, 'members': False, 'rarity': "1.56%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "1.56%"},
             ],
             "levels": [
                 {"lvl": 42, "hp": 49, "att": 33, "str": 31, "def": 36, "magic": 0, "attBo": 8, "strBo": 10, "rangeBo": 0, "stabDef": 1, "slashDef": 1, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Stab", "respawnrate": 0, "huntrange": 1, "wanderrange": 3, "maxrange": 5}
@@ -1495,6 +1629,7 @@ npc_data = {
         {
             "id": 0,
             "f2p": [
+                {'item': "Big Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron 2H Sword", 'qty': 1, 'members': False, 'rarity': "3.91%"},
                 {'item': "Black Kiteshield", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Steel Axe", 'qty': 1, 'members': False, 'rarity': "3.13%"},
@@ -1507,7 +1642,7 @@ npc_data = {
                 {'item': "Body Rune", 'qty': 37, 'members': False, 'rarity': "2.34%"},
                 {'item': "Law Rune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
                 {'item': "Water Rune", 'qty': 12, 'members': False, 'rarity': "0.78%"},
-                {'item': "Cosmicrune", 'qty': 4, 'members': False, 'rarity': "0.78%"},
+                {'item': "Cosmic Rune", 'qty': 4, 'members': False, 'rarity': "0.78%"},
                 {'item': "Death Rune", 'qty': 3, 'members': False, 'rarity': "0.78%"},
                 {'item': "Black Kiteshield", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 117, 'members': False, 'rarity': "25%"},
@@ -1519,9 +1654,10 @@ npc_data = {
                 {'item': "Jug Wine", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Mithril Ore", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Banana", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "3.13%"},
             ],
             "p2p": [
+                {'item': "Big Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron 2H Sword", 'qty': 1, 'members': False, 'rarity': "3.91%"},
                 {'item': "Black Kiteshield", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Steel Axe", 'qty': 1, 'members': False, 'rarity': "3.13%"},
@@ -1535,7 +1671,7 @@ npc_data = {
                 {'item': "Body Rune", 'qty': 37, 'members': False, 'rarity': "2.34%"},
                 {'item': "Law Rune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
                 {'item': "Water Rune", 'qty': 12, 'members': False, 'rarity': "0.78%"},
-                {'item': "Cosmicrune", 'qty': 4, 'members': False, 'rarity': "0.78%"},
+                {'item': "Cosmic Rune", 'qty': 4, 'members': False, 'rarity': "0.78%"},
                 {'item': "Death Rune", 'qty': 3, 'members': False, 'rarity': "0.78%"},
                 {'item': "Blood Rune", 'qty': 1, 'members': True, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 117, 'members': False, 'rarity': "25%"},
@@ -1547,7 +1683,7 @@ npc_data = {
                 {'item': "Jug Wine", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Mithril Ore", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Banana", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "3.13%"},
             ],
             "levels": [
                 {"lvl": 54, "hp": 70, "att": 40, "str": 40, "def": 40, "magic": 0, "attBo": 29, "strBo": 31, "rangeBo": 0, "stabDef": 0, "slashDef": 3, "crushDef": 2, "magicDef": 0, "rangeDef": 0, "attStyle": "Slash", "respawnrate": 60, "huntrange": 2, "wanderrange": 0, "maxrange": 0}
@@ -1558,32 +1694,34 @@ npc_data = {
         {
             "id": 0,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Battleaxe", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Mithril Mace", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Nature Rune", 'qty': 4, 'members': False, 'rarity': "7.81%"},
                 {'item': "Chaos Rune", 'qty': 3, 'members': False, 'rarity': "6.25%"},
                 {'item': "Law Rune", 'qty': 2, 'members': False, 'rarity': "5.47%"},
-                {'item': "Cosmicrune", 'qty': 2, 'members': False, 'rarity': "3.91%"},
+                {'item': "Cosmic Rune", 'qty': 2, 'members': False, 'rarity': "3.91%"},
                 {'item': "Mithril Arrow", 'qty': 3, 'members': False, 'rarity': "3.91%"},
                 {'item': "Death Rune", 'qty': 2, 'members': False, 'rarity': "2.34%"},
                 {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "7.81%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "30.47%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "2.34%"},
             ],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Battleaxe", 'qty': 1, 'members': False, 'rarity': "2.34%"},  
                 {'item': "Mithril Mace", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Nature Rune", 'qty': 4, 'members': False, 'rarity': "7.81%"},
                 {'item': "Chaos Rune", 'qty': 3, 'members': False, 'rarity': "6.25%"},
                 {'item': "Law Rune", 'qty': 2, 'members': False, 'rarity': "5.47%"},
-                {'item': "Cosmicrune", 'qty': 2, 'members': False, 'rarity': "3.91%"},
+                {'item': "Cosmic Rune", 'qty': 2, 'members': False, 'rarity': "3.91%"},
                 {'item': "Mithril Arrow", 'qty': 3, 'members': False, 'rarity': "3.91%"},
                 {'item': "Adamant Arrow", 'qty': 2, 'members': True, 'rarity': "1.56%"},
                 {'item': "Death Rune", 'qty': 2, 'members': False, 'rarity': "2.34%"},
                 {'item': "Blood Rune", 'qty': 2, 'members': True, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "7.81%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "7.81%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "30.47%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "2.34%"},
             ],
             "levels": [
                 {"lvl": 53, "hp": 59, "att": 47, "str": 47, "def": 47, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 30, "slashDef": 40, "crushDef": 20, "magicDef": 10, "rangeDef": 30, "attStyle": "Slash", "respawnrate": 60, "huntrange": 1, "wanderrange": 3, "maxrange": 5}
@@ -1594,6 +1732,7 @@ npc_data = {
         {
             "id": 0,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Imp Black Bead", 'qty': 1, 'members': False, 'rarity': "3.91%"},
                 {'item': "Imp Red Bead", 'qty': 1, 'members': False, 'rarity': "3.91%"},
                 {'item': "Imp White Bead", 'qty': 1, 'members': False, 'rarity': "3.91%"},
@@ -1623,11 +1762,12 @@ npc_data = {
                 {'item': "Clay", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Cadaver Berries", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Grain", 'qty': 1, 'members': False, 'rarity': "2.34%"},
-                {'item': "Chefshat", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "Chef's Hat", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Flier", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Potion", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Imp Black Bead", 'qty': 1, 'members': False, 'rarity': "3.91%"},
                 {'item': "Imp Red Bead", 'qty': 1, 'members': False, 'rarity': "3.91%"},
                 {'item': "Imp White Bead", 'qty': 1, 'members': False, 'rarity': "3.91%"},
@@ -1657,7 +1797,7 @@ npc_data = {
                 {'item': "Clay", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Cadaver Berries", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Grain", 'qty': 1, 'members': False, 'rarity': "2.34%"},
-                {'item': "Chefshat", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "Chef's Hat", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Flier", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Potion", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
@@ -1671,19 +1811,20 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
+                {'item': "Big Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Bronze Spear", 'qty': 1, 'members': False, 'rarity': "23.26"},
                 {'item': "Iron Spear", 'qty': 1, 'members': False, 'rarity': "3.1"},
                 {'item': "Nature Rune", 'qty': 2, 'members': False, 'rarity': "7.75"},
                 {'item': "Nature Rune", 'qty': 10, 'members': False, 'rarity': "1.55"},
                 {'item': "Nature Rune", 'qty': 5, 'members': False, 'rarity': "1.55"},
                 {'item': "Steel Javelin", 'qty': 5, 'members': False, 'rarity': "1.55"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "4.65"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "4.65"},
                 {'item': "Pineapple", 'qty': 2, 'members': False, 'rarity': "6.2"},
                 {'item': "Knife", 'qty': 1, 'members': False, 'rarity': "3.88"},
                 {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "2.33"},
                 {'item': "Big Bones", 'qty': 1, 'members': False, 'rarity': "2.33"},
                 {'item': "Big Bones", 'qty': 3, 'members': False, 'rarity': "1.55"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.55"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "1.55"},
                 {'item': "Potion", 'qty': 1, 'members': False, 'rarity': "0.78"},
                 {'item': "Unidentified Snake Weed", 'qty': 1, 'members': False, 'rarity': "0.78"},
                 {'item': "Unidentified Rogues Purse", 'qty': 1, 'members': False, 'rarity': "0.78"},
@@ -1698,6 +1839,7 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
+                {'item': "Dragon Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Rune Longsword", 'qty': 1, 'members': False, 'rarity': "7.81%"},
                 {'item': "Adamant Platebody", 'qty': 1, 'members': False, 'rarity': "7.03%"},
                 {'item': "Dragon Med Helm", 'qty': 1, 'members': True, 'rarity': "0.78%"},
@@ -1719,11 +1861,11 @@ npc_data = {
                 {'item': "Shark", 'qty': 4, 'members': True, 'rarity': "3.13%"},
                 {'item': "Oyster Perls", 'qty': 4, 'members': True, 'rarity': "3.13%"},
                 {'item': "Mithril Battleaxe", 'qty': 1, 'members': False, 'rarity': "2.34%"},
-                {'item': "~Ultrarare Getitem", 'qty': 1, 'members': False, 'rarity': "6.25%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "◄Ultra Rare►", 'qty': 1, 'members': False, 'rarity': "6.25%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "1.56%"},
             ],
             "levels": [
-                {'lvl': 238, 'hp': 240, 'att': 240, 'str': 240, 'def': 240, 'magic': 240, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 70, 'slashDef': 90, 'crushDef': 90, 'magicDef': 80, 'rangeDef': 70, 'attStyle': 'Stab', 'respawnrate': 150, 'huntrange': 20}
+                {"lvl": 238, "hp": 240, "att": 240, "str": 240, "def": 240, "magic": 240, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 70, "slashDef": 90, "crushDef": 90, "magicDef": 80, "rangeDef": 70, "attStyle": "Stab/Dragonfire", "respawnrate": 150, "huntrange": 20, "wanderrange": 20, "maxrange": 20}
             ]
         }
     ],
@@ -1731,7 +1873,8 @@ npc_data = {
         {
             "id": 0,
             "f2p": [
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+                {'item': "Ashes", 'qty': 1, 'members': False, 'rarity': "100%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Rune Med Helm", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Mithril Sq Shield", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Mithril Chainbody", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -1753,7 +1896,8 @@ npc_data = {
                 {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "5.47%"},
             ],
             "p2p": [
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+                {'item': "Ashes", 'qty': 1, 'members': False, 'rarity': "100%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Rune Med Helm", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Mithril Sq Shield", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Mithril Chainbody", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -1768,14 +1912,14 @@ npc_data = {
                 {'item': "Coins", 'qty': 120, 'members': False, 'rarity': "31.25%"},
                 {'item': "Fire Rune", 'qty': 30, 'members': False, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 40, 'members': False, 'rarity': "22.66%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "0.78%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Gold Ore", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Death Rune", 'qty': 3, 'members': False, 'rarity': "2.34%"},
                 {'item': "Chaos Rune", 'qty': 12, 'members': False, 'rarity': "3.91%"},
                 {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "5.47%"},
             ],
             "levels": [
-                {'lvl': 82, 'hp': 79, 'att': 68, 'str': 70, 'def': 71, 'magic': 0, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 0, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Slash', 'respawnrate': 60, 'huntrange': 2}
+                {"lvl": 82, "hp": 79, "att": 68, "str": 70, "def": 71, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": -10, "rangeDef": 0, "attStyle": "Slash", "respawnrate": 60, "huntrange": 2, "wanderrange": 6, "maxrange": 8}
             ]
         }
     ],
@@ -1783,6 +1927,7 @@ npc_data = {
         {
             "id": 0,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Dagger", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Bronze Med Helm", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Bronze Arrow", 'qty': 7, 'members': False, 'rarity': "2.34%"},
@@ -1790,7 +1935,7 @@ npc_data = {
                 {'item': "Fire Rune", 'qty': 6, 'members': False, 'rarity': "1.56%"},
                 {'item': "Mind Rune", 'qty': 9, 'members': False, 'rarity': "1.56%"},
                 {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
-                {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "17.97%"},
+                {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "18.59%"},
                 {'item': "Coins", 'qty': 3, 'members': False, 'rarity': "29.69%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "7.03%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "3.13%"},
@@ -1801,6 +1946,7 @@ npc_data = {
                 {'item': "Cabbage", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Dagger", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Bronze Med Helm", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Bolt", 'qty': 9, 'members': False, 'rarity': "17.19%"},
@@ -1809,7 +1955,7 @@ npc_data = {
                 {'item': "Fire Rune", 'qty': 6, 'members': False, 'rarity': "1.56%"},
                 {'item': "Mind Rune", 'qty': 9, 'members': False, 'rarity': "1.56%"},
                 {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "17.97%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "18.59%"},
                 {'item': "Coins", 'qty': 3, 'members': False, 'rarity': "29.69%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "7.03%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "3.13%"},
@@ -1820,7 +1966,7 @@ npc_data = {
                 {'item': "Cabbage", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
-                {'lvl': 2, 'hp': 7, 'att': 0, 'str': 0, 'def': 0, 'magic': 0, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 0, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Crush', 'respawnrate': 50, 'huntrange': 0}
+                {"lvl": 2, "hp": 7, "att": 0, "str": 0, "def": 0, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": -21, "slashDef": -21, "crushDef": -21, "magicDef": -21, "rangeDef": -21, "attStyle": "Crush", "respawnrate": 50, "huntrange": 0, "wanderrange": 0, "maxrange": 0}
             ]
         }
     ],
@@ -1829,11 +1975,14 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Zamorak Monk Bottom", 'qty': 1, 'members': True, 'rarity': "5%"},
                 {'item': "Zamorak Monk Top", 'qty': 1, 'members': True, 'rarity': "5%"},
             ],
             "levels": [
-                {'lvl': 45, 'hp': 40, 'att': 38, 'str': 38, 'def': 42, 'magic': 40, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 0, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Crush', 'respawnrate': 500, 'huntrange': 1}
+                {"lvl": 17, "hp": 10, "att": 8, "str": 8, "def": 12, "magic": 25, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 100, "huntrange": 1, "wanderrange": 12, "maxrange": 14},
+                {"lvl": 22, "hp": 20, "att": 18, "str": 18, "def": 22, "magic": 25, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 100, "huntrange": 1, "wanderrange": 12, "maxrange": 14},
+                {"lvl": 45, "hp": 40, "att": 38, "str": 38, "def": 42, "magic": 40, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 500, "huntrange": 1, "wanderrange": 12, "maxrange": 14}
             ]
         }
     ],
@@ -1841,6 +1990,7 @@ npc_data = {
         {
             "id": 0,
             "f2p": [
+                {'item': "Big Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Black Sq Shield", 'qty': 1, 'members': False, 'rarity': "3.91%"},
                 {'item': "Magicstaff", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Steel Med Helm", 'qty': 1, 'members': False, 'rarity': "1.56%"},
@@ -1852,7 +2002,7 @@ npc_data = {
                 {'item': "Earth Rune", 'qty': 27, 'members': False, 'rarity': "2.34%"},
                 {'item': "Chaos Rune", 'qty': 7, 'members': False, 'rarity': "2.34%"},
                 {'item': "Nature Rune", 'qty': 6, 'members': False, 'rarity': "2.34%"},
-                {'item': "Cosmicrune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
+                {'item': "Cosmic Rune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
                 {'item': "Iron Arrow", 'qty': 15, 'members': False, 'rarity': "1.56%"},
                 {'item': "Steel Arrow", 'qty': 30, 'members': False, 'rarity': "0.78%"},
                 {'item': "Death Rune", 'qty': 3, 'members': False, 'rarity': "0.78%"},
@@ -1865,9 +2015,10 @@ npc_data = {
                 {'item': "Steel Bar", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "Coal", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Spinach Roll", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "3.13%"},
             ],
             "p2p": [
+                {'item': "Big Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Black Sq Shield", 'qty': 1, 'members': False, 'rarity': "3.91%"},
                 {'item': "Magicstaff", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Steel Med Helm", 'qty': 1, 'members': False, 'rarity': "1.56%"},
@@ -1879,12 +2030,12 @@ npc_data = {
                 {'item': "Earth Rune", 'qty': 27, 'members': False, 'rarity': "2.34%"},
                 {'item': "Chaos Rune", 'qty': 7, 'members': False, 'rarity': "2.34%"},
                 {'item': "Nature Rune", 'qty': 6, 'members': False, 'rarity': "2.34%"},
-                {'item': "Cosmicrune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
+                {'item': "Cosmic Rune", 'qty': 2, 'members': False, 'rarity': "1.56%"},
                 {'item': "Iron Arrow", 'qty': 15, 'members': False, 'rarity': "1.56%"},
                 {'item': "Steel Arrow", 'qty': 30, 'members': False, 'rarity': "0.78%"},
                 {'item': "Death Rune", 'qty': 3, 'members': False, 'rarity': "0.78%"},
                 {'item': "Blood Rune", 'qty': 1, 'members': True, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "3.91%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "3.91%"},
                 {'item': "Coins", 'qty': 37, 'members': False, 'rarity': "14.84%"},
                 {'item': "Coins", 'qty': 2, 'members': False, 'rarity': "6.25%"},
                 {'item': "Coins", 'qty': 119, 'members': False, 'rarity': "7.81%"},
@@ -1892,10 +2043,10 @@ npc_data = {
                 {'item': "Steel Bar", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "Coal", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Spinach Roll", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "3.13%"},
             ],
             "levels": [
-                {'lvl': 48, 'hp': 60, 'att': 30, 'str': 30, 'def': 30, 'magic': 0, 'attBo': 33, 'strBo': 31, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 0, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Crush', 'respawnrate': 60, 'huntrange': 2}
+                {"lvl": 48, "hp": 60, "att": 30, "str": 30, "def": 30, "magic": 0, "attBo": 33, "strBo": 31, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 60, "huntrange": 2, "wanderrange": 3, "maxrange": 5}
             ]
         }
     ],
@@ -1903,6 +2054,7 @@ npc_data = {
         {
             "id": 0,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Mind Rune", 'qty': 9, 'members': False, 'rarity': "2.34%"},
                 {'item': "Water Rune", 'qty': 6, 'members': False, 'rarity': "1.56%"},
                 {'item': "Earth Rune", 'qty': 5, 'members': False, 'rarity': "1.56%"},
@@ -1918,10 +2070,11 @@ npc_data = {
                 {'item': "Cabbage", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Mind Rune", 'qty': 9, 'members': False, 'rarity': "2.34%"},
                 {'item': "Water Rune", 'qty': 6, 'members': False, 'rarity': "1.56%"},
                 {'item': "Earth Rune", 'qty': 5, 'members': False, 'rarity': "1.56%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "10.16%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "10.16%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "9.38%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "2.34%"},
                 {'item': "Coins", 'qty': 25, 'members': False, 'rarity': "0.78%"},
@@ -1933,7 +2086,7 @@ npc_data = {
                 {'item': "Cabbage", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
-                {'lvl': 4, 'hp': 8, 'att': 5, 'str': 5, 'def': 5, 'magic': 0, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 0, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Crush', 'respawnrate': 100, 'huntrange': 5}
+                {"lvl": 4, "hp": 8, "att": 5, "str": 5, "def": 5, "magic": 0, "attBo": 0, "strBo": -21, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 100, "huntrange": 5, "wanderrange": 12, "maxrange": 14}
             ]
         }
     ],
@@ -1942,6 +2095,7 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Staff", 'qty': 1, 'members': False, 'rarity': "6.25%"},
                 {'item': "Zamorak Monk Bottom", 'qty': 1, 'members': True, 'rarity': "3.13%"},
                 {'item': "Zamorak Monk Top", 'qty': 1, 'members': True, 'rarity': "2.34%"},
@@ -1962,7 +2116,7 @@ npc_data = {
                 {'item': "Mind Rune", 'qty': 18, 'members': False, 'rarity': "1.56%"},
                 {'item': "Body Rune", 'qty': 18, 'members': False, 'rarity': "1.56%"},
                 {'item': "Blood Rune", 'qty': 2, 'members': True, 'rarity': "1.56%"},
-                {'item': "Cosmicrune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "Cosmic Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
                 {'item': "Law Rune", 'qty': 3, 'members': False, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 1, 'members': False, 'rarity': "13.28%"},
                 {'item': "Coins", 'qty': 2, 'members': False, 'rarity': "12.5%"},
@@ -1970,7 +2124,7 @@ npc_data = {
                 {'item': "Coins", 'qty': 29, 'members': False, 'rarity': "2.34%"},
             ],
             "levels": [
-                {'lvl': 29, 'hp': 40, 'att': 18, 'str': 18, 'def': 18, 'magic': 18, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 0, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Crush', 'respawnrate': 500, 'huntrange': 0}
+                {"lvl": 29, "hp": 40, "att": 18, "str": 18, "def": 18, "magic": 18, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 500, "huntrange": 0, "wanderrange": 0, "maxrange": 0}
             ]
         }
     ],
@@ -1979,21 +2133,22 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Nature Rune", 'qty': 5, 'members': False, 'rarity': "7.03%"},
                 {'item': "Chaos Rune", 'qty': 4, 'members': False, 'rarity': "6.25%"},
                 {'item': "Law Rune", 'qty': 2, 'members': False, 'rarity': "5.47%"},
-                {'item': "Cosmicrune", 'qty': 2, 'members': False, 'rarity': "3.91%"},
+                {'item': "Cosmic Rune", 'qty': 2, 'members': False, 'rarity': "3.91%"},
                 {'item': "Death Rune", 'qty': 2, 'members': False, 'rarity': "3.13%"},
                 {'item': "Blood Rune", 'qty': 2, 'members': True, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "7.81%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "7.81%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "46.09%"},
                 {'item': "Ruby Ring", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Mithril Mace", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Mackerel", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "2.34%"},
             ],
             "levels": [
-                {'lvl': 64, 'hp': 66, 'att': 56, 'str': 56, 'def': 46, 'magic': 0, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 15, 'slashDef': 10, 'crushDef': 20, 'magicDef': 0, 'rangeDef': 15, 'attStyle': 'Crush', 'respawnrate': 40, 'huntrange': 0}
+                {"lvl": 64, "hp": 66, "att": 56, "str": 56, "def": 46, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 15, "slashDef": 10, "crushDef": 20, "magicDef": -5, "rangeDef": 15, "attStyle": "Crush", "respawnrate": 40, "huntrange": 0, "wanderrange": 3, "maxrange": 5}
             ]
         }
     ],
@@ -2002,6 +2157,7 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Steel Sword", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Steel Longsword", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Steel Full Helm", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -2010,16 +2166,17 @@ npc_data = {
                 {'item': "Iron Bar", 'qty': 1, 'members': False, 'rarity': "7.03%"},
                 {'item': "Mithril Bar", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Steel Bar", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "6.25%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': True, 'rarity': "6.25%"},
                 {'item': "Coins", 'qty': 48, 'members': False, 'rarity': "31.25%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "14.84%"},
                 {'item': "Coins", 'qty': 1, 'members': False, 'rarity': "12.5%"},
                 {'item': "Coins", 'qty': 8, 'members': False, 'rarity': "7.81%"},
                 {'item': "Coins", 'qty': 120, 'members': False, 'rarity': "1.56%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "1.56%"},
             ],
             "levels": [
-                {'lvl': 50, 'hp': 13, 'att': 63, 'str': 63, 'def': 63, 'magic': 0, 'attBo': 0, 'strBo': 10, 'rangeBo': 0, 'stabDef': 60, 'slashDef': 50, 'crushDef': 42, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Crush', 'respawnrate': 100, 'huntrange': 0}
+                {"lvl": 50, "hp": 13, "att": 63, "str": 63, "def": 63, "magic": 0, "attBo": 0, "strBo": 10, "rangeBo": 0, "stabDef": 60, "slashDef": 50, "crushDef": 42, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 100, "huntrange": 0, "wanderrange": 0, "maxrange": 0},
+                {"lvl": 53, "hp": 57, "att": 54, "str": 54, "def": 54, "magic": 0, "attBo": 20, "strBo": 22, "rangeBo": 0, "stabDef": 87, "slashDef": 84, "crushDef": 76, "magicDef": -10, "rangeDef": 79, "attStyle": "Slash", "respawnrate": 100, "huntrange": 0, "wanderrange": 2, "maxrange": 4}
             ]
         }
     ],
@@ -2027,6 +2184,7 @@ npc_data = {
         {
             "id": 0,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Dagger", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "Bronze Scimitar", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Iron Platebody", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -2044,10 +2202,11 @@ npc_data = {
                 {'item': "Coins", 'qty': 12, 'members': False, 'rarity': "4.69%"},
                 {'item': "Coins", 'qty': 35, 'members': False, 'rarity': "3.13%"},
                 {'item': "Coins", 'qty': 55, 'members': False, 'rarity': "0.78%"},
-                {'item': "Chefshat", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Chef's Hat", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Dagger", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "Bronze Scimitar", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Iron Platebody", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -2066,12 +2225,13 @@ npc_data = {
                 {'item': "Coins", 'qty': 35, 'members': False, 'rarity': "3.13%"},
                 {'item': "Coins", 'qty': 55, 'members': False, 'rarity': "0.78%"},
                 {'item': "Eyepatch", 'qty': 1, 'members': True, 'rarity': "9.38%"},
-                {'item': "Chefshat", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Chef's Hat", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Iron Bar", 'qty': 1, 'members': True, 'rarity': "0.78%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
-                {'lvl': 20, 'hp': 20, 'att': 20, 'str': 20, 'def': 20, 'magic': 0, 'attBo': 10, 'strBo': 9, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 1, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Slash', 'respawnrate': 50, 'huntrange': 1}
+                {"lvl": 20, "hp": 20, "att": 20, "str": 20, "def": 20, "magic": 0, "attBo": 10, "strBo": 9, "rangeBo": 0, "stabDef": 0, "slashDef": 1, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Slash", "respawnrate": 50, "huntrange": 0, "wanderrange": 0, "maxrange": 0},
+                {"lvl": 25, "hp": 23, "att": 23, "str": 23, "def": 23, "magic": 0, "attBo": 8, "strBo": 10, "rangeBo": 0, "stabDef": 3, "slashDef": 2, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Slash", "respawnrate": 50, "huntrange": 1, "wanderrange": 0, "maxrange": 0}
             ]
         }
     ],
@@ -2080,6 +2240,7 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
+                {'item': "Dragon Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Mithril 2H Sword", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Mithril Axe", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Mithril Battleaxe", 'qty': 1, 'members': False, 'rarity': "2.34%"},
@@ -2092,17 +2253,17 @@ npc_data = {
                 {'item': "Law Rune", 'qty': 4, 'members': False, 'rarity': "3.91%"},
                 {'item': "Blood Rune", 'qty': 2, 'members': True, 'rarity': "3.13%"},
                 {'item': "Death Rune", 'qty': 5, 'members': False, 'rarity': "2.34%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "1.56%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Coins", 'qty': 196, 'members': False, 'rarity': "31.25%"},
                 {'item': "Coins", 'qty': 66, 'members': False, 'rarity': "22.66%"},
                 {'item': "Coins", 'qty': 330, 'members': False, 'rarity': "7.81%"},
                 {'item': "Coins", 'qty': 690, 'members': False, 'rarity': "0.78%"},
                 {'item': "Chocolate Cake", 'qty': 3, 'members': False, 'rarity': "2.34%"},
                 {'item': "Adamantite Bar", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "3.91%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "3.91%"},
             ],
             "levels": [
-                {'lvl': 135, 'hp': 140, 'att': 130, 'str': 130, 'def': 130, 'magic': 0, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 50, 'slashDef': 70, 'crushDef': 70, 'magicDef': 60, 'rangeDef': 50, 'attStyle': 'Slash', 'respawnrate': 60, 'huntrange': 4}
+                {"lvl": 135, "hp": 140, "att": 130, "str": 130, "def": 130, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 50, "slashDef": 70, "crushDef": 70, "magicDef": 60, "rangeDef": 50, "attStyle": "Slash", "respawnrate": 60, "huntrange": 4, "wanderrange": 10, "maxrange": 12}
             ]
         }
     ],
@@ -2111,6 +2272,7 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Bronze Med Helm", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Iron Dagger", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Bolt", 'qty': 9, 'members': False, 'rarity': "17.19%"},
@@ -2119,7 +2281,7 @@ npc_data = {
                 {'item': "Fire Rune", 'qty': 6, 'members': False, 'rarity': "1.56%"},
                 {'item': "Mind Rune", 'qty': 9, 'members': False, 'rarity': "1.56%"},
                 {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "17.97%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "18.59%"},
                 {'item': "Coins", 'qty': 3, 'members': False, 'rarity': "29.69%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "7.03%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "3.13%"},
@@ -2130,7 +2292,7 @@ npc_data = {
                 {'item': "Cabbage", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
-                {'lvl': 14, 'hp': 17, 'att': 13, 'str': 13, 'def': 13, 'magic': 0, 'attBo': 5, 'strBo': 5, 'rangeBo': 0, 'stabDef': 6, 'slashDef': 9, 'crushDef': 11, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Stab', 'respawnrate': 100, 'huntrange': 1}
+                {"lvl": 14, "hp": 17, "att": 13, "str": 13, "def": 13, "magic": 0, "attBo": 5, "strBo": 5, "rangeBo": 0, "stabDef": 6, "slashDef": 9, "crushDef": 11, "magicDef": 0, "rangeDef": 0, "attStyle": "Stab", "respawnrate": 100, "huntrange": 1, "wanderrange": 0, "maxrange": 0}
             ]
         }
     ],
@@ -2139,12 +2301,13 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Black Dagger", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Water Rune", 'qty': 12, 'members': False, 'rarity': "3.91%"},
                 {'item': "Law Rune", 'qty': 2, 'members': False, 'rarity': "3.13%"},
                 {'item': "Nature Rune", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Fire Rune", 'qty': 36, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "30.47%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "30.47%"},
                 {'item': "White Berries", 'qty': 1, 'members': False, 'rarity': "3.91%"},
                 {'item': "Snape Grass", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Vial Water", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -2153,10 +2316,10 @@ npc_data = {
                 {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "2.34%"},
                 {'item': "1Dose2Defense", 'qty': 1, 'members': False, 'rarity': "8.59%"},
                 {'item': "Sinister Key", 'qty': 1, 'members': False, 'rarity': "7.81%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
-                {'lvl': 70, 'hp': 70, 'att': 58, 'str': 58, 'def': 62, 'magic': 0, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 0, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Crush', 'respawnrate': 100, 'huntrange': 0}
+                {"lvl": 70, "hp": 70, "att": 58, "str": 58, "def": 62, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 100, "huntrange": 0, "wanderrange": 0, "maxrange": 0}
             ]
         }
     ],
@@ -2164,6 +2327,7 @@ npc_data = {
         {
             "id": 0,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Bronze Arrow", 'qty': 2, 'members': False, 'rarity': "5.47%"},
                 {'item': "Bronze Arrow", 'qty': 5, 'members': False, 'rarity': "3.13%"},
                 {'item': "Iron Arrow", 'qty': 1, 'members': False, 'rarity': "3.13%"},
@@ -2185,9 +2349,10 @@ npc_data = {
                 {'item': "Fire Talisman", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Iron Ore", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Grain", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Bronze Arrow", 'qty': 2, 'members': False, 'rarity': "5.47%"},
                 {'item': "Bronze Arrow", 'qty': 5, 'members': False, 'rarity': "3.13%"},
                 {'item': "Iron Arrow", 'qty': 1, 'members': False, 'rarity': "3.13%"},
@@ -2197,7 +2362,7 @@ npc_data = {
                 {'item': "Chaos Rune", 'qty': 3, 'members': False, 'rarity': "1.56%"},
                 {'item': "Nature Rune", 'qty': 3, 'members': False, 'rarity': "0.78%"},
                 {'item': "Steel Arrow", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "18.36%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "18.36%"},
                 {'item': "Coins", 'qty': 2, 'members': False, 'rarity': "14.06%"},
                 {'item': "Coins", 'qty': 12, 'members': False, 'rarity': "11.72%"},
                 {'item': "Coins", 'qty': 4, 'members': False, 'rarity': "5.47%"},
@@ -2209,15 +2374,16 @@ npc_data = {
                 {'item': "Fire Talisman", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Iron Ore", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Grain", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
-                {"lvl": 18, "hp": 24, "att": 17, "str": 17, "def": 17, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 5, "slashDef": 5, "crushDef": -5, "magicDef": 0, "rangeDef": 5, "attStyle": "Crush", "respawnrate": 140, "huntrange": 1},
-                {"lvl": 20, "hp": 29, "att": 15, "str": 18, "def": 17, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 5, "slashDef": 5, "crushDef": -5, "magicDef": 0, "rangeDef": 5, "attStyle": "Crush", "respawnrate": 70, "huntrange": 1}
+                {"lvl": 18, "hp": 24, "att": 17, "str": 17, "def": 17, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 5, "slashDef": 5, "crushDef": -5, "magicDef": 0, "rangeDef": 5, "attStyle": "Crush", "respawnrate": 140, "huntrange": 1, "wanderrange": 0, "maxrange": 0},
+                {"lvl": 20, "hp": 29, "att": 15, "str": 18, "def": 17, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 5, "slashDef": 5, "crushDef": -5, "magicDef": 0, "rangeDef": 5, "attStyle": "Crush", "respawnrate": 70, "huntrange": 1, "wanderrange": 8, "maxrange": 10}
             ]
         }, {
             "id": 1,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Med Helm", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "Iron Sword", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Iron Axe", 'qty': 1, 'members': False, 'rarity': "1.56%"},
@@ -2227,7 +2393,7 @@ npc_data = {
                 {'item': "Chaos Rune", 'qty': 5, 'members': False, 'rarity': "2.34%"},
                 {'item': "Iron Arrow", 'qty': 12, 'members': False, 'rarity': "1.56%"},
                 {'item': "Law Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
-                {'item': "Cosmicrune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "Cosmic Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
                 {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "15.63%"},
                 {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "19.53%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "19.53%"},
@@ -2236,9 +2402,10 @@ npc_data = {
                 {'item': "Coins", 'qty': 64, 'members': False, 'rarity': "2.34%"},
                 {'item': "Coins", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Bronze Bar", 'qty': 1, 'members': False, 'rarity': "3.91%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "1.56%"},
             ],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Med Helm", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "Iron Sword", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Iron Axe", 'qty': 1, 'members': False, 'rarity': "1.56%"},
@@ -2248,8 +2415,8 @@ npc_data = {
                 {'item': "Chaos Rune", 'qty': 5, 'members': False, 'rarity': "2.34%"},
                 {'item': "Iron Arrow", 'qty': 12, 'members': False, 'rarity': "1.56%"},
                 {'item': "Law Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
-                {'item': "Cosmicrune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "15.63%"},
+                {'item': "Cosmic Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "15.63%"},
                 {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "19.53%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "19.53%"},
                 {'item': "Coins", 'qty': 25, 'members': False, 'rarity': "6.25%"},
@@ -2257,11 +2424,11 @@ npc_data = {
                 {'item': "Coins", 'qty': 64, 'members': False, 'rarity': "2.34%"},
                 {'item': "Coins", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Bronze Bar", 'qty': 1, 'members': False, 'rarity': "3.91%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "1.56%"},
             ],
             "levels": [
-                {"lvl": 22, "hp": 17, "att": 24, "str": 24, "def": 24, "magic": 0, "attBo": 15, "strBo": 14, "rangeBo": 0, "stabDef": 9, "slashDef": 11, "crushDef": -2, "magicDef": 1, "rangeDef": 4, "attStyle": "Slash", "respawnrate": 140, "huntrange": 1},
-                {'lvl': 45, 'hp': 59, 'att': 32, 'str': 35, 'def': 36, 'magic': 0, 'attBo': 15, 'strBo': 14, 'rangeBo': 0, 'stabDef': 9, 'slashDef': 11, 'crushDef': 0, 'magicDef': 1, 'rangeDef': 4, 'attStyle': 'Slash', 'respawnrate': 120, 'huntrange': 1}
+                {"lvl": 22, "hp": 17, "att": 24, "str": 24, "def": 24, "magic": 0, "attBo": 15, "strBo": 14, "rangeBo": 0, "stabDef": 9, "slashDef": 11, "crushDef": -2, "magicDef": 1, "rangeDef": 4, "attStyle": "Slash", "respawnrate": 70, "huntrange": 1, "wanderrange": 9, "maxrange": 11},
+                {"lvl": 45, "hp": 59, "att": 32, "str": 35, "def": 36, "magic": 0, "attBo": 15, "strBo": 14, "rangeBo": 0, "stabDef": 9, "slashDef": 11, "crushDef": -2, "magicDef": 1, "rangeDef": 4, "attStyle": "Slash", "respawnrate": 120, "huntrange": 1, "wanderrange": 9, "maxrange": 11}
             ]
         }
     ],
@@ -2271,7 +2438,7 @@ npc_data = {
             "f2p": [],
             "p2p":[],
             "levels": [
-                {'lvl': 15, 'hp': 17, 'att': 14, 'str': 14, 'def': 14, 'magic': 18, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 0, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Crush', 'respawnrate': 50, 'huntrange': 0}
+                {"lvl": 15, "hp": 17, "att": 14, "str": 14, "def": 14, "magic": 18, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 50, "huntrange": 0, "wanderrange": 0, "maxrange": 0}
             ]
         }
             ],
@@ -2280,6 +2447,7 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Steel Sword", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "Steel Med Helm", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Bronze Arrow", 'qty': 4, 'members': False, 'rarity': "3.91%"},
@@ -2302,7 +2470,7 @@ npc_data = {
                 {'item': "Iron Ore", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
-                {'lvl': 25, 'hp': 22, 'att': 26, 'str': 25, 'def': 26, 'magic': 0, 'attBo': 8, 'strBo': 10, 'rangeBo': 0, 'stabDef': 24, 'slashDef': 14, 'crushDef': 19, 'magicDef': 0, 'rangeDef': 16, 'attStyle': 'Slash', 'respawnrate': 100, 'huntrange': 0}
+                {"lvl": 25, "hp": 22, "att": 26, "str": 25, "def": 26, "magic": 0, "attBo": 8, "strBo": 10, "rangeBo": 0, "stabDef": 24, "slashDef": 14, "crushDef": 19, "magicDef": -4, "rangeDef": 16, "attStyle": "Slash", "respawnrate": 100, "huntrange": 0, "wanderrange": 0, "maxrange": 0}
             ]
         }
     ],
@@ -2310,6 +2478,7 @@ npc_data = {
         {
             "id": 0,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Steel Longsword", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Steel Full Helm", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Law Rune", 'qty': 2, 'members': False, 'rarity': "3.13%"},
@@ -2327,9 +2496,10 @@ npc_data = {
                 {'item': "Coins", 'qty': 150, 'members': False, 'rarity': "1.56%"},
                 {'item': "Silver Ore", 'qty': 1, 'members': False, 'rarity': "8.59%"},
                 {'item': "Cert Swordfish", 'qty': 5, 'members': False, 'rarity': "1.56%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "1.56%"},
             ],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Steel Longsword", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Steel Full Helm", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Law Rune", 'qty': 2, 'members': False, 'rarity': "3.13%"},
@@ -2338,7 +2508,7 @@ npc_data = {
                 {'item': "Chaos Rune", 'qty': 3, 'members': False, 'rarity': "2.34%"},
                 {'item': "Water Rune", 'qty': 30, 'members': False, 'rarity': "2.34%"},
                 {'item': "Mind Rune", 'qty': 5, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "11.72%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "11.72%"},
                 {'item': "Coins", 'qty': 48, 'members': False, 'rarity': "23.44%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "14.06%"},
                 {'item': "Coins", 'qty': 8, 'members': False, 'rarity': "8.59%"},
@@ -2347,10 +2517,10 @@ npc_data = {
                 {'item': "Coins", 'qty': 150, 'members': False, 'rarity': "1.56%"},
                 {'item': "Silver Ore", 'qty': 1, 'members': False, 'rarity': "8.59%"},
                 {'item': "Cert Swordfish", 'qty': 5, 'members': False, 'rarity': "1.56%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "1.56%"},
             ],
             "levels": [
-                {'lvl': 34, 'hp': 37, 'att': 32, 'str': 26, 'def': 27, 'magic': 0, 'attBo': 9, 'strBo': 9, 'rangeBo': 0, 'stabDef': 9, 'slashDef': 8, 'crushDef': 10, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Slash', 'respawnrate': 100, 'huntrange': 0}
+                {"lvl": 34, "hp": 37, "att": 32, "str": 26, "def": 27, "magic": 0, "attBo": 9, "strBo": 9, "rangeBo": 0, "stabDef": 9, "slashDef": 8, "crushDef": 10, "magicDef": 0, "rangeDef": 0, "attStyle": "Slash", "respawnrate": 100, "huntrange": 0, "wanderrange": 0, "maxrange": 0}
             ]
         }
     ],
@@ -2358,6 +2528,7 @@ npc_data = {
         {
             "id": 0,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Dagger", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Bronze Med Helm", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Bronze Arrow", 'qty': 7, 'members': False, 'rarity': "2.34%"},
@@ -2365,7 +2536,7 @@ npc_data = {
                 {'item': "Fire Rune", 'qty': 6, 'members': False, 'rarity': "1.56%"},
                 {'item': "Mind Rune", 'qty': 9, 'members': False, 'rarity': "1.56%"},
                 {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
-                {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "17.97%"},
+                {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "18.59%"},
                 {'item': "Coins", 'qty': 3, 'members': False, 'rarity': "29.69%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "7.03%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "3.13%"},
@@ -2376,6 +2547,7 @@ npc_data = {
                 {'item': "Cabbage", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Dagger", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Bronze Med Helm", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Bolt", 'qty': 9, 'members': False, 'rarity': "17.19%"},
@@ -2384,7 +2556,7 @@ npc_data = {
                 {'item': "Fire Rune", 'qty': 6, 'members': False, 'rarity': "1.56%"},
                 {'item': "Mind Rune", 'qty': 9, 'members': False, 'rarity': "1.56%"},
                 {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "17.97%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "18.59%"},
                 {'item': "Coins", 'qty': 3, 'members': False, 'rarity': "29.69%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "7.03%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "3.13%"},
@@ -2395,7 +2567,8 @@ npc_data = {
                 {'item': "Cabbage", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
-                {'lvl': 14, 'hp': 17, 'att': 14, 'str': 10, 'def': 9, 'magic': 0, 'attBo': 6, 'strBo': 7, 'rangeBo': 0, 'stabDef': 8, 'slashDef': 13, 'crushDef': 14, 'magicDef': 4, 'rangeDef': 9, 'attStyle': 'Stab', 'respawnrate': 50, 'huntrange': 0}
+                {"lvl": 14, "hp": 17, "att": 14, "str": 10, "def": 9, "magic": 0, "attBo": 6, "strBo": 7, "rangeBo": 0, "stabDef": 8, "slashDef": 13, "crushDef": 14, "magicDef": 4, "rangeDef": 9, "attStyle": "Stab", "respawnrate": 50, "huntrange": 0, "wanderrange": 0, "maxrange": 0},
+                {"lvl": 16, "hp": 17, "att": 14, "str": 13, "def": 12, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 50, "huntrange": 0, "wanderrange": 7, "maxrange": 10}
             ]
         }
     ],
@@ -2404,25 +2577,26 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Med Helm", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Iron Battleaxe", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Steel Axe", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Nature Rune", 'qty': 2, 'members': False, 'rarity': "10.16%"},
                 {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "3.13%"},
-                {'item': "Cosmicrune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "Cosmic Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
                 {'item': "Law Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
                 {'item': "Death Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "18.75%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "18.75%"},
                 {'item': "Iron Ore", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Iron Bar", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                 {'item': "Coal", 'qty': 1, 'members': False, 'rarity': "1.56%"},
-                {'item': "Coins", 'qty': 8, 'members': False, 'rarity': "17.97%"},
+                {'item': "Coins", 'qty': 8, 'members': False, 'rarity': "18.59%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "9.38%"},
                 {'item': "Coins", 'qty': 30, 'members': False, 'rarity': "1.56%"},
                 {'item': "Coins", 'qty': 20, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
-                {'lvl': 10, 'hp': 18, 'att': 7, 'str': 5, 'def': 9, 'magic': 0, 'attBo': 5, 'strBo': 5, 'rangeBo': 0, 'stabDef': 2, 'slashDef': 3, 'crushDef': 3, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Stab', 'respawnrate': 100, 'huntrange': 3}
+                {"lvl": 10, "hp": 18, "att": 7, "str": 5, "def": 9, "magic": 0, "attBo": 5, "strBo": 5, "rangeBo": 0, "stabDef": 2, "slashDef": 3, "crushDef": 3, "magicDef": 0, "rangeDef": 0, "attStyle": "Stab", "respawnrate": 100, "huntrange": 3, "wanderrange": 0, "maxrange": 0}
             ]
         }
     ],
@@ -2431,6 +2605,7 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Steel Sword", 'qty': 1, 'members': False, 'rarity': "4.69%"},
                 {'item': "Steel Med Helm", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Bronze Arrow", 'qty': 4, 'members': False, 'rarity': "3.91%"},
@@ -2453,7 +2628,7 @@ npc_data = {
                 {'item': "Iron Ore", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
-                {'lvl': 25, 'hp': 22, 'att': 26, 'str': 26, 'def': 26, 'magic': 0, 'attBo': 8, 'strBo': 8, 'rangeBo': 0, 'stabDef': 23, 'slashDef': 35, 'crushDef': 28, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Stab', 'respawnrate': 100, 'huntrange': 0}
+                {"lvl": 25, "hp": 22, "att": 26, "str": 26, "def": 26, "magic": 0, "attBo": 8, "strBo": 8, "rangeBo": 0, "stabDef": 23, "slashDef": 35, "crushDef": 28, "magicDef": 0, "rangeDef": 0, "attStyle": "Stab", "respawnrate": 100, "huntrange": 0, "wanderrange": 8, "maxrange": 11}
             ]
         }
     ],
@@ -2462,32 +2637,33 @@ npc_data = {
             "id": 0,
             "f2p": [],
             "p2p": [
-                {'item': "Bronze Spear", 'qty': 1, 'members': True, 'rarity': "5.07%"},
-                {'item': "Steel Javelin", 'qty': 10, 'members': True, 'rarity': "2.17%"},
-                {'item': "Bolt (P)", 'qty': 4, 'members': True, 'rarity': "1.45%"},
-                {'item': "Iron Spear", 'qty': 1, 'members': True, 'rarity': "1.45%"},
-                {'item': "Steel Arrow (P)", 'qty': 5, 'members': True, 'rarity': "1.45%"},
-                {'item': "Mithril Javelin", 'qty': 10, 'members': True, 'rarity': "1.45%"},
-                {'item': "Mithril Spear", 'qty': 1, 'members': True, 'rarity': "0.72%"},
-                {'item': "Unidentified Rogues Purse", 'qty': 1, 'members': True, 'rarity': "3.62%"},
-                {'item': "Unidentified Snake Weed", 'qty': 1, 'members': True, 'rarity': "3.62%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "7.97%"},
-                {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "18.12%"},
-                {'item': "Snape Grass", 'qty': 1, 'members': True, 'rarity': "14.49%"},
-                {'item': "Limpwurt Root", 'qty': 1, 'members': False, 'rarity': "8.7%"},
-                {'item': "Coins", 'qty': 28, 'members': False, 'rarity': "8.7%"},
-                {'item': "Nature Rune", 'qty': 3, 'members': False, 'rarity': "5.8%"},
-                {'item': "Coins", 'qty': 62, 'members': False, 'rarity': "3.62%"},
-                {'item': "Gold Ore", 'qty': 1, 'members': False, 'rarity': "3.62%"},
-                {'item': "2Dose2Antipoison", 'qty': 1, 'members': True, 'rarity': "2.17%"},
-                {'item': "3Dose2Antipoison", 'qty': 1, 'members': True, 'rarity': "0.72%"},
-                {'item': "Bread", 'qty': 1, 'members': False, 'rarity': "0.72%"},
-                {'item': "Tin Ore", 'qty': 1, 'members': False, 'rarity': "0.72%"},
-                {'item': "Pot Of Flour", 'qty': 1, 'members': False, 'rarity': "0.72%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "1.45%"},
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
+                {'item': "Bronze Spear", 'qty': 1, 'members': True, 'rarity': "5.47%"},
+                {'item': "Steel Javelin", 'qty': 10, 'members': True, 'rarity': "2.34%"},
+                {'item': "Bolt (P)", 'qty': 4, 'members': True, 'rarity': "1.56%"},
+                {'item': "Iron Spear", 'qty': 1, 'members': True, 'rarity': "1.56%"},
+                {'item': "Steel Arrow (P)", 'qty': 5, 'members': True, 'rarity': "1.56%"},
+                {'item': "Mithril Javelin", 'qty': 10, 'members': True, 'rarity': "1.56%"},
+                {'item': "Mithril Spear", 'qty': 1, 'members': True, 'rarity': "0.78%"},
+                {'item': "Unidentified Rogues Purse", 'qty': 1, 'members': True, 'rarity': "3.91%"},
+                {'item': "Unidentified Snake Weed", 'qty': 1, 'members': True, 'rarity': "3.91%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "8.59%"},
+                {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "17.97%"},
+                {'item': "Snape Grass", 'qty': 1, 'members': True, 'rarity': "15.63%"},
+                {'item': "Limpwurt Root", 'qty': 1, 'members': False, 'rarity': "9.38%"},
+                {'item': "Coins", 'qty': 28, 'members': False, 'rarity': "9.38%"},
+                {'item': "Nature Rune", 'qty': 3, 'members': False, 'rarity': "6.25%"},
+                {'item': "Coins", 'qty': 62, 'members': False, 'rarity': "3.91%"},
+                {'item': "Gold Ore", 'qty': 1, 'members': False, 'rarity': "3.91%"},
+                {'item': "2Dose2Antipoison", 'qty': 1, 'members': True, 'rarity': "2.34%"},
+                {'item': "3Dose2Antipoison", 'qty': 1, 'members': True, 'rarity': "0.78%"},
+                {'item': "Bread", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Tin Ore", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Pot Of Flour", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "1.56%"},
             ],
             "levels": [
-                {'lvl': 32, 'hp': 39, 'att': 23, 'str': 27, 'def': 26, 'magic': 0, 'attBo': 8, 'strBo': 5, 'rangeBo': 0, 'stabDef': 4, 'slashDef': 6, 'crushDef': 6, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Stab', 'respawnrate': 100, 'huntrange': 1}
+                {"lvl": 32, "hp": 39, "att": 23, "str": 27, "def": 26, "magic": 0, "attBo": 8, "strBo": 5, "rangeBo": 0, "stabDef": 4, "slashDef": 6, "crushDef": 6, "magicDef": 0, "rangeDef": 0, "attStyle": "Stab", "respawnrate": 100, "huntrange": 1, "wanderrange": 0, "maxrange": 0}
             ]
         }
     ],
@@ -2500,7 +2676,7 @@ npc_data = {
                 {'item': "Raw Ugthanki Meat", 'qty': 1, 'members': True, 'rarity': "100%"},
             ],
             "levels": [
-                {'lvl': 42, 'hp': 45, 'att': 35, 'str': 35, 'def': 35, 'magic': 0, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 0, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Stab', 'respawnrate': 700, 'huntrange': 2}
+                {"lvl": 42, "hp": 45, "att": 35, "str": 35, "def": 35, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Stab", "respawnrate": 700, "huntrange": 2, "wanderrange": 0, "maxrange": 0}
             ]
         }
     ],
@@ -2515,7 +2691,7 @@ npc_data = {
                 {'item': "Unicorn Horn", 'qty': 1, 'members': True, 'rarity': "100%"},
             ],
             "levels": [
-                {'lvl': 15, 'hp': 19, 'att': 11, 'str': 13, 'def': 13, 'magic': 0, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 0, 'crushDef': 0, 'magicDef': 0, 'rangeDef': 0, 'attStyle': 'Stab', 'respawnrate': 180, 'huntrange': 0}
+                {"lvl": 15, "hp": 19, "att": 11, "str": 13, "def": 1, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Stab", "respawnrate": 0, "huntrange": 0, "wanderrange": 1, "maxrange": 0}
             ]
         }
     ],
@@ -2523,6 +2699,7 @@ npc_data = {
         {
             "id": 0,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Longsword", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Steel Sword", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Steel Med Helm", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -2548,9 +2725,10 @@ npc_data = {
                 {'item': "Half An Apple Pie", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Iron Ore", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Pot Of Flour", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                     ],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Longsword", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Steel Sword", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Steel Med Helm", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -2563,7 +2741,7 @@ npc_data = {
                 {'item': "Adamant Arrow", 'qty': 2, 'members': False, 'rarity': "0.78%"},
                 {'item': "Blood Rune", 'qty': 2, 'members': True, 'rarity': "0.78%"},
                 {'item': "Law Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "3.91%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "3.91%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "11.72%"},
                 {'item': "Coins", 'qty': 48, 'members': False, 'rarity': "11.72%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "11.72%"},
@@ -2577,10 +2755,10 @@ npc_data = {
                 {'item': "Half An Apple Pie", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Iron Ore", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Pot Of Flour", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomjewel", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
-                {"lvl": 36, "hp": 52, "att": 27, "str": 29, "def": 21, "magic": 0, "attBo": 30, "strBo": 31, "rangeBo": 0, "stabDef": 83, "slashDef": 76, "crushDef": 70, "magicDef": -11, "rangeDef": 74, "attStyle": "Slash", "respawnrate": 100, "huntrange": 0}
+                {"lvl": 36, "hp": 52, "att": 27, "str": 29, "def": 21, "magic": 0, "attBo": 30, "strBo": 31, "rangeBo": 0, "stabDef": 83, "slashDef": 76, "crushDef": 70, "magicDef": -11, "rangeDef": 74, "attStyle": "Slash", "respawnrate": 100, "huntrange": 0, "wanderrange": 0, "maxrange": 0}
             ]
         }
     ],
@@ -2588,6 +2766,7 @@ npc_data = {
         {
             "id": 0,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Staff", 'qty': 1, 'members': False, 'rarity': "6.25%"},
                 {'item': "Wizards Robe", 'qty': 1, 'members': False, 'rarity': "5.47%"},
                 {'item': "Wizards Hat Blue", 'qty': 1, 'members': False, 'rarity': "2.34%"},
@@ -2615,6 +2794,7 @@ npc_data = {
                 {'item': "Coins", 'qty': 30, 'members': False, 'rarity': "0.78%"},
             ],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Staff", 'qty': 1, 'members': False, 'rarity': "6.25%"},
                 {'item': "Wizards Robe", 'qty': 1, 'members': False, 'rarity': "5.47%"},
                 {'item': "Wizards Hat Blue", 'qty': 1, 'members': False, 'rarity': "2.34%"},
@@ -2642,7 +2822,7 @@ npc_data = {
                 {'item': "Coins", 'qty': 30, 'members': False, 'rarity': "0.78%"},
             ],
             "levels": [
-                {'lvl': 9, 'hp': 14, 'att': 8, 'str': 8, 'def': 5, 'magic': 10, 'attBo': 0, 'strBo': 0, 'rangeBo': 0, 'stabDef': 0, 'slashDef': 0, 'crushDef': 0, 'magicDef': 3, 'rangeDef': 0, 'attStyle': '', 'respawnrate': 60, 'huntrange': 0}
+                {"lvl": 2, "hp": 7, "att": 0, "str": 0, "def": 0, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": -21, "slashDef": -21, "crushDef": -21, "magicDef": -21, "rangeDef": -21, "attStyle": "Crush", "respawnrate": 50, "huntrange": 0, "wanderrange": 0, "maxrange": 0}
             ]
         }
     ],
@@ -2650,6 +2830,7 @@ npc_data = {
         {
             "id": 0,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Dagger", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Bronze Med Helm", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Bronze Arrow", 'qty': 7, 'members': False, 'rarity': "2.34%"},
@@ -2657,7 +2838,7 @@ npc_data = {
                 {'item': "Fire Rune", 'qty': 6, 'members': False, 'rarity': "1.56%"},
                 {'item': "Mind Rune", 'qty': 9, 'members': False, 'rarity': "1.56%"},
                 {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
-                {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "17.97%"},
+                {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "18.59%"},
                 {'item': "Coins", 'qty': 3, 'members': False, 'rarity': "29.69%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "7.03%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "3.13%"},
@@ -2668,6 +2849,7 @@ npc_data = {
                 {'item': "Cabbage", 'qty': 1, 'members': False, 'rarity': "0.78%"},
             ],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Iron Dagger", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                 {'item': "Bronze Med Helm", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                 {'item': "Bolt", 'qty': 9, 'members': False, 'rarity': "17.19%"},
@@ -2676,7 +2858,7 @@ npc_data = {
                 {'item': "Fire Rune", 'qty': 6, 'members': False, 'rarity': "1.56%"},
                 {'item': "Mind Rune", 'qty': 9, 'members': False, 'rarity': "1.56%"},
                 {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "17.97%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "18.59%"},
                 {'item': "Coins", 'qty': 3, 'members': False, 'rarity': "29.69%"},
                 {'item': "Coins", 'qty': 5, 'members': False, 'rarity': "7.03%"},
                 {'item': "Coins", 'qty': 15, 'members': False, 'rarity': "3.13%"},
@@ -2691,10 +2873,46 @@ npc_data = {
             ]
         }
     ],
+    "Zamorak Wizard": [
+        {
+            "id": 0,
+            'f2p': [],
+            'p2p': [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
+                {'item': "Zamorak Monk Bottom", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+                {'item': "Zamorak Monk Top", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Water Battlestaff", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Earth Battlestaff", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Air Battlestaff", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+                {'item': "Fire Battlestaff", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Blood Rune", 'qty': 12, 'members': False, 'rarity': "9.38%"},
+                {'item': "Nature Rune", 'qty': 7, 'members': False, 'rarity': "5.47%"},
+                {'item': "Death Rune", 'qty': 45, 'members': False, 'rarity': "4.69%"},
+                {'item': "Earth Rune", 'qty': 86, 'members': False, 'rarity': "3.13%"},
+                {'item': "Air Rune", 'qty': 60, 'members': False, 'rarity': "2.34%"},
+                {'item': "Water Rune", 'qty': 42, 'members': False, 'rarity': "2.34%"},
+                {'item': "Earth Rune", 'qty': 79, 'members': False, 'rarity': "2.34%"},
+                {'item': "Fire Rune", 'qty': 51, 'members': False, 'rarity': "2.34%"},
+                {'item': "Air Rune", 'qty': 189, 'members': False, 'rarity': "1.56%"},
+                {'item': "Water Rune", 'qty': 126, 'members': False, 'rarity': "1.56%"},
+                {'item': "Earth Rune", 'qty': 107, 'members': False, 'rarity': "1.56%"},
+                {'item': "Fire Rune", 'qty': 180, 'members': False, 'rarity': "1.56%"},
+                {'item': "Cosmic Rune", 'qty': 25, 'members': False, 'rarity': "0.78%"},
+                {'item': "Law Rune", 'qty': 9, 'members': False, 'rarity': "0.78%"},
+                {'item': "Coins", 'qty': 89, 'members': False, 'rarity': "19.53%"},
+                {'item': "Coins", 'qty': 77, 'members': False, 'rarity': "13.28%"},
+                {'item': "Coins", 'qty': 240, 'members': False, 'rarity': "2.34%"},
+            ],
+            "levels": [
+                {"lvl": 74, "hp": 80, "att": 24, "str": 24, "def": 24, "magic": 80, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 3, "rangeDef": 0, "attStyle": "Magic", "respawnrate": 0, "huntrange": 0, "wanderrange": 3, "maxrange": 5}
+            ]
+        }
+    ],
     "Zombie": [
         {
             "id": 0,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                   {'item': "Bronze Med Helm", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                   {'item': "Bronze Longsword", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                   {'item': "Iron Axe", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -2715,6 +2933,7 @@ npc_data = {
                   {'item': "Copper Ore", 'qty': 1, 'members': False, 'rarity': "1.56%"}
             ],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                   {'item': "Bronze Med Helm", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                   {'item': "Bronze Longsword", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                   {'item': "Iron Axe", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -2725,7 +2944,7 @@ npc_data = {
                   {'item': "Iron Arrow", 'qty': 8, 'members': False, 'rarity': "3.13%"},
                   {'item': "Steel Arrow", 'qty': 5, 'members': False, 'rarity': "1.56%"},
                   {'item': "Nature Rune", 'qty': 6, 'members': False, 'rarity': "0.78%"},
-                  {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "19.53%"},
+                  {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "19.53%"},
                   {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "8.59%"},
                   {'item': "Coins", 'qty': 4, 'members': False, 'rarity': "3.13%"},
                   {'item': "Coins", 'qty': 18, 'members': False, 'rarity': "2.34%"},
@@ -2735,12 +2954,13 @@ npc_data = {
                   {'item': "Copper Ore", 'qty': 1, 'members': False, 'rarity': "1.56%"}
             ],
             "levels": [
-                {"lvl": 13, "hp": 22, "att": 8, "str": 9, "def": 10, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 70, "huntrange": 1},
-                {"lvl": 18, "hp": 24, "att": 13, "str": 13, "def": 18, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 70, "huntrange": 1}
+                {"lvl": 13, "hp": 22, "att": 8, "str": 9, "def": 10, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 70, "huntrange": 1, "wanderrange": 9, "maxrange": 11},
+                {"lvl": 18, "hp": 24, "att": 13, "str": 13, "def": 18, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 70, "huntrange": 1, "wanderrange": 9, "maxrange": 11}
             ]
         }, {
             "id": 1,
             "f2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                   {'item': "Iron Mace", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                   {'item': "Iron Dagger", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                   {'item': "Bronze Kiteshield", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -2760,9 +2980,10 @@ npc_data = {
                   {'item': "Tinderbox", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                   {'item': "Eye of Newt", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                   {'item': "Tin Ore", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                  {'item': "~randomjewel", 'qty': 1, 'members': False, 'rarity': "0.78%"}
+                  {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "0.78%"}
             ],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                   {'item': "Iron Mace", 'qty': 1, 'members': False, 'rarity': "2.34%"},
                   {'item': "Iron Dagger", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                   {'item': "Bronze Kiteshield", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -2772,7 +2993,7 @@ npc_data = {
                   {'item': "Chaos Rune", 'qty': 4, 'members': False, 'rarity': "0.78%"},
                   {'item': "Cosmic Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
                   {'item': "Fire Rune", 'qty': 7, 'members': False, 'rarity': "0.78%"},
-                  {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "23.44%"},
+                  {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "23.44%"},
                   {'item': "Coins", 'qty': 10, 'members': False, 'rarity': "7.81%"},
                   {'item': "Coins", 'qty': 18, 'members': False, 'rarity': "16.41%"},
                   {'item': "Coins", 'qty': 26, 'members': False, 'rarity': "6.25%"},
@@ -2782,15 +3003,16 @@ npc_data = {
                   {'item': "Tinderbox", 'qty': 1, 'members': False, 'rarity': "1.56%"},
                   {'item': "Eye of Newt", 'qty': 1, 'members': False, 'rarity': "0.78%"},
                   {'item': "Tin Ore", 'qty': 1, 'members': False, 'rarity': "0.78%"},
-                  {'item': "~randomjewel", 'qty': 1, 'members': False, 'rarity': "0.78%"}
+                  {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "0.78%"}
             ],
             "levels": [
-                {"lvl": 24, "hp": 30, "att": 19, "str": 21, "def": 16, "magic": 0, "attBo": 5, "strBo": 7, "rangeBo": 0, "stabDef": 9, "slashDef": 8, "crushDef": 12, "magicDef": 10, "rangeDef": 11, "attStyle": "Slash", "respawnrate": 70, "huntrange": 1}
+                {"lvl": 24, "hp": 30, "att": 19, "str": 21, "def": 16, "magic": 0, "attBo": 5, "strBo": 7, "rangeBo": 0, "stabDef": 9, "slashDef": 8, "crushDef": 12, "magicDef": 10, "rangeDef": 11, "attStyle": "Slash", "respawnrate": 70, "huntrange": 1, "wanderrange": 9, "maxrange": 11}
             ]
         }, {
             "id": 2,
             "f2p": [],
             "p2p": [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
                 {'item': "Bronze Axe", 'qty': 1, 'members': False, 'rarity': "39.06%"},
                 {'item': "Bronze Med Helm", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Bronze Longsword", 'qty': 1, 'members': False, 'rarity': "0.78%"},
@@ -2798,17 +3020,311 @@ npc_data = {
                 {'item': "Air Rune", 'qty': 13, 'members': False, 'rarity': "3.13%"},
                 {'item': "Bronze Arrow", 'qty': 8, 'members': False, 'rarity': "3.13%"},
                 {'item': "Nature Rune", 'qty': 6, 'members': False, 'rarity': "0.78%"},
-                {'item': "~Randomherb", 'qty': 1, 'members': True, 'rarity': "3.13%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "3.13%"},
                 {'item': "Fishing Bait", 'qty': 5, 'members': False, 'rarity': "35.94%"},
                 {'item': "Coins", 'qty': 18, 'members': False, 'rarity': "2.34%"},
                 {'item': "Coins", 'qty': 28, 'members': False, 'rarity': "1.56%"}
             ],
             "levels": [
-                {"lvl": 25, "hp": 30, "att": 19, "str": 21, "def": 21, "magic": 0, "attBo": 5, "strBo": 7, "rangeBo": 0, "stabDef": 10, "slashDef": 8, "crushDef": 12, "magicDef": 10, "rangeDef": 10, "attStyle": "Slash", "respawnrate": 70, "huntrange": 1}
+                {"lvl": 25, "hp": 30, "att": 19, "str": 21, "def": 21, "magic": 0, "attBo": 5, "strBo": 7, "rangeBo": 0, "stabDef": 10, "slashDef": 8, "crushDef": 12, "magicDef": 10, "rangeDef": 10, "attStyle": "Slash", "respawnrate": 0, "huntrange": 1, "wanderrange": 9, "maxrange": 11}
             ]
         }
     ],
-    "~megararetable": [
+    "•River Troll": [
+        {
+            "id": 0,
+            'f2p': [
+                {'item': "Fishing Bait", 'qty': 5, 'members': False, 'rarity': "21.09%"},
+                {'item': "Fishing Bait", 'qty': 30, 'members': False, 'rarity': "10.16%"},
+                {'item': "Fishing Bait", 'qty': 15, 'members': False, 'rarity': "7.03%"},
+                {'item': "Fishing Bait", 'qty': 50, 'members': False, 'rarity': "1.56%"},
+                {'item': "Feather", 'qty': 20, 'members': False, 'rarity': "3.13%"},
+                {'item': "Feather", 'qty': 40, 'members': False, 'rarity': "3.13%"},
+                {'item': "Raw Tuna", 'qty': 1, 'members': False, 'rarity': "16.41%"},
+                {'item': "Raw Swordfish", 'qty': 1, 'members': False, 'rarity': "14.84%"},
+                {'item': "Raw Shark", 'qty': 1, 'members': False, 'rarity': "9.38%"},
+                {'item': "Raw Pike", 'qty': 1, 'members': False, 'rarity': "4.69%"},
+                {'item': "Raw Salmon", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+                {'item': "Raw Sardine", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+                {'item': "Raw Herring", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+            ],
+            'p2p': [
+                {'item': "Fishing Bait", 'qty': 5, 'members': False, 'rarity': "21.09%"},
+                {'item': "Fishing Bait", 'qty': 30, 'members': False, 'rarity': "10.16%"},
+                {'item': "Fishing Bait", 'qty': 15, 'members': False, 'rarity': "7.03%"},
+                {'item': "Fishing Bait", 'qty': 50, 'members': False, 'rarity': "1.56%"},
+                {'item': "Feather", 'qty': 20, 'members': False, 'rarity': "3.13%"},
+                {'item': "Feather", 'qty': 40, 'members': False, 'rarity': "3.13%"},
+                {'item': "Raw Tuna", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Raw Swordfish", 'qty': 1, 'members': False, 'rarity': "14.84%"},
+                {'item': "Raw Shark", 'qty': 1, 'members': False, 'rarity': "9.38%"},
+                {'item': "Raw Pike", 'qty': 1, 'members': False, 'rarity': "4.69%"},
+                {'item': "Raw Salmon", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+                {'item': "Raw Sardine", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+                {'item': "Raw Herring", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "3Dosefisherspotion", 'qty': 1, 'members': False, 'rarity': "3.91%"},
+                {'item': "Oyster", 'qty': 5, 'members': True, 'rarity': "9.38%"},
+                {'item': "Casket", 'qty': 1, 'members': True, 'rarity': "3.91%"},
+            ],
+            "levels": [
+                {"lvl": 14, "hp": 25, "att": 9, "str": 9, "def": 9, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 5, "maxrange": 5},
+                {"lvl": 29, "hp": 40, "att": 22, "str": 22, "def": 22, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 5, "maxrange": 5},
+                {"lvl": 49, "hp": 60, "att": 38, "str": 38, "def": 38, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 5, "maxrange": 5},
+                {"lvl": 79, "hp": 85, "att": 65, "str": 65, "def": 65, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 5, "maxrange": 5},
+                {"lvl": 120, "hp": 120, "att": 100, "str": 100, "def": 100, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 5, "maxrange": 5},
+                {"lvl": 159, "hp": 170, "att": 130, "str": 130, "def": 130, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 5, "maxrange": 5}
+            ]
+        }
+    ],
+    "•Rock Golem": [
+        {
+            "id": 0,
+            "f2p": [
+                {'item': "Earth Rune", 'qty': 5, 'members': False, 'rarity': "38.28%"},
+                {'item': "Earth Rune", 'qty': 42, 'members': False, 'rarity': "5.47%"},
+                {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "5.47%"},
+                {'item': "Bronze Bar", 'qty': 1, 'members': False, 'rarity': "8.59%"},
+                {'item': "Iron Ore", 'qty': 1, 'members': False, 'rarity': "5.47%"},
+                {'item': "Tin Ore", 'qty': 1, 'members': False, 'rarity': "3.91%"},
+                {'item': "Copper Ore", 'qty': 1, 'members': False, 'rarity': "3.91%"},
+                {'item': "Dwarven Stout", 'qty': 1, 'members': False, 'rarity': "16.41%"},
+                {'item': "Hammer", 'qty': 1, 'members': False, 'rarity': "12.5%"},
+            ],
+            "p2p": [
+                {'item': "Earth Rune", 'qty': 5, 'members': False, 'rarity': "38.28%"},
+                {'item': "Earth Rune", 'qty': 42, 'members': False, 'rarity': "5.47%"},
+                {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "5.47%"},
+                {'item': "Bronze Bar", 'qty': 1, 'members': False, 'rarity': "8.59%"},
+                {'item': "Iron Ore", 'qty': 1, 'members': False, 'rarity': "5.47%"},
+                {'item': "Tin Ore", 'qty': 1, 'members': False, 'rarity': "3.91%"},
+                {'item': "Copper Ore", 'qty': 1, 'members': False, 'rarity': "3.91%"},
+                {'item': "Dwarven Stout", 'qty': 1, 'members': False, 'rarity': "16.41%"},
+                {'item': "Hammer", 'qty': 1, 'members': False, 'rarity': "12.5%"},
+            ], 
+            "levels": [
+                {"lvl": 14, "hp": 25, "att": 9, "str": 9, "def": 9, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7},
+                {"lvl": 29, "hp": 40, "att": 22, "str": 22, "def": 22, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7},
+                {"lvl": 49, "hp": 60, "att": 38, "str": 38, "def": 38, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7},
+                {"lvl": 79, "hp": 85, "att": 65, "str": 65, "def": 65, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7}
+            ]
+        },
+        {
+            "id": 1,
+            "f2p": [
+                {'item': "Bronze Pickaxe", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+                {'item': "Adamant Pickaxe", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Rune Pickaxe", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Earth Rune", 'qty': 5, 'members': False, 'rarity': "23.44%"},
+                {'item': "Earth Rune", 'qty': 42, 'members': False, 'rarity': "3.13%"},
+                {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "3.13%"},
+                {'item': "Coal", 'qty': 1, 'members': False, 'rarity': "19.53%"},
+                {'item': "Mithril Ore", 'qty': 1, 'members': False, 'rarity': "7.81%"},
+                {'item': "Bronze Bar", 'qty': 1, 'members': False, 'rarity': "5.47%"},
+                {'item': "Iron Ore", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+                {'item': "Iron Bar", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Tin Ore", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Copper Ore", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Adamantite Ore", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Runite Ore", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Dwarven Stout", 'qty': 1, 'members': False, 'rarity': "10.16%"},
+                {'item': "Hammer", 'qty': 1, 'members': False, 'rarity': "7.81%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+            ],
+            "p2p": [
+                {'item': "Bronze Pickaxe", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+                {'item': "Adamant Pickaxe", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Rune Pickaxe", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Earth Rune", 'qty': 5, 'members': False, 'rarity': "23.44%"},
+                {'item': "Earth Rune", 'qty': 42, 'members': False, 'rarity': "3.13%"},
+                {'item': "Chaos Rune", 'qty': 2, 'members': False, 'rarity': "3.13%"},
+                {'item': "Coal", 'qty': 1, 'members': False, 'rarity': "19.53%"},
+                {'item': "Mithril Ore", 'qty': 1, 'members': False, 'rarity': "7.81%"},
+                {'item': "Bronze Bar", 'qty': 1, 'members': False, 'rarity': "5.47%"},
+                {'item': "Iron Ore", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+                {'item': "Iron Bar", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Tin Ore", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Copper Ore", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Adamantite Ore", 'qty': 1, 'members': False, 'rarity': "2.34%"},
+                {'item': "Runite Ore", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "Dwarven Stout", 'qty': 1, 'members': False, 'rarity': "10.16%"},
+                {'item': "Hammer", 'qty': 1, 'members': False, 'rarity': "7.81%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "1.56%"},
+            ], 
+            "levels": [
+                {"lvl": 120, "hp": 120, "att": 100, "str": 100, "def": 100, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7},
+                {"lvl": 159, "hp": 170, "att": 130, "str": 130, "def": 130, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7}
+            ]
+        },
+    ],
+    "•Shade": [
+        {
+            "id": 0,
+            'f2p': [],
+            'p2p': [
+                {'item': "Shade Robe Top", 'qty': 1, 'members': False, 'rarity': "25%"},
+                {'item': "Shade Robe Bottom", 'qty': 1, 'members': False, 'rarity': "25%"},
+            ],
+            "levels": [
+                {"lvl": 14, "hp": 25, "att": 9, "str": 9, "def": 9, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 3, "maxrange": 3},
+                {"lvl": 29, "hp": 40, "att": 22, "str": 22, "def": 22, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 3, "maxrange": 3},
+                {"lvl": 49, "hp": 60, "att": 38, "str": 38, "def": 38, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 3, "maxrange": 3},
+                {"lvl": 79, "hp": 85, "att": 65, "str": 65, "def": 65, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 3, "maxrange": 3},
+                {"lvl": 120, "hp": 120, "att": 100, "str": 100, "def": 100, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 3, "maxrange": 3},
+                {"lvl": 159, "hp": 170, "att": 130, "str": 130, "def": 130, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 100, "huntrange": 0, "wanderrange": 3, "maxrange": 3}
+            ]
+        }
+    ],
+    "•Tree Spirit": [
+        {
+            "id": 0,
+            'f2p': [
+                {'item': "Mithril Axe", 'qty': 1, 'members': False, 'rarity': "15.63%"},
+                {'item': "Steel Axe", 'qty': 1, 'members': False, 'rarity': "7.81%"},
+                {'item': "Adamant Axe", 'qty': 1, 'members': False, 'rarity': "6.25%"},
+                {'item': "Rune Axe", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+                {'item': "Nature Rune", 'qty': 22, 'members': False, 'rarity': "24.22%"},
+                {'item': "Nature Rune", 'qty': 10, 'members': False, 'rarity': "1.56%"},
+                {'item': "Nature Rune", 'qty': 5, 'members': False, 'rarity': "1.56%"},
+                {'item': "Nature Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "Banana", 'qty': 1, 'members': False, 'rarity': "9.38%"},
+                {'item': "Knife", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "6.25%"},
+            ],
+            'p2p': [
+                {'item': "Mithril Axe", 'qty': 1, 'members': False, 'rarity': "15.63%"},
+                {'item': "Steel Axe", 'qty': 1, 'members': False, 'rarity': "7.81%"},
+                {'item': "Adamant Axe", 'qty': 1, 'members': False, 'rarity': "6.25%"},
+                {'item': "Rune Axe", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+                {'item': "Nature Rune", 'qty': 22, 'members': False, 'rarity': "24.22%"},
+                {'item': "Nature Rune", 'qty': 10, 'members': False, 'rarity': "1.56%"},
+                {'item': "Nature Rune", 'qty': 5, 'members': False, 'rarity': "1.56%"},
+                {'item': "Nature Rune", 'qty': 2, 'members': False, 'rarity': "0.78%"},
+                {'item': "Banana", 'qty': 1, 'members': False, 'rarity': "9.38%"},
+                {'item': "Knife", 'qty': 1, 'members': False, 'rarity': "0.78%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "22.66%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "6.25%"},
+            ],
+            "levels": [
+                {"lvl": 14, "hp": 25, "att": 9, "str": 9, "def": 9, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7},
+                {"lvl": 29, "hp": 40, "att": 22, "str": 22, "def": 22, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7},
+                {"lvl": 49, "hp": 60, "att": 38, "str": 38, "def": 38, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7},
+                {"lvl": 79, "hp": 85, "att": 65, "str": 65, "def": 65, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7},
+                {"lvl": 120, "hp": 120, "att": 100, "str": 100, "def": 100, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7},
+                {"lvl": 159, "hp": 170, "att": 130, "str": 130, "def": 130, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7}
+            ]
+        }
+    ],
+    "•Watchman": [
+        {
+            "id": 0,
+            'f2p': [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
+                {'item': "Steel Sword", 'qty': 1, 'members': False, 'rarity': "6.25%"},
+                {'item': "Mithril Med Helm", 'qty': 1, 'members': False, 'rarity': "4.69%"},
+                {'item': "Coal", 'qty': 1, 'members': False, 'rarity': "4.69%"},
+                {'item': "Steel Bar", 'qty': 1, 'members': False, 'rarity': "6.25%"},
+                {'item': "Coins", 'qty': 2, 'members': False, 'rarity': "12.5%"},
+                {'item': "Coins", 'qty': 16, 'members': False, 'rarity': "10.94%"},
+                {'item': "Coins", 'qty': 20, 'members': False, 'rarity': "9.38%"},
+                {'item': "Coins", 'qty': 30, 'members': False, 'rarity': "7.81%"},
+                {'item': "Coins", 'qty': 50, 'members': False, 'rarity': "6.25%"},
+                {'item': "Coins", 'qty': 70, 'members': False, 'rarity': "4.69%"},
+                {'item': "Coins", 'qty': 105, 'members': False, 'rarity': "3.13%"},
+                {'item': "Water Rune", 'qty': 50, 'members': False, 'rarity': "5.47%"},
+                {'item': "Body Rune", 'qty': 22, 'members': False, 'rarity': "3.91%"},
+                {'item': "Law Rune", 'qty': 3, 'members': False, 'rarity': "3.13%"},
+                {'item': "Death Rune", 'qty': 3, 'members': False, 'rarity': "3.13%"},
+                {'item': "Nature Rune", 'qty': 8, 'members': False, 'rarity': "1.56%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+            ],
+            'p2p': [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
+                {'item': "Steel Sword", 'qty': 1, 'members': False, 'rarity': "6.25%"},
+                {'item': "Mithril Med Helm", 'qty': 1, 'members': False, 'rarity': "4.69%"},
+                {'item': "Coal", 'qty': 1, 'members': False, 'rarity': "4.69%"},
+                {'item': "Steel Bar", 'qty': 1, 'members': False, 'rarity': "6.25%"},
+                {'item': "Coins", 'qty': 2, 'members': False, 'rarity': "12.5%"},
+                {'item': "Coins", 'qty': 16, 'members': False, 'rarity': "10.94%"},
+                {'item': "Coins", 'qty': 20, 'members': False, 'rarity': "9.38%"},
+                {'item': "Coins", 'qty': 30, 'members': False, 'rarity': "7.81%"},
+                {'item': "Coins", 'qty': 50, 'members': False, 'rarity': "6.25%"},
+                {'item': "Coins", 'qty': 70, 'members': False, 'rarity': "4.69%"},
+                {'item': "Coins", 'qty': 105, 'members': False, 'rarity': "3.13%"},
+                {'item': "Water Rune", 'qty': 50, 'members': False, 'rarity': "5.47%"},
+                {'item': "Body Rune", 'qty': 22, 'members': False, 'rarity': "3.91%"},
+                {'item': "Law Rune", 'qty': 3, 'members': False, 'rarity': "3.13%"},
+                {'item': "Death Rune", 'qty': 3, 'members': False, 'rarity': "3.13%"},
+                {'item': "Nature Rune", 'qty': 8, 'members': False, 'rarity': "1.56%"},
+                {'item': "◄Herb►", 'qty': 1, 'members': False, 'rarity': "3.13%"},
+            ],
+            "levels": [
+                {"lvl": 14, "hp": 20, "att": 9, "str": 9, "def": 9, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7},
+                {"lvl": 28, "hp": 22, "att": 31, "str": 31, "def": 31, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 24, "slashDef": 14, "crushDef": 19, "magicDef": -4, "rangeDef": 16, "attStyle": "Crush", "respawnrate": 100, "huntrange": 0, "wanderrange": 0, "maxrange": 0},
+                {"lvl": 29, "hp": 40, "att": 22, "str": 22, "def": 22, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7},
+                {"lvl": 49, "hp": 60, "att": 38, "str": 38, "def": 38, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7},
+                {"lvl": 79, "hp": 85, "att": 65, "str": 65, "def": 65, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7},
+                {"lvl": 120, "hp": 120, "att": 100, "str": 100, "def": 100, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7},
+                {"lvl": 159, "hp": 170, "att": 130, "str": 130, "def": 130, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7}
+            ]
+        }
+    ],
+    "•Zombie": [
+        {
+            "id": 0,
+            'f2p': [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
+                {'item': "Fishing Bait", 'qty': 50, 'members': False, 'rarity': "14.06%"},
+                {'item': "Fishing Bait", 'qty': 27, 'members': False, 'rarity': "9.38%"},
+                {'item': "Chaos Rune", 'qty': 35, 'members': False, 'rarity': "12.5%"},
+                {'item': "Chaos Rune", 'qty': 50, 'members': False, 'rarity': "3.13%"},
+                {'item': "Swordfish", 'qty': 1, 'members': False, 'rarity': "10.94%"},
+                {'item': "Cosmic Rune", 'qty': 5, 'members': False, 'rarity': "6.25%"},
+                {'item': "Coins", 'qty': 26, 'members': False, 'rarity': "6.25%"},
+                {'item': "Big Bones", 'qty': 1, 'members': False, 'rarity': "15.63%"},
+                {'item': "Big Bones", 'qty': 2, 'members': False, 'rarity': "12.5%"},
+                {'item': "Big Bones", 'qty': 6, 'members': False, 'rarity': "3.13%"},
+                {'item': "Bones", 'qty': 3, 'members': False, 'rarity': "3.13%"},
+                {'item': "Big Bones", 'qty': 4, 'members': False, 'rarity': "6.25%"},
+                {'item': "Big Bones", 'qty': 2, 'members': False, 'rarity': "6.25%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "0.39%"},
+            ],
+            'p2p': [
+                {'item': "Bones", 'qty': 1, 'members': False, 'rarity': "100%"},
+                {'item': "Fishing Bait", 'qty': 50, 'members': False, 'rarity': "14.06%"},
+                {'item': "Fishing Bait", 'qty': 27, 'members': False, 'rarity': "9.38%"},
+                {'item': "Chaos Rune", 'qty': 35, 'members': False, 'rarity': "12.5%"},
+                {'item': "Chaos Rune", 'qty': 50, 'members': False, 'rarity': "3.13%"},
+                {'item': "Swordfish", 'qty': 1, 'members': False, 'rarity': "10.94%"},
+                {'item': "Cosmic Rune", 'qty': 5, 'members': False, 'rarity': "6.25%"},
+                {'item': "Coins", 'qty': 26, 'members': False, 'rarity': "6.25%"},
+                {'item': "Big Bones", 'qty': 1, 'members': False, 'rarity': "15.63%"},
+                {'item': "Big Bones", 'qty': 2, 'members': False, 'rarity': "12.5%"},
+                {'item': "Big Bones", 'qty': 6, 'members': False, 'rarity': "3.13%"},
+                {'item': "Bones", 'qty': 3, 'members': False, 'rarity': "3.13%"},
+                {'item': "Big Bones", 'qty': 4, 'members': False, 'rarity': "6.25%"},
+                {'item': "Big Bones", 'qty': 2, 'members': False, 'rarity': "6.25%"},
+                {'item': "Dragon Bones", 'qty': 1, 'members': True, 'rarity': "1.95%"},
+                {'item': "Big Bones", 'qty': 1, 'members': False, 'rarity': "1.95%"},
+                {'item': "Dragon Bones", 'qty': 2, 'members': True, 'rarity': "0.39%"},
+                {'item': "Big Bones", 'qty': 10, 'members': False, 'rarity': "0.39%"},
+                {'item': "Bones", 'qty': 10, 'members': False, 'rarity': "0.39%"},
+                {'item': "Dragon Bones", 'qty': 3, 'members': True, 'rarity': "0.39%"},
+                {'item': "Big Bones", 'qty': 4, 'members': False, 'rarity': "3.13%"},
+                {'item': "Big Bones", 'qty': 2, 'members': False, 'rarity': "3.13%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "0.39%"},
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "0.39%"},
+            ],
+            "levels": [
+                {"lvl": 14, "hp": 20, "att": 9, "str": 9, "def": 9, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7},
+                {"lvl": 29, "hp": 40, "att": 22, "str": 22, "def": 22, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7},
+                {"lvl": 49, "hp": 60, "att": 38, "str": 38, "def": 38, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7},
+                {"lvl": 79, "hp": 85, "att": 65, "str": 65, "def": 65, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7},
+                {"lvl": 120, "hp": 120, "att": 100, "str": 100, "def": 100, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7},
+                {"lvl": 159, "hp": 170, "att": 130, "str": 130, "def": 130, "magic": 0, "attBo": 0, "strBo": 0, "rangeBo": 0, "stabDef": 0, "slashDef": 0, "crushDef": 0, "magicDef": 0, "rangeDef": 0, "attStyle": "Crush", "respawnrate": 0, "huntrange": 0, "wanderrange": 7, "maxrange": 7}
+            ]
+        }
+    ],
+    "◄Mega Rare►": [
         {
             "id": 0,
             "f2p": [],
@@ -2836,7 +3352,7 @@ npc_data = {
             "huntrange": "N/A"
         }
             ],
-    "~randomherb": [
+    "◄Herb►": [
         {
             "id": 0,
             "f2p": [],
@@ -2872,7 +3388,7 @@ npc_data = {
             "huntrange": "N/A"
         }
             ],
-    "~randomjewel": [
+    "◄Jewel►": [
         {
             "id": 0,
             "f2p": [
@@ -2889,7 +3405,7 @@ npc_data = {
                 {'item': "Rune Javelin", 'qty': 5, 'members': True, 'rarity': "0.78%"},
                 {'item': "Half of a key (tooth)", 'qty': 1, 'members': True, 'rarity': "0.78%"},
                 {'item': "Half of a key (loop)", 'qty': 1, 'members': True, 'rarity': "0.78%"},
-                {'item': "~megararetable", 'qty': 1, 'members': True, 'rarity': "0.78%"},
+                {'item': "◄Mega Rare►", 'qty': 1, 'members': True, 'rarity': "0.78%"},
                 {'item': "Chaos Talisman", 'qty': 1, 'members': True, 'rarity': "0.78%"},
                 {'item': "Nature Talisman", 'qty': 1, 'members': True, 'rarity': "0.78%"}
                     ],
@@ -2912,7 +3428,7 @@ npc_data = {
             "huntrange": "N/A"
         }
             ],
-    "~randomjunk": [
+    "◄Junk►": [
         {
             "id": 0,
             "f2p": [],
@@ -2945,7 +3461,7 @@ npc_data = {
             "huntrange": "N/A"
         }
             ],
-    "~ultrarare_getitem": [
+    "◄Ultra Rare►": [
         {
             "id": 0,
             "f2p": [],
@@ -2967,8 +3483,8 @@ npc_data = {
                 {'item': "Runite Bar", 'qty': 1, 'members': False, 'rarity': "3.91%"},
                 {'item': "Dragonstone", 'qty': 1, 'members': True, 'rarity': "1.56%"},
                 {'item': "Silver Ore (note)", 'qty': 100, 'members': False, 'rarity': "1.56%"},
-                {'item': "~randomjewel", 'qty': 1, 'members': False, 'rarity': "15.63%"},
-                {'item': "~megararetable", 'qty': 1, 'members': True, 'rarity': "11.72%"}
+                {'item': "◄Jewel►", 'qty': 1, 'members': False, 'rarity': "15.63%"},
+                {'item': "◄Mega Rare►", 'qty': 1, 'members': True, 'rarity': "11.72%"}
                     ],
             "lvl": "N/A",
             "hp": "N/A",

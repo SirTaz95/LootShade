@@ -3,6 +3,7 @@ import os
 import json
 import time
 import random
+import requests
 import pstats
 import cProfile
 from io import StringIO
@@ -14,6 +15,10 @@ from tkinter import messagebox
 import webbrowser
 from data.npc_data import npc_data
 from data.theme_data import theme_data
+
+GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfG9fj7YkLGRuihTsyGJy7-enFaWi4la_uizAm3MfaR_rrh2Q/formResponse"
+BUG_DESCRIPTION_ID = "entry.1319961271"
+
 CONFIG_FILE = "config.json"
 
 start_time = time.time()
@@ -25,20 +30,17 @@ def profile_script():
         root.mainloop()
         return
 
+    print("Profiling enabled...")
     profiler = cProfile.Profile()
-    profiler.enable()
-    root.mainloop()
-    profiler.disable()
+    
+    with profiler:
+        root.mainloop()
 
-    s = StringIO()
-    sortby = 'cumulative'
-    ps = pstats.Stats(profiler, stream=s).sort_stats(sortby)
-    ps.print_stats()
+    with open("profile_output.txt", "w") as f:
+        stats = pstats.Stats(profiler, stream=f)
+        stats.strip_dirs().sort_stats("cumulative").print_stats()
 
-    with open("profile_report.txt", "w") as f:
-        f.write(s.getvalue())
-
-    print("Profile report saved to 'profile_report.txt'.")
+    print("Profiling complete, results saved to profile_output.txt.")
 
 def restart_application():
     python = sys.executable
@@ -58,7 +60,7 @@ def load_config():
         "world": "F2P",
         "show_members_items": True,
         "show_drops_as_fraction": False,
-        "theme": "Creme",
+        "theme": "OSWiki: Day",
         "enable_profiling": False
     }
 
@@ -95,36 +97,60 @@ def save_config(config):
     except IOError:
         print("Error: Unable to save config.json.")
 
-def show_info_window():
+import tkinter as tk
+from tkinter import ttk
+
+def show_info_window(force=False):
     config = load_config()
-    if not config.get("show_info_window", True):
+    
+    if not force and not config.get("show_info_window", True):
         return
 
     info_window = tk.Toplevel(root)
     info_window.title("Welcome to LootShade")
-    info_window.geometry("400x250")
+    info_window.geometry("420x260")
     info_window.resizable(False, False)
     info_window.iconbitmap(icon_path)
-    
+    info_window.configure(bg="#2c2f33")
+
+    text_frame = tk.Frame(info_window, bg="#2c2f33")
+    text_frame.pack(expand=True, fill="both", padx=10, pady=(10, 5))
+
+    scrollbar = tk.Scrollbar(text_frame)
+    scrollbar.pack(side="right", fill="y")
+
     info_text = tk.Text(
-        info_window,
+        text_frame,
         wrap="word",
         font=("Arial", 12),
-        padx=10,
-        pady=10,
+        padx=12,
+        pady=12,
         height=8,
         width=50,
-        borderwidth=0
+        borderwidth=0,
+        bg="#3b3e42",
+        fg="white",
+        relief="flat",
+        yscrollcommand=scrollbar.set
     )
-    info_text.pack(expand=True, fill="both")
+    info_text.pack(expand=True, fill="both", side="left")
+    scrollbar.config(command=info_text.yview)
 
-    info_text.insert("end", "   Welcome to LootShade!\n\n", "header")
-    info_text.insert("end", "1. Click 'World' from the menu to change between f2p/p2p.\n", "bold")
-    info_text.insert("end", "2. Click 'Help' from the menu if you feel stuck.\n\n\n", "bold")
+    info_text.insert("end", "Welcome to LootShade!\n\n", "header")
+    info_text.insert("end", "Looking for help?\n", "bold")
+    info_text.insert("end", "Click 'Help' from the menu bar where you can find the README, FAQ & a discord link.\n\n")
+    info_text.insert("end", "Find a bug?\n", "bold")
+    info_text.insert("end", "Under 'Help' you can also find the option to submit a bug. Feel free to use this to leave feedback as well.\n\n")
+    info_text.insert("end", "Correct World selected?\n", "bold")
+    info_text.insert("end", "Some NPCs drop different items depending on whether you are on a members' world or not. In the menu bar, you should find 'World'. Make your selection (f2p/p2p) to see the correct drops.\n\n")
+    info_text.insert("end", "Enable Profiling?\n", "bold")
+    info_text.insert("end", "Only turn this on if you feel like LootShade is running poorly. It will create (profile_output.txt) and place it in the same location as LootShade. It can be found under 'Settings'.\n\n")
+    info_text.insert("end", "Welcome screen\n", "bold")
+    info_text.insert("end", "If you choose to hide this window from opening at startup but want to see it again, you can always reopen it under 'Help' by clicking 'Show Info Window'.\n\n")
 
-    info_text.tag_configure("header", font=("Arial", 16, "bold"))
-    info_text.tag_configure("bold", font=("Arial", 12))
-    info_text.tag_configure("normal", font=("Arial", 10))
+    info_text.tag_configure("header", font=("Arial", 20, "bold"), justify="center", foreground="#f8c471")
+    info_text.tag_configure("bold", font=("Arial", 14, "bold"), foreground="#aed6f1")
+    info_text.tag_configure("normal", font=("Arial", 10), foreground="white")
 
     info_text.config(state="disabled")
 
@@ -135,29 +161,105 @@ def show_info_window():
         save_config(config)
 
     show_again_checkbox = tk.Checkbutton(
-        info_window, text="Show this window on startup",
+        info_window,
+        text="Show this window on startup",
         variable=show_again_var,
-        command=toggle_show_again
+        command=toggle_show_again,
+        bg="#2c2f33",
+        fg="white",
+        selectcolor="#44474c",
+        activebackground="#3b3e42",
+        font=("Arial", 10)
     )
     show_again_checkbox.pack(pady=5)
 
-    close_button = tk.Button(info_window, text="OK", command=info_window.destroy)
+    close_button = tk.Button(
+        info_window,
+        text="OK",
+        command=info_window.destroy,
+        font=("Arial", 12, "bold"),
+        bg="#4caf50",
+        fg="white",
+        relief="flat",
+        padx=10,
+        pady=5
+    )
     close_button.pack(pady=10)
 
+def force_show_info_window():
+    show_info_window(force=True)
+
+def send_bug_report():
+    bug_description = bug_entry.get("1.0", tk.END).strip()
+    if not bug_description:
+        messagebox.showerror("Error", "Bug description cannot be empty!")
+        return
+
+    data = {BUG_DESCRIPTION_ID: bug_description}
+
+    try:
+        response = requests.post(GOOGLE_FORM_URL, data=data, headers={"Content-Type": "application/x-www-form-urlencoded"})
+
+        if response.status_code == 200 or response.status_code == 204:
+            messagebox.showinfo("Success", "Bug report submitted successfully!")
+            bug_entry.delete("1.0", tk.END)
+            bug_window.destroy()
+        else:
+            messagebox.showerror("Error", f"Failed to submit bug report: {response.status_code}")
+    except Exception as e:
+        messagebox.showerror("Error", f"Error submitting bug report:\n{e}")
+
+import tkinter as tk
+from tkinter import ttk
+
+def report_bug():
+    global bug_window
+    bug_window = tk.Toplevel(root)
+    bug_window.title("Report Bug")
+    bug_window.geometry("400x225")  
+    bug_window.resizable(False, False)
+    bug_window.iconbitmap(icon_path)
+    
+    frame = ttk.Frame(bug_window, padding=10)
+    frame.grid(row=0, column=0, sticky="nsew")
+    
+    ttk.Label(frame, text="Describe the bug:", font=("Arial", 10, "bold")).grid(row=0, column=0, sticky="w", pady=5)
+    
+    global bug_entry
+    bug_entry = tk.Text(frame, height=8, width=45, wrap="word")
+    scrollbar = ttk.Scrollbar(frame, orient="vertical", command=bug_entry.yview)
+    bug_entry.config(yscrollcommand=scrollbar.set)
+    
+    bug_entry.grid(row=1, column=0, sticky="nsew")
+    scrollbar.grid(row=1, column=1, sticky="ns")
+    
+    button_frame = ttk.Frame(frame)
+    button_frame.grid(row=2, column=0, columnspan=2, pady=10)
+    
+    submit_button = ttk.Button(button_frame, text="Submit", command=send_bug_report)
+    submit_button.pack(side="left", padx=5)
+    
+    close_button = ttk.Button(button_frame, text="Cancel", command=bug_window.destroy)
+    close_button.pack(side="left", padx=5)
+    
+    bug_window.grid_columnconfigure(0, weight=1)
+    bug_window.grid_rowconfigure(1, weight=1)
+
 rarity_conversion = {
+    "0.39%": "0.5/128", "1.95%": "2.5/128", "5.86%": "7.5/128",
     "0.00%": "0/128", "0.78%": "1/128", "1.56%": "2/128", "2.34%": "3/128", "3.13%": "4/128",
     "3.91%": "5/128", "4.69%": "6/128", "5.47%": "7/128", "6.25%": "8/128", "7.03%": "9/128",
     "7.81%": "10/128", "8.59%": "11/128", "9.38%": "12/128", "10.16%": "13/128", "10.94%": "14/128",
-    "11.72%": "15/128", "12.50%": "16/128", "13.28%": "17/128", "14.06%": "18/128", "14.84%": "19/128",
+    "11.72%": "15/128", "12.5%": "16/128", "13.28%": "17/128", "14.06%": "18/128", "14.84%": "19/128",
     "15.63%": "20/128", "16.41%": "21/128", "17.19%": "22/128", "17.97%": "23/128", "18.75%": "24/128",
     "19.53%": "25/128", "20.31%": "26/128", "21.09%": "27/128", "21.88%": "28/128", "22.66%": "29/128",
-    "23.44%": "30/128", "24.22%": "31/128", "25.00%": "32/128", "25.78%": "33/128", "26.56%": "34/128",
+    "23.44%": "30/128", "24.22%": "31/128", "25%": "32/128", "25.78%": "33/128", "26.56%": "34/128",
     "27.34%": "35/128", "28.13%": "36/128", "28.91%": "37/128", "29.69%": "38/128", "30.47%": "39/128",
     "31.25%": "40/128", "32.03%": "41/128", "32.81%": "42/128", "33.59%": "43/128", "34.38%": "44/128",
-    "35.16%": "45/128", "35.94%": "46/128", "36.72%": "47/128", "37.50%": "48/128", "38.28%": "49/128",
+    "35.16%": "45/128", "35.94%": "46/128", "36.72%": "47/128", "37.5%": "48/128", "38.28%": "49/128",
     "39.06%": "50/128", "39.84%": "51/128", "40.63%": "52/128", "41.41%": "53/128", "42.19%": "54/128",
     "43.75%": "56/128", "44.53%": "57/128", "45.31%": "58/128", "46.09%": "59/128", "46.88%": "60/128",
-    "47.66%": "61/128", "48.44%": "62/128", "49.22%": "63/128", "50.00%": "64/128", "100.00%": "128/128"
+    "47.66%": "61/128", "48.44%": "62/128", "49.22%": "63/128", "50%": "64/128", "100.00%": "128/128"
 }
 
 def format_rarity(rarity):
@@ -170,6 +272,7 @@ def format_rarity(rarity):
     return rarity
 
 sort_order = {}
+
 def sort_treeview(treeview, column_index):
     items = list(treeview.get_children())
 
@@ -184,14 +287,18 @@ def sort_treeview(treeview, column_index):
         if value == "Always":
             return float('inf') if order_desc else float('+inf')
 
+        # Handle fractions like "0/128" and "1.5/128"
         if '/' in value:
             try:
-                numerator, denominator = map(int, value.split('/'))
+                numerator, denominator = value.split('/')
+                numerator = float(numerator)  # Support floating-point numerators
+                denominator = float(denominator)  # Support floating-point denominators
                 return numerator / denominator
             except ValueError:
                 return float('-inf') if order_desc else float('inf')
 
         try:
+            # Handle percentages (remove % and convert to float)
             return float(value.strip('%')) if value.endswith('%') else float(value)
         except ValueError:
             return float('-inf') if order_desc else float('inf')
@@ -250,21 +357,33 @@ def search_items():
         return
 
     results_found = False
-    
+
     for npc, worlds in npc_data.items():
+        hide_drop_tables = config.get("hide_drop_tables", False)
+
+        if hide_drop_tables and npc.startswith("\u25C4"):
+            continue  
+
         for world_entry in worlds:
             if selected_world in world_entry:
                 for drop in world_entry[selected_world]:
+                    if hide_drop_tables and drop['item'].startswith("\u25C4"):
+                        continue
+                    
                     if search_term in drop['item'].lower() and (show_members_var.get() or not drop['members']):
                         item_name = f"★ {drop['item']}" if drop['members'] else drop['item']
                         formatted_rarity = format_rarity(drop.get('rarity', "N/A"))
-                        
-                        for level_entry in world_entry.get("levels", []):
-                            npc_level = level_entry.get("lvl", "N/A")
-                            npc_display_name = f"{npc} (lvl-{npc_level})"
-                            search_results.insert("", "end", values=(npc_display_name, item_name, drop['qty'], formatted_rarity))
-                            results_found = True
-    
+
+                        if npc.startswith("\u25C4") and not hide_drop_tables:
+                            npc_display_name = f"{npc}"
+                        else:
+                            for level_entry in world_entry.get("levels", []):
+                                npc_level = level_entry.get("lvl", "N/A")
+                                npc_display_name = f"{npc} (lvl-{npc_level})"
+                                
+                        search_results.insert("", "end", values=(npc_display_name, item_name, drop['qty'], formatted_rarity))
+                        results_found = True
+
     if not results_found:
         search_results.insert("", "end", values=("No results found", "", "", ""))
 
@@ -345,7 +464,7 @@ def toggle_theme():
     config["theme"] = current_theme
     save_config(config)
 
-    theme_settings = theme_data.get(current_theme, theme_data["Creme"])
+    theme_settings = theme_data.get(current_theme, theme_data["OSWiki: Day"])
 
     npc_listbox.config(bg=theme_settings["treeview_bg"])
     image_label.config(bg=theme_settings["img_bg_color"])
@@ -382,6 +501,29 @@ def toggle_show_members():
     config["show_members_items"] = show_members_var.get()
     save_config(config)
     refresh_drops()
+
+def toggle_hide_guardians():
+    config["hide_guardians"] = hide_guardians_var.get()
+    save_config(config)
+    update_npc_list()
+    search_items()
+
+def toggle_hide_drop_tables():
+    config["hide_drop_tables"] = hide_drop_tables_var.get()
+    save_config(config)
+    update_npc_list()
+    search_items()
+
+def update_npc_list():
+    npc_listbox.delete(0, tk.END)
+    
+    for npc, world_entry, npc_id in npc_listbox_data:
+        if config.get("hide_guardians", False) and npc.startswith("\u2022"):  # ◄
+            continue
+        if config.get("hide_drop_tables", False) and npc.startswith("\u25C4"):  # •
+            continue
+        
+        npc_listbox.insert(tk.END, npc)
 
 def resize_panes():
     total_width = root.winfo_width()
@@ -587,7 +729,7 @@ menu_bar = tk.Menu(root)
 root.config(menu=menu_bar)
 
 world_var = tk.StringVar(value=config.get("world", "F2P"))
-theme_var = tk.StringVar(value=config.get("theme", "Creme"))
+theme_var = tk.StringVar(value=config.get("theme", "OSWiki: Day"))
 show_members_var = tk.BooleanVar(value=config.get("show_members_items", True))
 show_frac_var = tk.BooleanVar(value=config.get("show_drops_as_fraction", False))
 
@@ -614,14 +756,24 @@ for theme_name in theme_data:
 enable_profiling_var = tk.BooleanVar(value=config.get("enable_profiling", False))
 
 def toggle_profiling():
-    config["enable_profiling"] = enable_profiling_var.get()
-    save_config(config)
-    restart_application()
+    confirmation = messagebox.askyesno(
+        "Confirm Action", 
+        "Are you sure you want to enable/disable profiling? The application will restart."
+    )
+
+    if confirmation:
+        config["enable_profiling"] = enable_profiling_var.get()
+        save_config(config)
+        restart_application()
+
+hide_guardians_var = tk.BooleanVar(value=config.get("hide_guardians", False))
+hide_drop_tables_var = tk.BooleanVar(value=config.get("hide_drop_tables", False))
 
 settings_menu.add_checkbutton(label="Enable Profiling", variable=enable_profiling_var, command=toggle_profiling)
-
 settings_menu.add_checkbutton(label="Show Member Items", variable=show_members_var, command=toggle_show_members)
 settings_menu.add_checkbutton(label="Show drops as 1/128", variable=show_frac_var, command=toggle_rarity_display)
+settings_menu.add_checkbutton(label="Hide Guardians", variable=hide_guardians_var, command=toggle_hide_guardians)
+settings_menu.add_checkbutton(label="Hide Drop Tables", variable=hide_drop_tables_var, command=toggle_hide_drop_tables)
 
 top_paned_window = tk.PanedWindow(root, orient=tk.HORIZONTAL)
 top_paned_window.pack(fill=tk.BOTH, expand=True)
@@ -752,11 +904,21 @@ def show_credits():
 def open_discord():
     discord_link = "https://discord.gg/wKf3KTaM"
     webbrowser.open(discord_link)
-
+def open_readme():
+    readme_link = "https://github.com/SirTaz95/LootShade/blob/main/README.md"
+    webbrowser.open(readme_link)
+def open_faq():
+    faq_link = "https://github.com/SirTaz95/LootShade/blob/main/FAQ.md"
+    webbrowser.open(faq_link)
+    
 help_menu = tk.Menu(menu_bar, tearoff=0)
 menu_bar.add_cascade(label="Help", menu=help_menu)
-help_menu.add_command(label="Credits", command=show_credits)
+#help_menu.add_command(label="Credits", command=show_credits)
+help_menu.add_command(label="Read Me", command=open_readme)
+help_menu.add_command(label="FAQ", command=open_faq)
 help_menu.add_command(label="Discord", command=open_discord)
+help_menu.add_command(label="Submit a Bug", command=report_bug)
+help_menu.add_command(label="Show Info Window", command=force_show_info_window)
 
 npc_listbox_data = []
 for npc, worlds in npc_data.items():
@@ -771,17 +933,19 @@ for npc, world_entry, npc_id in npc_listbox_data:
     else:
         print(f"Skipping invalid entry: {npc}, {npc_id}")
 
-end_time = time.time()
-elapsed_time = end_time - start_time
-print(f"Script took {elapsed_time:.2f} seconds to start up.")
 
-root.update_idletasks()
+#root.update_idletasks()
 resize_panes()
 toggle_theme()
 refresh_drops()
 show_info_window()
+update_npc_list()
 
 root.bind("<Configure>", lambda event: resize_panes_throttled())
+
+end_time = time.time()
+elapsed_time = end_time - start_time
+print(f"Script took {elapsed_time:.2f} seconds to start up.")
 
 profile_script()
 #root.mainloop()

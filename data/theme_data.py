@@ -1,12 +1,30 @@
 theme_data = {
-    "Creme": {
-        "background_color": "#e2dbc8",
+    "OSWiki: Day": {
+        "background_color": "#e2dbc8", #Light
         "foreground_color": "#000000",
-        "treeview_bg": "#d8ccb4",
+        "treeview_bg": "#d8ccb4", #Middle
         "treeview_fg": "#000000",
-        "treeview_heading_bg": "#b8a282",
+        "treeview_heading_bg": "#b8a282", #Dark
         "treeview_heading_fg": "#000000",
         "img_bg_color": "#d8ccb4",
+    },
+    "OSWiki: Night": {
+        "background_color": "#172136", #Light
+        "foreground_color": "#000000",
+        "treeview_bg": "#313e59", #Middle
+        "treeview_fg": "#000000",
+        "treeview_heading_bg": "#212c42", #Dark
+        "treeview_heading_fg": "#000000",
+        "img_bg_color": "#313e59",
+    },
+    "OSWiki: Browntown": {
+        "background_color": "#28221d", #Light
+        "foreground_color": "#000000",
+        "treeview_bg": "#3e362f", #Middle
+        "treeview_fg": "#000000",
+        "treeview_heading_bg": "#312a25", #Dark
+        "treeview_heading_fg": "#000000",
+        "img_bg_color": "#3e362f",
     },
     "Cyberpunk": {
         "background_color": "#000000",
@@ -16,24 +34,6 @@ theme_data = {
         "treeview_heading_bg": "#ff00ff",
         "treeview_heading_fg": "#000000",
         "img_bg_color": "#121212",
-    },
-    "Light": {
-        "background_color": "#ffffff",
-        "foreground_color": "#000000",
-        "treeview_bg": "#ffffff",
-        "treeview_fg": "#000000",
-        "treeview_heading_bg": "#e0e0e0",
-        "treeview_heading_fg": "#000000",
-        "img_bg_color": "#ffffff",
-    },
-    "Dark": {
-        "background_color": "#252525",
-        "foreground_color": "#ffffff",
-        "treeview_bg": "#2e2e2e",
-        "treeview_fg": "#ffffff",
-        "treeview_heading_bg": "#484848",
-        "treeview_heading_fg": "#ffffff",
-        "img_bg_color": "#2e2e2e",
     },
     "Solarized": {
         "background_color": "#002b36",
