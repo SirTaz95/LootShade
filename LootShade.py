@@ -231,8 +231,8 @@ def report_bug():
     frame = ttk.Frame(bug_window, padding=10)
     frame.grid(row=0, column=0, sticky="nsew")
     
-    ttk.Label(frame, text="Describe the bug:", font=("Arial", 10, "bold")).grid(row=0, column=0, sticky="w", pady=5)
-    
+    ttk.Label(frame, text=f"Describe the bug:                                 Version: {version}", font=("Arial", 10, "bold")).grid(row=0, column=0, sticky="w", pady=5)
+
     global bug_entry
     bug_entry = tk.Text(frame, height=8, width=45, wrap="word")
     scrollbar = ttk.Scrollbar(frame, orient="vertical", command=bug_entry.yview)
@@ -249,7 +249,7 @@ def report_bug():
     
     close_button = ttk.Button(button_frame, text="Cancel", command=bug_window.destroy)
     close_button.pack(side="left", padx=5)
-    
+
     bug_window.grid_columnconfigure(0, weight=1)
     bug_window.grid_rowconfigure(1, weight=1)
 
