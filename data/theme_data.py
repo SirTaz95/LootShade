@@ -10,20 +10,20 @@ theme_data = {
     },
     "OSWiki: Night": {
         "background_color": "#172136", #Light
-        "foreground_color": "#000000",
+        "foreground_color": "#cbd9f4",
         "treeview_bg": "#313e59", #Middle
-        "treeview_fg": "#000000",
+        "treeview_fg": "#cbd9f4",
         "treeview_heading_bg": "#212c42", #Dark
-        "treeview_heading_fg": "#000000",
+        "treeview_heading_fg": "#cbd9f4",
         "img_bg_color": "#313e59",
     },
     "OSWiki: Browntown": {
         "background_color": "#28221d", #Light
-        "foreground_color": "#000000",
+        "foreground_color": "#b79d7e",
         "treeview_bg": "#3e362f", #Middle
-        "treeview_fg": "#000000",
+        "treeview_fg": "#b79d7e",
         "treeview_heading_bg": "#312a25", #Dark
-        "treeview_heading_fg": "#000000",
+        "treeview_heading_fg": "#b79d7e",
         "img_bg_color": "#3e362f",
     },
     "Cyberpunk": {

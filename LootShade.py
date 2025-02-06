@@ -13,11 +13,14 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
 import webbrowser
+from data.game_data import start_guess_game
 from data.npc_data import npc_data
 from data.theme_data import theme_data
 
+version = "1.0.0"
 GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfG9fj7YkLGRuihTsyGJy7-enFaWi4la_uizAm3MfaR_rrh2Q/formResponse"
 BUG_DESCRIPTION_ID = "entry.1319961271"
+VERSION_ID = "entry.811865845"
 
 CONFIG_FILE = "config.json"
 
@@ -97,9 +100,6 @@ def save_config(config):
     except IOError:
         print("Error: Unable to save config.json.")
 
-import tkinter as tk
-from tkinter import ttk
-
 def show_info_window(force=False):
     config = load_config()
     
@@ -143,6 +143,10 @@ def show_info_window(force=False):
     info_text.insert("end", "Under 'Help' you can also find the option to submit a bug. Feel free to use this to leave feedback as well.\n\n")
     info_text.insert("end", "Correct World selected?\n", "bold")
     info_text.insert("end", "Some NPCs drop different items depending on whether you are on a members' world or not. In the menu bar, you should find 'World'. Make your selection (f2p/p2p) to see the correct drops.\n\n")
+    info_text.insert("end", "Hide Guardians?\n", "bold")
+    info_text.insert("end", "This will disable Guardians (Random Events) from showing up in the list. They will also no longer appear in the search results. They can be identified by a '•Example'.\n\n")
+    info_text.insert("end", "Hide Drop Tables?\n", "bold")
+    info_text.insert("end", "This will disable Drop Tables from showing up in the list. They will also no longer appear in the search results. They can be identified by a '◄Example►'.\n\n")
     info_text.insert("end", "Enable Profiling?\n", "bold")
     info_text.insert("end", "Only turn this on if you feel like LootShade is running poorly. It will create (profile_output.txt) and place it in the same location as LootShade. It can be found under 'Settings'.\n\n")
     info_text.insert("end", "Welcome screen\n", "bold")
@@ -195,10 +199,17 @@ def send_bug_report():
         messagebox.showerror("Error", "Bug description cannot be empty!")
         return
 
-    data = {BUG_DESCRIPTION_ID: bug_description}
+    data = {
+        BUG_DESCRIPTION_ID: bug_description,
+        VERSION_ID: version
+    }
 
     try:
-        response = requests.post(GOOGLE_FORM_URL, data=data, headers={"Content-Type": "application/x-www-form-urlencoded"})
+        response = requests.post(
+            GOOGLE_FORM_URL,
+            data=data,
+            headers={"Content-Type": "application/x-www-form-urlencoded"}
+        )
 
         if response.status_code == 200 or response.status_code == 204:
             messagebox.showinfo("Success", "Bug report submitted successfully!")
@@ -208,10 +219,7 @@ def send_bug_report():
             messagebox.showerror("Error", f"Failed to submit bug report: {response.status_code}")
     except Exception as e:
         messagebox.showerror("Error", f"Error submitting bug report:\n{e}")
-
-import tkinter as tk
-from tkinter import ttk
-
+        
 def report_bug():
     global bug_window
     bug_window = tk.Toplevel(root)
@@ -259,7 +267,8 @@ rarity_conversion = {
     "35.16%": "45/128", "35.94%": "46/128", "36.72%": "47/128", "37.5%": "48/128", "38.28%": "49/128",
     "39.06%": "50/128", "39.84%": "51/128", "40.63%": "52/128", "41.41%": "53/128", "42.19%": "54/128",
     "43.75%": "56/128", "44.53%": "57/128", "45.31%": "58/128", "46.09%": "59/128", "46.88%": "60/128",
-    "47.66%": "61/128", "48.44%": "62/128", "49.22%": "63/128", "50%": "64/128", "100.00%": "128/128"
+    "47.66%": "61/128", "48.44%": "62/128", "49.22%": "63/128", "50%": "64/128", "53.91%": "69/128", 
+    "100.00%": "128/128"
 }
 
 def format_rarity(rarity):
@@ -287,18 +296,16 @@ def sort_treeview(treeview, column_index):
         if value == "Always":
             return float('inf') if order_desc else float('+inf')
 
-        # Handle fractions like "0/128" and "1.5/128"
         if '/' in value:
             try:
                 numerator, denominator = value.split('/')
-                numerator = float(numerator)  # Support floating-point numerators
-                denominator = float(denominator)  # Support floating-point denominators
+                numerator = float(numerator)
+                denominator = float(denominator)
                 return numerator / denominator
             except ValueError:
                 return float('-inf') if order_desc else float('inf')
 
         try:
-            # Handle percentages (remove % and convert to float)
             return float(value.strip('%')) if value.endswith('%') else float(value)
         except ValueError:
             return float('-inf') if order_desc else float('inf')
@@ -316,10 +323,10 @@ def show_drops(event):
 
     selected_index = npc_listbox.curselection()[0]
     try:
-        selected_npc, selected_world_entry, _ = npc_listbox_data[selected_index]
+        selected_npc, selected_world_entry, _ = filtered_npc_listbox_data[selected_index]
         npc_name = selected_npc
         npc_id = selected_world_entry['id']
-    except ValueError:
+    except (ValueError, IndexError):
         messagebox.showerror("Error", "Invalid NPC selection format. Please reselect an NPC.")
         return
 
@@ -359,29 +366,21 @@ def search_items():
     results_found = False
 
     for npc, worlds in npc_data.items():
-        hide_drop_tables = config.get("hide_drop_tables", False)
-
-        if hide_drop_tables and npc.startswith("\u25C4"):
+        if config.get("hide_guardians", False) and npc.startswith("\u2022"):
             continue  
+        if config.get("hide_drop_tables", False) and npc.startswith("\u25C4"):
+            continue
 
         for world_entry in worlds:
             if selected_world in world_entry:
                 for drop in world_entry[selected_world]:
-                    if hide_drop_tables and drop['item'].startswith("\u25C4"):
-                        continue
-                    
-                    if search_term in drop['item'].lower() and (show_members_var.get() or not drop['members']):
-                        item_name = f"★ {drop['item']}" if drop['members'] else drop['item']
-                        formatted_rarity = format_rarity(drop.get('rarity', "N/A"))
-
-                        if npc.startswith("\u25C4") and not hide_drop_tables:
+                    if search_term in drop['item'].lower() and (show_members_var.get() or not drop.get('members', False)):
+                        if npc.startswith("\u25C4"):
                             npc_display_name = f"{npc}"
                         else:
-                            for level_entry in world_entry.get("levels", []):
-                                npc_level = level_entry.get("lvl", "N/A")
-                                npc_display_name = f"{npc} (lvl-{npc_level})"
-                                
-                        search_results.insert("", "end", values=(npc_display_name, item_name, drop['qty'], formatted_rarity))
+                            npc_display_name = npc  
+                        formatted_rarity = format_rarity(drop.get('rarity', "N/A"))
+                        search_results.insert("", "end", values=(npc_display_name, drop['item'], drop.get('qty', 1), formatted_rarity))
                         results_found = True
 
     if not results_found:
@@ -514,15 +513,19 @@ def toggle_hide_drop_tables():
     update_npc_list()
     search_items()
 
+filtered_npc_listbox_data = []
+
 def update_npc_list():
+    global filtered_npc_listbox_data
     npc_listbox.delete(0, tk.END)
-    
+    filtered_npc_listbox_data = []
+
     for npc, world_entry, npc_id in npc_listbox_data:
-        if config.get("hide_guardians", False) and npc.startswith("\u2022"):  # ◄
+        if config.get("hide_guardians", False) and npc.startswith("\u2022"):
             continue
-        if config.get("hide_drop_tables", False) and npc.startswith("\u25C4"):  # •
+        if config.get("hide_drop_tables", False) and npc.startswith("\u25C4"):
             continue
-        
+        filtered_npc_listbox_data.append((npc, world_entry, npc_id))
         npc_listbox.insert(tk.END, npc)
 
 def resize_panes():
@@ -565,7 +568,10 @@ images, display_name_map = load_images("images")
 def display_image(event):
     if npc_listbox.curselection():
         selected_index = npc_listbox.curselection()[0]
-        selected_npc, selected_world_entry, _ = npc_listbox_data[selected_index]
+        try:
+            selected_npc, selected_world_entry, _ = filtered_npc_listbox_data[selected_index]
+        except IndexError:
+            return
         image_name = selected_npc.lower()
 
         for display_name, filename in display_name_map.items():
@@ -660,6 +666,14 @@ def get_image_info(filename, npc_name, npc_id):
     level_to_entry_map = {str(level["lvl"]): npc_entry for level in npc_entry.get("levels", [])}
     level_options.sort(key=int)
     level_dropdown["menu"].delete(0, "end")
+    
+    if not level_options:
+        option_var.set("N/A")
+        level_dropdown["menu"].delete(0, "end")
+        level_dropdown["menu"].add_command(label="N/A", command=lambda: option_var.set("N/A"))
+        info_treeview.delete(*info_treeview.get_children())
+        info_treeview.insert("", "end", values=("Error", "No data to display."))
+        return
 
     if level_options:
         option_var.set(level_options[0])
@@ -765,6 +779,8 @@ def toggle_profiling():
         config["enable_profiling"] = enable_profiling_var.get()
         save_config(config)
         restart_application()
+    else:
+        enable_profiling_var.set(config.get("enable_profiling", False))
 
 hide_guardians_var = tk.BooleanVar(value=config.get("hide_guardians", False))
 hide_drop_tables_var = tk.BooleanVar(value=config.get("hide_drop_tables", False))
@@ -788,9 +804,11 @@ def handle_npc_select(event=None):
     display_image(event)
     if npc_listbox.curselection():
         selected_index = npc_listbox.curselection()[0]
-        selected_npc, selected_world_entry, npc_id = npc_listbox_data[selected_index]
+        try:
+            selected_npc, selected_world_entry, npc_id = filtered_npc_listbox_data[selected_index]
+        except IndexError:
+            return
         get_image_info(None, selected_npc, npc_id)
-
 
 npc_listbox.bind("<<ListboxSelect>>", handle_npc_select)
 
@@ -919,6 +937,10 @@ help_menu.add_command(label="FAQ", command=open_faq)
 help_menu.add_command(label="Discord", command=open_discord)
 help_menu.add_command(label="Submit a Bug", command=report_bug)
 help_menu.add_command(label="Show Info Window", command=force_show_info_window)
+
+game_menu = tk.Menu(menu_bar, tearoff=0)
+menu_bar.add_cascade(label="Games", menu=game_menu)
+game_menu.add_command(label="Guess the Number", command=lambda: start_guess_game(root, icon_path))
 
 npc_listbox_data = []
 for npc, worlds in npc_data.items():
