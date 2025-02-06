@@ -15,9 +15,13 @@ LootShade is a Python-based Tkinter application designed for displaying NPC drop
 - **Discord Integration**: Quick access to community support via Discord.
 
 ## Requirements
+Ensure you have Python 3.
+
+You can find it here. [Python](https://www.python.org/downloads)
+
 Ensure you have the following dependencies installed:
 ```sh
-pip install pillow
+pip install requests Pillow
 ```
 
 ## How to Run
