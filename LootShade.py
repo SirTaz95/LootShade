@@ -68,7 +68,7 @@ def load_config():
         "enable_profiling": False
     }
 
-    user_config_path = os.path.join(os.path.expanduser('~user'), 'LootShade', CONFIG_FILE)
+    user_config_path = os.path.join(Path.home(), 'LootShade', CONFIG_FILE)
 
     if os.path.exists(user_config_path):
         try:
