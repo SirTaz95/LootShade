@@ -16,6 +16,7 @@ import webbrowser
 from data.game_data import start_guess_game
 from data.npc_data import npc_data
 from data.theme_data import theme_data
+from pathlib import Path
 
 version = "1.0.0"
 GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfG9fj7YkLGRuihTsyGJy7-enFaWi4la_uizAm3MfaR_rrh2Q/formResponse"
@@ -67,7 +68,7 @@ def load_config():
         "enable_profiling": False
     }
 
-    user_config_path = os.path.join(os.getenv('APPDATA'), 'LootShade', CONFIG_FILE)
+    user_config_path = os.path.join(os.path.expanduser('~user'), 'LootShade', CONFIG_FILE)
 
     if os.path.exists(user_config_path):
         try:
@@ -90,7 +91,7 @@ def load_config():
     return default_config
 
 def save_config(config):
-    user_config_path = os.path.join(os.getenv('APPDATA'), 'LootShade', CONFIG_FILE)
+    user_config_path = os.path.join(Path.home(), 'LootShade', CONFIG_FILE)
     os.makedirs(os.path.dirname(user_config_path), exist_ok=True)
     
     try:
@@ -110,7 +111,7 @@ def show_info_window(force=False):
     info_window.title("Welcome to LootShade")
     info_window.geometry("420x260")
     info_window.resizable(False, False)
-    info_window.iconbitmap(icon_path)
+    #info_window.iconbitmap(icon_path)
     info_window.configure(bg="#2c2f33")
 
     text_frame = tk.Frame(info_window, bg="#2c2f33")
@@ -226,7 +227,7 @@ def report_bug():
     bug_window.title("Report Bug")
     bug_window.geometry("400x225")  
     bug_window.resizable(False, False)
-    bug_window.iconbitmap(icon_path)
+    #bug_window.iconbitmap(icon_path)
     
     frame = ttk.Frame(bug_window, padding=10)
     frame.grid(row=0, column=0, sticky="nsew")
@@ -551,8 +552,8 @@ root = tk.Tk()
 root.title("LootShade")
 root.geometry("1000x700")
 root.resizable(False, False)
-icon_path = os.path.join(os.path.dirname(__file__), "images", "LootShade.ico")
-root.iconbitmap(icon_path)
+#icon_path = os.path.join(os.path.dirname(__file__), "images", "LootShade.ico")
+#root.iconbitmap(icon_path)
 
 def create_placeholder_image():
     hex_bg_color = theme_settings.get("img_bg_color", "#ffffff")
@@ -901,7 +902,7 @@ def show_credits():
     credits_window.title("Credits")
     credits_window.geometry("300x200")
     credits_window.resizable(False, False)
-    credits_window.iconbitmap(icon_path)
+    #credits_window.iconbitmap(icon_path)
 
     credits_label = tk.Label(
         credits_window,
